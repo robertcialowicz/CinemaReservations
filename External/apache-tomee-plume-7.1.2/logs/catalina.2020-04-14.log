@@ -1,0 +1,924 @@
+14-Apr-2020 19:54:31.861 INFO [main] org.apache.openejb.persistence.PersistenceBootstrap.getDefaultProvider Default JPA Provider changed to org.eclipse.persistence.jpa.PersistenceProvider specified by jar:file:/D:/40_studia/informatyka/semestr_6/technologie_obiektowe_2/CinemaReservations/External/apache-tomee-plume-7.1.2/lib/openejb-core-eclipselink-7.1.2.jar!/META-INF/org.apache.openejb.persistence.PersistenceBootstrap.provider
+14-Apr-2020 19:54:32.426 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server version name:   Apache Tomcat (TomEE)/8.5.50 (7.1.2)
+14-Apr-2020 19:54:32.426 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server built:          Dec 7 2019 19:19:46 UTC
+14-Apr-2020 19:54:32.426 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server version number: 8.5.50.0
+14-Apr-2020 19:54:32.426 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke OS Name:               Windows 10
+14-Apr-2020 19:54:32.426 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke OS Version:            10.0
+14-Apr-2020 19:54:32.426 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Architecture:          amd64
+14-Apr-2020 19:54:32.426 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Java Home:             C:\Program Files\Java\jdk1.8.0_191\jre
+14-Apr-2020 19:54:32.430 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke JVM Version:           1.8.0_191-b12
+14-Apr-2020 19:54:32.430 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke JVM Vendor:            Oracle Corporation
+14-Apr-2020 19:54:32.430 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke CATALINA_BASE:         D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2
+14-Apr-2020 19:54:32.430 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke CATALINA_HOME:         D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2
+14-Apr-2020 19:54:32.430 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djava.util.logging.config.file=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\conf\logging.properties
+14-Apr-2020 19:54:32.430 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-Apr-2020 19:54:32.431 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -javaagent:D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\lib\openejb-javaagent.jar
+14-Apr-2020 19:54:32.431 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+14-Apr-2020 19:54:32.438 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+14-Apr-2020 19:54:32.439 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dignore.endorsed.dirs=
+14-Apr-2020 19:54:32.439 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.base=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2
+14-Apr-2020 19:54:32.439 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.home=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2
+14-Apr-2020 19:54:32.439 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Djava.io.tmpdir=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\temp
+14-Apr-2020 19:54:32.439 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\TDM-GCC-64\bin;C:\Users\Robert Ciałowicz\AppData\Local\Programs\stack\x86_64-windows\ghc-8.6.5\bin;C:\Program Files\Git\cmd;C:\Users\Robert Ciałowicz\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2019.1.3\bin;C:\Users\Robert Ciałowicz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Robert Ciałowicz\AppData\Local\GitHubDesktop\bin;D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-maven-3.6.3\bin;D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-ant-1.10.7\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.4\bin;;.]
+14-Apr-2020 19:54:32.865 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initializing ProtocolHandler ["http-nio-8080"]
+14-Apr-2020 19:54:32.871 SEVERE [main] sun.reflect.NativeMethodAccessorImpl.invoke Failed to initialize connector [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:995)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:552)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:848)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:639)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:662)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:303)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+	Caused by: java.net.BindException: Address already in use: bind
+		at sun.nio.ch.Net.bind0(Native Method)
+		at sun.nio.ch.Net.bind(Net.java:433)
+		at sun.nio.ch.Net.bind(Net.java:425)
+		at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+		at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:221)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1118)
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:223)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:581)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:70)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:993)
+		... 13 more
+14-Apr-2020 19:54:32.871 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initializing ProtocolHandler ["ajp-nio-8009"]
+14-Apr-2020 19:54:32.879 SEVERE [main] sun.reflect.NativeMethodAccessorImpl.invoke Failed to initialize connector [Connector[AJP/1.3-8009]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:995)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:552)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:848)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:639)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:662)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:303)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+	Caused by: java.net.BindException: Address already in use: bind
+		at sun.nio.ch.Net.bind0(Native Method)
+		at sun.nio.ch.Net.bind(Net.java:433)
+		at sun.nio.ch.Net.bind(Net.java:425)
+		at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+		at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:221)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1118)
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:223)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:581)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:993)
+		... 13 more
+14-Apr-2020 19:54:33.137 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.jdbc.datasource-creator=org.apache.tomee.jdbc.TomEEDataSourceCreator'
+14-Apr-2020 19:54:33.312 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> ********************************************************************************
+14-Apr-2020 19:54:33.312 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> OpenEJB http://tomee.apache.org/
+14-Apr-2020 19:54:33.312 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Startup: Tue Apr 14 19:54:33 CEST 2020
+14-Apr-2020 19:54:33.312 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Copyright 1999-2018 (C) Apache OpenEJB Project, All Rights Reserved.
+14-Apr-2020 19:54:33.325 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Version: 7.1.2
+14-Apr-2020 19:54:33.325 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Build date: 20200107
+14-Apr-2020 19:54:33.325 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Build time: 11:53
+14-Apr-2020 19:54:33.325 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> ********************************************************************************
+14-Apr-2020 19:54:33.325 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> openejb.home = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2
+14-Apr-2020 19:54:33.325 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> openejb.base = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2
+14-Apr-2020 19:54:33.327 INFO [main] org.apache.openejb.cdi.CdiBuilder.initializeOWB Created new singletonService org.apache.openejb.cdi.ThreadSingletonServiceImpl@6e75aa0d
+14-Apr-2020 19:54:33.328 INFO [main] org.apache.openejb.cdi.CdiBuilder.initializeOWB Succeeded in installing singleton service
+14-Apr-2020 19:54:33.360 INFO [main] org.apache.openejb.config.ConfigurationFactory.init TomEE configuration file is 'D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\conf\tomee.xml'
+14-Apr-2020 19:54:33.426 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Tomcat Security Service, type=SecurityService, provider-id=Tomcat Security Service)
+14-Apr-2020 19:54:33.429 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Transaction Manager, type=TransactionManager, provider-id=Default Transaction Manager)
+14-Apr-2020 19:54:33.431 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.deployments.classpath=false'
+14-Apr-2020 19:54:33.436 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating TransactionManager(id=Default Transaction Manager)
+14-Apr-2020 19:54:33.504 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating SecurityService(id=Tomcat Security Service)
+14-Apr-2020 19:54:33.613 INFO [main] org.apache.openejb.server.ServiceManager.initServer Creating ServerService(id=cxf)
+14-Apr-2020 19:54:33.889 INFO [main] org.apache.openejb.server.ServiceManager.initServer Creating ServerService(id=cxf-rs)
+14-Apr-2020 19:54:33.953 INFO [main] org.apache.openejb.server.SimpleServiceManager.start   ** Bound Services **
+14-Apr-2020 19:54:33.953 INFO [main] org.apache.openejb.server.SimpleServiceManager.printRow   NAME                 IP              PORT  
+14-Apr-2020 19:54:33.953 INFO [main] org.apache.openejb.server.SimpleServiceManager.start -------
+14-Apr-2020 19:54:33.953 INFO [main] org.apache.openejb.server.SimpleServiceManager.start Ready!
+14-Apr-2020 19:54:33.961 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initialization processed in 2069 ms
+14-Apr-2020 19:54:34.044 INFO [main] org.apache.tomee.catalina.OpenEJBNamingContextListener.bindResource Importing a Tomcat Resource with id 'UserDatabase' of type 'org.apache.catalina.UserDatabase'.
+14-Apr-2020 19:54:34.044 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=UserDatabase)
+14-Apr-2020 19:54:34.065 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting service [Catalina]
+14-Apr-2020 19:54:34.066 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting Servlet Engine: Apache Tomcat (TomEE)/8.5.50 (7.1.2)
+14-Apr-2020 19:54:34.092 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application archive [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0.war]
+14-Apr-2020 19:54:34.095 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /CinemaReservations-back-1.0
+14-Apr-2020 19:54:34.370 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0
+14-Apr-2020 19:54:34.594 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Managed Container, type=Container, provider-id=Default Managed Container)
+14-Apr-2020 19:54:34.594 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.createContainer Auto-creating a container for bean CinemaReservations-back-1.0.Comp1681491123: Container(type=MANAGED, id=Default Managed Container)
+14-Apr-2020 19:54:34.594 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Container(id=Default Managed Container)
+14-Apr-2020 19:54:34.606 INFO [localhost-startStop-1] org.apache.openejb.core.managed.SimplePassivater.init Using directory D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\temp for stateful session passivation
+14-Apr-2020 19:54:34.639 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0" loaded.
+14-Apr-2020 19:54:35.136 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0
+14-Apr-2020 19:54:35.327 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0)
+14-Apr-2020 19:54:35.546 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2020 19:54:35.707 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application archive [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0.war] has finished in [1,615] ms
+14-Apr-2020 19:54:35.708 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application directory [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\docs]
+14-Apr-2020 19:54:35.708 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /docs
+14-Apr-2020 19:54:35.882 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\docs
+14-Apr-2020 19:54:35.891 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\docs" loaded.
+14-Apr-2020 19:54:35.891 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\docs
+14-Apr-2020 19:54:35.901 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\docs)
+14-Apr-2020 19:54:35.975 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2020 19:54:35.994 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application directory [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\docs] has finished in [286] ms
+14-Apr-2020 19:54:35.994 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application directory [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\host-manager]
+14-Apr-2020 19:54:36.003 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /host-manager
+14-Apr-2020 19:54:36.093 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\host-manager
+14-Apr-2020 19:54:36.100 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\host-manager" loaded.
+14-Apr-2020 19:54:36.100 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\host-manager
+14-Apr-2020 19:54:36.116 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\host-manager\META-INF\context.xml
+14-Apr-2020 19:54:36.116 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\host-manager)
+14-Apr-2020 19:54:36.198 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2020 19:54:36.306 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application directory [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\host-manager] has finished in [312] ms
+14-Apr-2020 19:54:36.306 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application directory [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\manager]
+14-Apr-2020 19:54:36.308 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /manager
+14-Apr-2020 19:54:36.365 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\manager
+14-Apr-2020 19:54:36.378 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\manager" loaded.
+14-Apr-2020 19:54:36.378 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\manager
+14-Apr-2020 19:54:36.381 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\manager\META-INF\context.xml
+14-Apr-2020 19:54:36.381 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\manager)
+14-Apr-2020 19:54:36.436 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2020 19:54:36.473 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application directory [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\manager] has finished in [167] ms
+14-Apr-2020 19:54:36.473 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application directory [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\ROOT]
+14-Apr-2020 19:54:36.473 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /
+14-Apr-2020 19:54:36.528 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\ROOT
+14-Apr-2020 19:54:36.540 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\ROOT" loaded.
+14-Apr-2020 19:54:36.540 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\ROOT
+14-Apr-2020 19:54:36.549 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\ROOT)
+14-Apr-2020 19:54:36.596 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2020 19:54:36.622 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application directory [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\ROOT] has finished in [149] ms
+14-Apr-2020 19:54:36.630 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Server startup in 2668 ms
+14-Apr-2020 19:54:36.631 SEVERE [main] sun.reflect.NativeMethodAccessorImpl.invoke StandardServer.await: create[localhost:8005]: 
+	java.net.BindException: Address already in use: JVM_Bind
+		at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+		at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+		at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+		at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+		at java.net.ServerSocket.bind(ServerSocket.java:375)
+		at java.net.ServerSocket.<init>(ServerSocket.java:237)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:421)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:776)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:722)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:343)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+14-Apr-2020 19:54:36.632 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Pausing ProtocolHandler ["http-nio-8080"]
+14-Apr-2020 19:54:36.632 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Pausing ProtocolHandler ["ajp-nio-8009"]
+14-Apr-2020 19:54:36.632 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping service [Catalina]
+14-Apr-2020 19:54:36.640 WARNING [localhost-startStop-1] com.sun.faces.config.ConfigureListener.contextDestroyed Unexpected state during contextDestroyed: no ConfigManager instance in current ServletContext but one is expected to exist.
+14-Apr-2020 19:54:36.656 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0
+14-Apr-2020 19:54:36.851 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\docs
+14-Apr-2020 19:54:37.086 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\host-manager
+14-Apr-2020 19:54:37.244 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\manager
+14-Apr-2020 19:54:37.339 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\ROOT
+14-Apr-2020 19:54:37.445 INFO [main] org.apache.openejb.server.SimpleServiceManager.stop Stopping server services
+14-Apr-2020 19:54:37.479 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping ProtocolHandler ["http-nio-8080"]
+14-Apr-2020 19:54:37.480 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Destroying ProtocolHandler ["http-nio-8080"]
+14-Apr-2020 19:54:37.480 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping ProtocolHandler ["ajp-nio-8009"]
+14-Apr-2020 19:54:37.480 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Destroying ProtocolHandler ["ajp-nio-8009"]
+14-Apr-2020 19:55:09.407 INFO [main] org.apache.openejb.persistence.PersistenceBootstrap.getDefaultProvider Default JPA Provider changed to org.eclipse.persistence.jpa.PersistenceProvider specified by jar:file:/D:/40_studia/informatyka/semestr_6/technologie_obiektowe_2/CinemaReservations/External/apache-tomee-plume-7.1.2/lib/openejb-core-eclipselink-7.1.2.jar!/META-INF/org.apache.openejb.persistence.PersistenceBootstrap.provider
+14-Apr-2020 19:55:10.054 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server version name:   Apache Tomcat (TomEE)/8.5.50 (7.1.2)
+14-Apr-2020 19:55:10.054 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server built:          Dec 7 2019 19:19:46 UTC
+14-Apr-2020 19:55:10.054 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server version number: 8.5.50.0
+14-Apr-2020 19:55:10.054 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke OS Name:               Windows 10
+14-Apr-2020 19:55:10.054 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke OS Version:            10.0
+14-Apr-2020 19:55:10.054 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Architecture:          amd64
+14-Apr-2020 19:55:10.054 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Java Home:             C:\Program Files\Java\jdk1.8.0_191\jre
+14-Apr-2020 19:55:10.054 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke JVM Version:           1.8.0_191-b12
+14-Apr-2020 19:55:10.054 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke JVM Vendor:            Oracle Corporation
+14-Apr-2020 19:55:10.054 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke CATALINA_BASE:         D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2
+14-Apr-2020 19:55:10.062 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke CATALINA_HOME:         D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2
+14-Apr-2020 19:55:10.062 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djava.util.logging.config.file=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\conf\logging.properties
+14-Apr-2020 19:55:10.062 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-Apr-2020 19:55:10.073 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -javaagent:D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\lib\openejb-javaagent.jar
+14-Apr-2020 19:55:10.073 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+14-Apr-2020 19:55:10.074 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+14-Apr-2020 19:55:10.074 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dignore.endorsed.dirs=
+14-Apr-2020 19:55:10.074 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.base=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2
+14-Apr-2020 19:55:10.075 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.home=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2
+14-Apr-2020 19:55:10.075 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Djava.io.tmpdir=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\temp
+14-Apr-2020 19:55:10.075 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\TDM-GCC-64\bin;C:\Users\Robert Ciałowicz\AppData\Local\Programs\stack\x86_64-windows\ghc-8.6.5\bin;C:\Program Files\Git\cmd;C:\Users\Robert Ciałowicz\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2019.1.3\bin;C:\Users\Robert Ciałowicz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Robert Ciałowicz\AppData\Local\GitHubDesktop\bin;D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-maven-3.6.3\bin;D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-ant-1.10.7\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.4\bin;;.]
+14-Apr-2020 19:55:10.341 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initializing ProtocolHandler ["http-nio-8080"]
+14-Apr-2020 19:55:10.887 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Using a shared selector for servlet write/read
+14-Apr-2020 19:55:10.902 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initializing ProtocolHandler ["ajp-nio-8009"]
+14-Apr-2020 19:55:10.905 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Using a shared selector for servlet write/read
+14-Apr-2020 19:55:11.179 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.jdbc.datasource-creator=org.apache.tomee.jdbc.TomEEDataSourceCreator'
+14-Apr-2020 19:55:11.424 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> ********************************************************************************
+14-Apr-2020 19:55:11.425 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> OpenEJB http://tomee.apache.org/
+14-Apr-2020 19:55:11.426 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Startup: Tue Apr 14 19:55:11 CEST 2020
+14-Apr-2020 19:55:11.426 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Copyright 1999-2018 (C) Apache OpenEJB Project, All Rights Reserved.
+14-Apr-2020 19:55:11.426 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Version: 7.1.2
+14-Apr-2020 19:55:11.426 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Build date: 20200107
+14-Apr-2020 19:55:11.426 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Build time: 11:53
+14-Apr-2020 19:55:11.426 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> ********************************************************************************
+14-Apr-2020 19:55:11.427 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> openejb.home = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2
+14-Apr-2020 19:55:11.427 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> openejb.base = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2
+14-Apr-2020 19:55:11.436 INFO [main] org.apache.openejb.cdi.CdiBuilder.initializeOWB Created new singletonService org.apache.openejb.cdi.ThreadSingletonServiceImpl@3967e60c
+14-Apr-2020 19:55:11.437 INFO [main] org.apache.openejb.cdi.CdiBuilder.initializeOWB Succeeded in installing singleton service
+14-Apr-2020 19:55:11.476 INFO [main] org.apache.openejb.config.ConfigurationFactory.init TomEE configuration file is 'D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\conf\tomee.xml'
+14-Apr-2020 19:55:11.517 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Tomcat Security Service, type=SecurityService, provider-id=Tomcat Security Service)
+14-Apr-2020 19:55:11.519 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Transaction Manager, type=TransactionManager, provider-id=Default Transaction Manager)
+14-Apr-2020 19:55:11.522 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.deployments.classpath=false'
+14-Apr-2020 19:55:11.525 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating TransactionManager(id=Default Transaction Manager)
+14-Apr-2020 19:55:11.594 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating SecurityService(id=Tomcat Security Service)
+14-Apr-2020 19:55:11.679 INFO [main] org.apache.openejb.server.ServiceManager.initServer Creating ServerService(id=cxf)
+14-Apr-2020 19:55:11.931 INFO [main] org.apache.openejb.server.ServiceManager.initServer Creating ServerService(id=cxf-rs)
+14-Apr-2020 19:55:11.985 INFO [main] org.apache.openejb.server.SimpleServiceManager.start   ** Bound Services **
+14-Apr-2020 19:55:11.985 INFO [main] org.apache.openejb.server.SimpleServiceManager.printRow   NAME                 IP              PORT  
+14-Apr-2020 19:55:11.985 INFO [main] org.apache.openejb.server.SimpleServiceManager.start -------
+14-Apr-2020 19:55:11.985 INFO [main] org.apache.openejb.server.SimpleServiceManager.start Ready!
+14-Apr-2020 19:55:11.985 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initialization processed in 2541 ms
+14-Apr-2020 19:55:12.017 INFO [main] org.apache.tomee.catalina.OpenEJBNamingContextListener.bindResource Importing a Tomcat Resource with id 'UserDatabase' of type 'org.apache.catalina.UserDatabase'.
+14-Apr-2020 19:55:12.017 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=UserDatabase)
+14-Apr-2020 19:55:12.033 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting service [Catalina]
+14-Apr-2020 19:55:12.033 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting Servlet Engine: Apache Tomcat (TomEE)/8.5.50 (7.1.2)
+14-Apr-2020 19:55:12.055 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application archive [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0.war]
+14-Apr-2020 19:55:12.065 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /CinemaReservations-back-1.0
+14-Apr-2020 19:55:12.361 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0
+14-Apr-2020 19:55:12.610 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Managed Container, type=Container, provider-id=Default Managed Container)
+14-Apr-2020 19:55:12.610 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.createContainer Auto-creating a container for bean CinemaReservations-back-1.0.Comp346894144: Container(type=MANAGED, id=Default Managed Container)
+14-Apr-2020 19:55:12.610 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Container(id=Default Managed Container)
+14-Apr-2020 19:55:12.624 INFO [localhost-startStop-1] org.apache.openejb.core.managed.SimplePassivater.init Using directory D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\temp for stateful session passivation
+14-Apr-2020 19:55:12.661 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0" loaded.
+14-Apr-2020 19:55:12.668 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0
+14-Apr-2020 19:55:12.926 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0)
+14-Apr-2020 19:55:13.283 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2020 19:55:13.475 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application archive [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0.war] has finished in [1,419] ms
+14-Apr-2020 19:55:13.476 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application directory [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\docs]
+14-Apr-2020 19:55:13.477 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /docs
+14-Apr-2020 19:55:13.592 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\docs
+14-Apr-2020 19:55:13.604 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\docs" loaded.
+14-Apr-2020 19:55:13.605 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\docs
+14-Apr-2020 19:55:13.614 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\docs)
+14-Apr-2020 19:55:13.701 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2020 19:55:13.742 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application directory [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\docs] has finished in [266] ms
+14-Apr-2020 19:55:13.742 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application directory [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\host-manager]
+14-Apr-2020 19:55:13.748 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /host-manager
+14-Apr-2020 19:55:13.828 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\host-manager
+14-Apr-2020 19:55:13.837 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\host-manager" loaded.
+14-Apr-2020 19:55:13.837 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\host-manager
+14-Apr-2020 19:55:13.848 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\host-manager\META-INF\context.xml
+14-Apr-2020 19:55:13.849 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\host-manager)
+14-Apr-2020 19:55:13.919 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2020 19:55:13.972 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application directory [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\host-manager] has finished in [230] ms
+14-Apr-2020 19:55:13.972 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application directory [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\manager]
+14-Apr-2020 19:55:13.974 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /manager
+14-Apr-2020 19:55:14.039 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\manager
+14-Apr-2020 19:55:14.054 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\manager" loaded.
+14-Apr-2020 19:55:14.054 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\manager
+14-Apr-2020 19:55:14.064 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\manager\META-INF\context.xml
+14-Apr-2020 19:55:14.064 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\manager)
+14-Apr-2020 19:55:14.142 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2020 19:55:14.169 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application directory [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\manager] has finished in [197] ms
+14-Apr-2020 19:55:14.169 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application directory [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\ROOT]
+14-Apr-2020 19:55:14.170 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /
+14-Apr-2020 19:55:14.228 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\ROOT
+14-Apr-2020 19:55:14.238 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\ROOT" loaded.
+14-Apr-2020 19:55:14.238 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\ROOT
+14-Apr-2020 19:55:14.245 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\ROOT)
+14-Apr-2020 19:55:14.304 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2020 19:55:14.320 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application directory [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\ROOT] has finished in [151] ms
+14-Apr-2020 19:55:14.331 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting ProtocolHandler ["http-nio-8080"]
+14-Apr-2020 19:55:14.342 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting ProtocolHandler ["ajp-nio-8009"]
+14-Apr-2020 19:55:14.346 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Server startup in 2360 ms
+14-Apr-2020 19:56:32.477 WARNING [http-nio-8080-exec-4] com.sun.faces.config.ConfigureListener.contextDestroyed Unexpected state during contextDestroyed: no ConfigManager instance in current ServletContext but one is expected to exist.
+14-Apr-2020 19:56:32.540 INFO [http-nio-8080-exec-4] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0
+14-Apr-2020 19:56:33.369 INFO [http-nio-8080-exec-4] sun.reflect.DelegatingMethodAccessorImpl.invoke Undeploying context [/CinemaReservations-back-1.0]
+14-Apr-2020 19:56:41.050 INFO [http-nio-8080-exec-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application archive [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0.war]
+14-Apr-2020 19:56:41.051 INFO [http-nio-8080-exec-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /CinemaReservations-back-1.0
+14-Apr-2020 19:56:41.061 INFO [http-nio-8080-exec-1] org.apache.openejb.util.JarExtractor.extract Extracting jar: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0.war
+14-Apr-2020 19:56:42.039 INFO [http-nio-8080-exec-1] org.apache.openejb.util.JarExtractor.extract Extracted path: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0
+14-Apr-2020 19:56:42.223 INFO [http-nio-8080-exec-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0
+14-Apr-2020 19:56:42.799 INFO [http-nio-8080-exec-1] org.apache.openejb.config.AutoConfig.deploy Configuring PersistenceUnit(name=CinemaReservationsPU)
+14-Apr-2020 19:56:42.804 INFO [http-nio-8080-exec-1] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default JDBC Database, type=Resource, provider-id=Default JDBC Database)
+14-Apr-2020 19:56:42.806 INFO [http-nio-8080-exec-1] org.apache.openejb.config.AutoConfig.logAutoCreateResource Auto-creating a Resource with id 'Default JDBC Database' of type 'DataSource for 'CinemaReservationsPU'.
+14-Apr-2020 19:56:42.806 INFO [http-nio-8080-exec-1] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=Default JDBC Database)
+14-Apr-2020 19:56:43.473 INFO [http-nio-8080-exec-1] org.hsqldb.persist.Logger.logInfoEvent Checkpoint start
+14-Apr-2020 19:56:43.473 INFO [http-nio-8080-exec-1] org.hsqldb.persist.Logger.logInfoEvent checkpointClose start
+14-Apr-2020 19:56:43.509 INFO [http-nio-8080-exec-1] org.hsqldb.persist.Logger.logInfoEvent checkpointClose end
+14-Apr-2020 19:56:43.513 INFO [http-nio-8080-exec-1] org.hsqldb.persist.Logger.logInfoEvent Checkpoint end - txts: 1
+14-Apr-2020 19:56:43.577 INFO [http-nio-8080-exec-1] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Unmanaged JDBC Database, type=Resource, provider-id=Default Unmanaged JDBC Database)
+14-Apr-2020 19:56:43.577 INFO [http-nio-8080-exec-1] org.apache.openejb.config.AutoConfig.logAutoCreateResource Auto-creating a Resource with id 'Default Unmanaged JDBC Database' of type 'DataSource for 'CinemaReservationsPU'.
+14-Apr-2020 19:56:43.582 INFO [http-nio-8080-exec-1] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=Default Unmanaged JDBC Database)
+14-Apr-2020 19:56:43.625 INFO [http-nio-8080-exec-1] org.apache.openejb.config.AutoConfig.setJtaDataSource Adjusting PersistenceUnit CinemaReservationsPU <jta-data-source> to Resource ID 'Default JDBC Database' from 'null'
+14-Apr-2020 19:56:43.626 INFO [http-nio-8080-exec-1] org.apache.openejb.config.AutoConfig.setNonJtaDataSource Adjusting PersistenceUnit CinemaReservationsPU <non-jta-data-source> to Resource ID 'Default Unmanaged JDBC Database' from 'null'
+14-Apr-2020 19:56:43.754 INFO [http-nio-8080-exec-1] org.apache.openejb.config.OutputGeneratedDescriptors.writeEjbJar Dumping Generated ejb-jar.xml to: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\temp\ejb-jar-6610453218477265045CinemaReservations-back-1.0.xml
+14-Apr-2020 19:56:43.829 INFO [http-nio-8080-exec-1] org.apache.openejb.config.OutputGeneratedDescriptors.writeOpenejbJar Dumping Generated openejb-jar.xml to: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\temp\openejb-jar-353405772338718251CinemaReservations-back-1.0.xml
+14-Apr-2020 19:56:43.864 SEVERE [http-nio-8080-exec-1] org.apache.openejb.config.ReportValidationResults.logResults FAIL ... CinemaReservations-back-1.0:	Mistaken use of @PersistenceUnit on an EntityManager reference.  Use @PersistenceContext for ref "java:comp/env/CinemaReservations.repository.ReservationRepository/em"
+14-Apr-2020 19:56:43.864 SEVERE [http-nio-8080-exec-1] org.apache.openejb.config.ReportValidationResults.logResults Invalid EjbModule(name=CinemaReservations-back-1.0, path=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0)
+14-Apr-2020 19:56:43.864 INFO [http-nio-8080-exec-1] org.apache.openejb.config.ReportValidationResults.deploy Set the 'openejb.validation.output.level' system property to VERBOSE for increased validation details.
+14-Apr-2020 19:56:43.864 SEVERE [http-nio-8080-exec-1] org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal Unable to deploy collapsed ear in war StandardEngine[Catalina].StandardHost[localhost].StandardContext[/CinemaReservations-back-1.0]
+	org.apache.openejb.config.ValidationFailedException: Module failed validation. AppModule(name=CinemaReservations-back-1.0)
+		at org.apache.openejb.config.ReportValidationResults.deploy(ReportValidationResults.java:88)
+		at org.apache.openejb.config.AppInfoBuilder.build(AppInfoBuilder.java:327)
+		at org.apache.openejb.config.ConfigurationFactory.configureApplication(ConfigurationFactory.java:1040)
+		at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1281)
+		at org.apache.tomee.catalina.TomcatWebAppBuilder.configureStart(TomcatWebAppBuilder.java:1125)
+		at org.apache.tomee.catalina.GlobalListenerSupport.lifecycleEvent(GlobalListenerSupport.java:133)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5063)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:492)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1634)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:287)
+		at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+		at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+		at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1559)
+		at org.apache.catalina.manager.HTMLManagerServlet.upload(HTMLManagerServlet.java:289)
+		at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:207)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:211)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:109)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:668)
+		at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:348)
+		at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:52)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+		at org.apache.tomee.catalina.OpenEJBSecurityListener$RequestCapturer.invoke(OpenEJBSecurityListener.java:97)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:609)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:810)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1623)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+14-Apr-2020 19:56:43.868 SEVERE [http-nio-8080-exec-1] sun.reflect.NativeMethodAccessorImpl.invoke ContainerBase.removeChild: destroy: 
+	org.apache.catalina.LifecycleException: An invalid Lifecycle transition was attempted ([before_destroy]) for component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/CinemaReservations-back-1.0]] in state [STARTING_PREP]
+		at org.apache.catalina.util.LifecycleBase.invalidTransition(LifecycleBase.java:430)
+		at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:316)
+		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:845)
+		at org.apache.tomee.catalina.TomcatWebAppBuilder.undeploy(TomcatWebAppBuilder.java:1651)
+		at org.apache.tomee.catalina.TomcatWebAppBuilder.undeploy(TomcatWebAppBuilder.java:1631)
+		at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1312)
+		at org.apache.tomee.catalina.TomcatWebAppBuilder.configureStart(TomcatWebAppBuilder.java:1125)
+		at org.apache.tomee.catalina.GlobalListenerSupport.lifecycleEvent(GlobalListenerSupport.java:133)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5063)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:492)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1634)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:287)
+		at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+		at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+		at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1559)
+		at org.apache.catalina.manager.HTMLManagerServlet.upload(HTMLManagerServlet.java:289)
+		at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:207)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:211)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:109)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:668)
+		at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:348)
+		at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:52)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+		at org.apache.tomee.catalina.OpenEJBSecurityListener$RequestCapturer.invoke(OpenEJBSecurityListener.java:97)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:609)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:810)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1623)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+14-Apr-2020 19:56:43.869 SEVERE [56] sun.reflect.NativeMethodAccessorImpl.invoke ContainerBase.addChild: start: 
+	org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/CinemaReservations-back-1.0]]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:440)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:198)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:492)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1634)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:287)
+		at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+		at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+		at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1559)
+		at org.apache.catalina.manager.HTMLManagerServlet.upload(HTMLManagerServlet.java:289)
+		at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:207)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:211)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:109)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:668)
+		at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:348)
+		at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:52)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+		at org.apache.tomee.catalina.OpenEJBSecurityListener$RequestCapturer.invoke(OpenEJBSecurityListener.java:97)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:609)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:810)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1623)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+	Caused by: org.apache.tomee.catalina.TomEERuntimeException: org.apache.openejb.config.ValidationFailedException: Module failed validation. AppModule(name=CinemaReservations-back-1.0)
+		at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1315)
+		at org.apache.tomee.catalina.TomcatWebAppBuilder.configureStart(TomcatWebAppBuilder.java:1125)
+		at org.apache.tomee.catalina.GlobalListenerSupport.lifecycleEvent(GlobalListenerSupport.java:133)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5063)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		... 50 more
+	Caused by: org.apache.openejb.config.ValidationFailedException: Module failed validation. AppModule(name=CinemaReservations-back-1.0)
+		at org.apache.openejb.config.ReportValidationResults.deploy(ReportValidationResults.java:88)
+		at org.apache.openejb.config.AppInfoBuilder.build(AppInfoBuilder.java:327)
+		at org.apache.openejb.config.ConfigurationFactory.configureApplication(ConfigurationFactory.java:1040)
+		at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1281)
+		... 55 more
+14-Apr-2020 19:56:43.870 SEVERE [56] sun.reflect.NativeMethodAccessorImpl.invoke Error deploying web application archive [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0.war]
+	java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/CinemaReservations-back-1.0]]
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:747)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:492)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1634)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:287)
+		at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+		at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+		at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1559)
+		at org.apache.catalina.manager.HTMLManagerServlet.upload(HTMLManagerServlet.java:289)
+		at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:207)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:211)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:109)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:668)
+		at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:348)
+		at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:52)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+		at org.apache.tomee.catalina.OpenEJBSecurityListener$RequestCapturer.invoke(OpenEJBSecurityListener.java:97)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:609)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:810)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1623)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+14-Apr-2020 19:56:43.873 INFO [56] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application archive [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0.war] has finished in [2,823] ms
+14-Apr-2020 19:58:19.503 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+14-Apr-2020 19:58:19.503 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Pausing ProtocolHandler ["http-nio-8080"]
+14-Apr-2020 19:58:20.081 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Pausing ProtocolHandler ["ajp-nio-8009"]
+14-Apr-2020 19:58:20.622 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping service [Catalina]
+14-Apr-2020 19:58:20.632 INFO [localhost-startStop-2] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\docs
+14-Apr-2020 19:58:20.944 INFO [localhost-startStop-2] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\host-manager
+14-Apr-2020 19:58:21.158 INFO [localhost-startStop-2] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\manager
+14-Apr-2020 19:58:21.440 INFO [localhost-startStop-2] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\ROOT
+14-Apr-2020 19:58:21.600 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping ProtocolHandler ["http-nio-8080"]
+14-Apr-2020 19:58:21.616 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping ProtocolHandler ["ajp-nio-8009"]
+14-Apr-2020 19:58:21.622 INFO [main] org.apache.openejb.server.SimpleServiceManager.stop Stopping server services
+14-Apr-2020 19:58:21.664 INFO [main] org.apache.openejb.assembler.classic.Assembler.doResourceDestruction Closing DataSource: Default JDBC Database
+14-Apr-2020 19:58:21.664 INFO [main] org.apache.openejb.assembler.classic.Assembler.doResourceDestruction Closing DataSource: Default Unmanaged JDBC Database
+14-Apr-2020 19:58:21.696 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Destroying ProtocolHandler ["http-nio-8080"]
+14-Apr-2020 19:58:21.698 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Destroying ProtocolHandler ["ajp-nio-8009"]
+14-Apr-2020 20:00:48.879 INFO [main] org.apache.openejb.persistence.PersistenceBootstrap.getDefaultProvider Default JPA Provider changed to org.eclipse.persistence.jpa.PersistenceProvider specified by jar:file:/D:/40_studia/informatyka/semestr_6/technologie_obiektowe_2/CinemaReservations/External/apache-tomee-plume-7.1.2/lib/openejb-core-eclipselink-7.1.2.jar!/META-INF/org.apache.openejb.persistence.PersistenceBootstrap.provider
+14-Apr-2020 20:00:49.605 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server version name:   Apache Tomcat (TomEE)/8.5.50 (7.1.2)
+14-Apr-2020 20:00:49.605 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server built:          Dec 7 2019 19:19:46 UTC
+14-Apr-2020 20:00:49.605 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server version number: 8.5.50.0
+14-Apr-2020 20:00:49.605 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke OS Name:               Windows 10
+14-Apr-2020 20:00:49.606 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke OS Version:            10.0
+14-Apr-2020 20:00:49.606 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Architecture:          amd64
+14-Apr-2020 20:00:49.606 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Java Home:             C:\Program Files\Java\jdk1.8.0_191\jre
+14-Apr-2020 20:00:49.606 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke JVM Version:           1.8.0_191-b12
+14-Apr-2020 20:00:49.606 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke JVM Vendor:            Oracle Corporation
+14-Apr-2020 20:00:49.606 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke CATALINA_BASE:         D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2
+14-Apr-2020 20:00:49.606 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke CATALINA_HOME:         D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2
+14-Apr-2020 20:00:49.607 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djava.util.logging.config.file=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\conf\logging.properties
+14-Apr-2020 20:00:49.607 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-Apr-2020 20:00:49.616 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -javaagent:D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\lib\openejb-javaagent.jar
+14-Apr-2020 20:00:49.619 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+14-Apr-2020 20:00:49.619 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+14-Apr-2020 20:00:49.620 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dignore.endorsed.dirs=
+14-Apr-2020 20:00:49.620 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.base=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2
+14-Apr-2020 20:00:49.620 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.home=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2
+14-Apr-2020 20:00:49.620 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Djava.io.tmpdir=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\temp
+14-Apr-2020 20:00:49.621 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\TDM-GCC-64\bin;C:\Users\Robert Ciałowicz\AppData\Local\Programs\stack\x86_64-windows\ghc-8.6.5\bin;C:\Program Files\Git\cmd;C:\Users\Robert Ciałowicz\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2019.1.3\bin;C:\Users\Robert Ciałowicz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Robert Ciałowicz\AppData\Local\GitHubDesktop\bin;D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-maven-3.6.3\bin;D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-ant-1.10.7\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.4\bin;;.]
+14-Apr-2020 20:00:50.039 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initializing ProtocolHandler ["http-nio-8080"]
+14-Apr-2020 20:00:50.718 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Using a shared selector for servlet write/read
+14-Apr-2020 20:00:50.750 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initializing ProtocolHandler ["ajp-nio-8009"]
+14-Apr-2020 20:00:50.759 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Using a shared selector for servlet write/read
+14-Apr-2020 20:00:51.187 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.jdbc.datasource-creator=org.apache.tomee.jdbc.TomEEDataSourceCreator'
+14-Apr-2020 20:00:51.393 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> ********************************************************************************
+14-Apr-2020 20:00:51.397 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> OpenEJB http://tomee.apache.org/
+14-Apr-2020 20:00:51.397 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Startup: Tue Apr 14 20:00:51 CEST 2020
+14-Apr-2020 20:00:51.397 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Copyright 1999-2018 (C) Apache OpenEJB Project, All Rights Reserved.
+14-Apr-2020 20:00:51.397 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Version: 7.1.2
+14-Apr-2020 20:00:51.397 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Build date: 20200107
+14-Apr-2020 20:00:51.397 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Build time: 11:53
+14-Apr-2020 20:00:51.398 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> ********************************************************************************
+14-Apr-2020 20:00:51.398 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> openejb.home = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2
+14-Apr-2020 20:00:51.398 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> openejb.base = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2
+14-Apr-2020 20:00:51.402 INFO [main] org.apache.openejb.cdi.CdiBuilder.initializeOWB Created new singletonService org.apache.openejb.cdi.ThreadSingletonServiceImpl@3967e60c
+14-Apr-2020 20:00:51.403 INFO [main] org.apache.openejb.cdi.CdiBuilder.initializeOWB Succeeded in installing singleton service
+14-Apr-2020 20:00:51.468 INFO [main] org.apache.openejb.config.ConfigurationFactory.init TomEE configuration file is 'D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\conf\tomee.xml'
+14-Apr-2020 20:00:51.547 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Tomcat Security Service, type=SecurityService, provider-id=Tomcat Security Service)
+14-Apr-2020 20:00:51.547 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Transaction Manager, type=TransactionManager, provider-id=Default Transaction Manager)
+14-Apr-2020 20:00:51.553 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.deployments.classpath=false'
+14-Apr-2020 20:00:51.562 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating TransactionManager(id=Default Transaction Manager)
+14-Apr-2020 20:00:51.680 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating SecurityService(id=Tomcat Security Service)
+14-Apr-2020 20:00:51.848 INFO [main] org.apache.openejb.server.ServiceManager.initServer Creating ServerService(id=cxf)
+14-Apr-2020 20:00:52.267 INFO [main] org.apache.openejb.server.ServiceManager.initServer Creating ServerService(id=cxf-rs)
+14-Apr-2020 20:00:52.385 INFO [main] org.apache.openejb.server.SimpleServiceManager.start   ** Bound Services **
+14-Apr-2020 20:00:52.385 INFO [main] org.apache.openejb.server.SimpleServiceManager.printRow   NAME                 IP              PORT  
+14-Apr-2020 20:00:52.385 INFO [main] org.apache.openejb.server.SimpleServiceManager.start -------
+14-Apr-2020 20:00:52.385 INFO [main] org.apache.openejb.server.SimpleServiceManager.start Ready!
+14-Apr-2020 20:00:52.385 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initialization processed in 3470 ms
+14-Apr-2020 20:00:52.448 INFO [main] org.apache.tomee.catalina.OpenEJBNamingContextListener.bindResource Importing a Tomcat Resource with id 'UserDatabase' of type 'org.apache.catalina.UserDatabase'.
+14-Apr-2020 20:00:52.449 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=UserDatabase)
+14-Apr-2020 20:00:52.473 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting service [Catalina]
+14-Apr-2020 20:00:52.473 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting Servlet Engine: Apache Tomcat (TomEE)/8.5.50 (7.1.2)
+14-Apr-2020 20:00:52.505 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application archive [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0.war]
+14-Apr-2020 20:00:52.521 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /CinemaReservations-back-1.0
+14-Apr-2020 20:00:53.239 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0
+14-Apr-2020 20:00:54.211 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Managed Container, type=Container, provider-id=Default Managed Container)
+14-Apr-2020 20:00:54.212 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.createContainer Auto-creating a container for bean CinemaReservations-back-1.0.Comp1676585282: Container(type=MANAGED, id=Default Managed Container)
+14-Apr-2020 20:00:54.212 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Container(id=Default Managed Container)
+14-Apr-2020 20:00:54.234 INFO [localhost-startStop-1] org.apache.openejb.core.managed.SimplePassivater.init Using directory D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\temp for stateful session passivation
+14-Apr-2020 20:00:54.261 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.deploy Configuring PersistenceUnit(name=CinemaReservationsPU)
+14-Apr-2020 20:00:54.268 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default JDBC Database, type=Resource, provider-id=Default JDBC Database)
+14-Apr-2020 20:00:54.269 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.logAutoCreateResource Auto-creating a Resource with id 'Default JDBC Database' of type 'DataSource for 'CinemaReservationsPU'.
+14-Apr-2020 20:00:54.269 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=Default JDBC Database)
+14-Apr-2020 20:00:55.422 INFO [localhost-startStop-1] org.hsqldb.persist.Logger.logInfoEvent checkpointClose start
+14-Apr-2020 20:00:55.487 INFO [localhost-startStop-1] org.hsqldb.persist.Logger.logInfoEvent checkpointClose end
+14-Apr-2020 20:00:55.571 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Unmanaged JDBC Database, type=Resource, provider-id=Default Unmanaged JDBC Database)
+14-Apr-2020 20:00:55.572 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.logAutoCreateResource Auto-creating a Resource with id 'Default Unmanaged JDBC Database' of type 'DataSource for 'CinemaReservationsPU'.
+14-Apr-2020 20:00:55.574 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=Default Unmanaged JDBC Database)
+14-Apr-2020 20:00:55.672 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.setJtaDataSource Adjusting PersistenceUnit CinemaReservationsPU <jta-data-source> to Resource ID 'Default JDBC Database' from 'null'
+14-Apr-2020 20:00:55.672 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.setNonJtaDataSource Adjusting PersistenceUnit CinemaReservationsPU <non-jta-data-source> to Resource ID 'Default Unmanaged JDBC Database' from 'null'
+14-Apr-2020 20:00:55.786 INFO [localhost-startStop-1] org.apache.openejb.config.OutputGeneratedDescriptors.writeEjbJar Dumping Generated ejb-jar.xml to: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\temp\ejb-jar-986171279329134167CinemaReservations-back-1.0.xml
+14-Apr-2020 20:00:55.874 INFO [localhost-startStop-1] org.apache.openejb.config.OutputGeneratedDescriptors.writeOpenejbJar Dumping Generated openejb-jar.xml to: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\temp\openejb-jar-1625609878336058946CinemaReservations-back-1.0.xml
+14-Apr-2020 20:00:55.979 SEVERE [localhost-startStop-1] org.apache.openejb.config.ReportValidationResults.logResults FAIL ... CinemaReservations-back-1.0:	Mistaken use of @PersistenceUnit on an EntityManager reference.  Use @PersistenceContext for ref "java:comp/env/CinemaReservations.repository.ReservationRepository/em"
+14-Apr-2020 20:00:55.980 SEVERE [localhost-startStop-1] org.apache.openejb.config.ReportValidationResults.logResults Invalid EjbModule(name=CinemaReservations-back-1.0, path=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0)
+14-Apr-2020 20:00:55.982 INFO [localhost-startStop-1] org.apache.openejb.config.ReportValidationResults.deploy Set the 'openejb.validation.output.level' system property to VERBOSE for increased validation details.
+14-Apr-2020 20:00:55.983 SEVERE [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal Unable to deploy collapsed ear in war StandardEngine[Catalina].StandardHost[localhost].StandardContext[/CinemaReservations-back-1.0]
+	org.apache.openejb.config.ValidationFailedException: Module failed validation. AppModule(name=CinemaReservations-back-1.0)
+		at org.apache.openejb.config.ReportValidationResults.deploy(ReportValidationResults.java:88)
+		at org.apache.openejb.config.AppInfoBuilder.build(AppInfoBuilder.java:327)
+		at org.apache.openejb.config.ConfigurationFactory.configureApplication(ConfigurationFactory.java:1040)
+		at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1281)
+		at org.apache.tomee.catalina.TomcatWebAppBuilder.configureStart(TomcatWebAppBuilder.java:1125)
+		at org.apache.tomee.catalina.GlobalListenerSupport.lifecycleEvent(GlobalListenerSupport.java:133)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5063)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1841)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+14-Apr-2020 20:00:55.984 SEVERE [localhost-startStop-1] sun.reflect.NativeMethodAccessorImpl.invoke ContainerBase.removeChild: destroy: 
+	org.apache.catalina.LifecycleException: An invalid Lifecycle transition was attempted ([before_destroy]) for component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/CinemaReservations-back-1.0]] in state [STARTING_PREP]
+		at org.apache.catalina.util.LifecycleBase.invalidTransition(LifecycleBase.java:430)
+		at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:316)
+		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:845)
+		at org.apache.tomee.catalina.TomcatWebAppBuilder.undeploy(TomcatWebAppBuilder.java:1651)
+		at org.apache.tomee.catalina.TomcatWebAppBuilder.undeploy(TomcatWebAppBuilder.java:1631)
+		at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1312)
+		at org.apache.tomee.catalina.TomcatWebAppBuilder.configureStart(TomcatWebAppBuilder.java:1125)
+		at org.apache.tomee.catalina.GlobalListenerSupport.lifecycleEvent(GlobalListenerSupport.java:133)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5063)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1841)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+14-Apr-2020 20:00:55.986 SEVERE [localhost-startStop-1] sun.reflect.NativeMethodAccessorImpl.invoke ContainerBase.addChild: start: 
+	org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/CinemaReservations-back-1.0]]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:440)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:198)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1841)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+	Caused by: org.apache.tomee.catalina.TomEERuntimeException: org.apache.openejb.config.ValidationFailedException: Module failed validation. AppModule(name=CinemaReservations-back-1.0)
+		at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1315)
+		at org.apache.tomee.catalina.TomcatWebAppBuilder.configureStart(TomcatWebAppBuilder.java:1125)
+		at org.apache.tomee.catalina.GlobalListenerSupport.lifecycleEvent(GlobalListenerSupport.java:133)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5063)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		... 10 more
+	Caused by: org.apache.openejb.config.ValidationFailedException: Module failed validation. AppModule(name=CinemaReservations-back-1.0)
+		at org.apache.openejb.config.ReportValidationResults.deploy(ReportValidationResults.java:88)
+		at org.apache.openejb.config.AppInfoBuilder.build(AppInfoBuilder.java:327)
+		at org.apache.openejb.config.ConfigurationFactory.configureApplication(ConfigurationFactory.java:1040)
+		at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1281)
+		... 15 more
+14-Apr-2020 20:00:55.987 SEVERE [localhost-startStop-1] sun.reflect.NativeMethodAccessorImpl.invoke Error deploying web application archive [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0.war]
+	java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/CinemaReservations-back-1.0]]
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:747)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1841)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+14-Apr-2020 20:00:55.997 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application archive [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0.war] has finished in [3,489] ms
+14-Apr-2020 20:00:55.998 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application directory [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\docs]
+14-Apr-2020 20:00:55.998 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /docs
+14-Apr-2020 20:00:56.350 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\docs
+14-Apr-2020 20:00:56.375 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\docs" loaded.
+14-Apr-2020 20:00:56.390 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\docs
+14-Apr-2020 20:00:56.693 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\docs)
+14-Apr-2020 20:00:57.127 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2020 20:00:57.522 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application directory [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\docs] has finished in [1,524] ms
+14-Apr-2020 20:00:57.522 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application directory [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\host-manager]
+14-Apr-2020 20:00:57.527 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /host-manager
+14-Apr-2020 20:00:57.655 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\host-manager
+14-Apr-2020 20:00:57.675 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\host-manager" loaded.
+14-Apr-2020 20:00:57.676 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\host-manager
+14-Apr-2020 20:00:57.694 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\host-manager\META-INF\context.xml
+14-Apr-2020 20:00:57.694 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\host-manager)
+14-Apr-2020 20:00:57.848 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2020 20:00:57.879 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application directory [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\host-manager] has finished in [357] ms
+14-Apr-2020 20:00:57.880 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application directory [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\manager]
+14-Apr-2020 20:00:57.881 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /manager
+14-Apr-2020 20:00:57.957 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\manager
+14-Apr-2020 20:00:57.976 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\manager" loaded.
+14-Apr-2020 20:00:57.976 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\manager
+14-Apr-2020 20:00:57.990 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\manager\META-INF\context.xml
+14-Apr-2020 20:00:57.990 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\manager)
+14-Apr-2020 20:00:58.120 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2020 20:00:58.197 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application directory [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\manager] has finished in [317] ms
+14-Apr-2020 20:00:58.197 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application directory [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\ROOT]
+14-Apr-2020 20:00:58.197 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /
+14-Apr-2020 20:00:58.305 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\ROOT
+14-Apr-2020 20:00:58.317 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\ROOT" loaded.
+14-Apr-2020 20:00:58.317 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\ROOT
+14-Apr-2020 20:00:58.333 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\ROOT)
+14-Apr-2020 20:00:58.486 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2020 20:00:58.521 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application directory [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\ROOT] has finished in [324] ms
+14-Apr-2020 20:00:58.533 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting ProtocolHandler ["http-nio-8080"]
+14-Apr-2020 20:00:58.554 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting ProtocolHandler ["ajp-nio-8009"]
+14-Apr-2020 20:00:58.563 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Server startup in 6176 ms
+14-Apr-2020 20:01:29.086 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] sun.reflect.DelegatingMethodAccessorImpl.invoke Undeploying context [/CinemaReservations-back-1.0]
+14-Apr-2020 20:01:37.080 INFO [http-nio-8080-exec-7] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application archive [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0.war]
+14-Apr-2020 20:01:37.083 INFO [http-nio-8080-exec-7] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /CinemaReservations-back-1.0
+14-Apr-2020 20:01:37.093 INFO [http-nio-8080-exec-7] org.apache.openejb.util.JarExtractor.extract Extracting jar: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0.war
+14-Apr-2020 20:01:38.071 INFO [http-nio-8080-exec-7] org.apache.openejb.util.JarExtractor.extract Extracted path: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0
+14-Apr-2020 20:01:38.111 SEVERE [http-nio-8080-exec-7] sun.reflect.NativeMethodAccessorImpl.invoke naming.namingContextCreationFailed
+14-Apr-2020 20:01:38.410 INFO [http-nio-8080-exec-7] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2020 20:01:38.454 INFO [http-nio-8080-exec-7] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application archive [D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0.war] has finished in [1,374] ms
+14-Apr-2020 20:01:48.080 INFO [http-nio-8080-exec-9] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/CinemaReservations-back-1.0] has started
+14-Apr-2020 20:01:48.162 WARNING [http-nio-8080-exec-9] com.sun.faces.config.ConfigureListener.contextDestroyed Unexpected state during contextDestroyed: no ConfigManager instance in current ServletContext but one is expected to exist.
+14-Apr-2020 20:01:48.255 SEVERE [http-nio-8080-exec-9] sun.reflect.NativeMethodAccessorImpl.invoke naming.namingContextCreationFailed
+14-Apr-2020 20:01:48.410 INFO [http-nio-8080-exec-9] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0
+14-Apr-2020 20:01:48.630 INFO [http-nio-8080-exec-9] org.apache.openejb.config.AutoConfig.deploy Configuring PersistenceUnit(name=CinemaReservationsPU)
+14-Apr-2020 20:01:48.634 INFO [http-nio-8080-exec-9] org.apache.openejb.config.AutoConfig.setJtaDataSource Adjusting PersistenceUnit CinemaReservationsPU <jta-data-source> to Resource ID 'Default JDBC Database' from 'null'
+14-Apr-2020 20:01:48.634 INFO [http-nio-8080-exec-9] org.apache.openejb.config.AutoConfig.setNonJtaDataSource Adjusting PersistenceUnit CinemaReservationsPU <non-jta-data-source> to Resource ID 'Default Unmanaged JDBC Database' from 'null'
+14-Apr-2020 20:01:48.640 INFO [http-nio-8080-exec-9] org.apache.openejb.config.OutputGeneratedDescriptors.writeEjbJar Dumping Generated ejb-jar.xml to: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\temp\ejb-jar-3548779626881787546CinemaReservations-back-1.0.xml
+14-Apr-2020 20:01:48.644 INFO [http-nio-8080-exec-9] org.apache.openejb.config.OutputGeneratedDescriptors.writeOpenejbJar Dumping Generated openejb-jar.xml to: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\temp\openejb-jar-4251834661390034240CinemaReservations-back-1.0.xml
+14-Apr-2020 20:01:48.648 SEVERE [http-nio-8080-exec-9] org.apache.openejb.config.ReportValidationResults.logResults FAIL ... CinemaReservations-back-1.0:	Mistaken use of @PersistenceUnit on an EntityManager reference.  Use @PersistenceContext for ref "java:comp/env/CinemaReservations.repository.ReservationRepository/em"
+14-Apr-2020 20:01:48.648 SEVERE [http-nio-8080-exec-9] org.apache.openejb.config.ReportValidationResults.logResults Invalid EjbModule(name=CinemaReservations-back-1.0, path=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\CinemaReservations-back-1.0)
+14-Apr-2020 20:01:48.648 INFO [http-nio-8080-exec-9] org.apache.openejb.config.ReportValidationResults.deploy Set the 'openejb.validation.output.level' system property to VERBOSE for increased validation details.
+14-Apr-2020 20:01:48.648 SEVERE [http-nio-8080-exec-9] org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal Unable to deploy collapsed ear in war StandardEngine[Catalina].StandardHost[localhost].StandardContext[/CinemaReservations-back-1.0]
+	org.apache.openejb.config.ValidationFailedException: Module failed validation. AppModule(name=CinemaReservations-back-1.0)
+		at org.apache.openejb.config.ReportValidationResults.deploy(ReportValidationResults.java:88)
+		at org.apache.openejb.config.AppInfoBuilder.build(AppInfoBuilder.java:327)
+		at org.apache.openejb.config.ConfigurationFactory.configureApplication(ConfigurationFactory.java:1040)
+		at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1281)
+		at org.apache.tomee.catalina.TomcatWebAppBuilder.configureStart(TomcatWebAppBuilder.java:1125)
+		at org.apache.tomee.catalina.GlobalListenerSupport.lifecycleEvent(GlobalListenerSupport.java:133)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5063)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3759)
+		at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:1089)
+		at org.apache.catalina.manager.HTMLManagerServlet.reload(HTMLManagerServlet.java:635)
+		at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:212)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:211)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:109)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:668)
+		at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:348)
+		at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:52)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+		at org.apache.tomee.catalina.OpenEJBSecurityListener$RequestCapturer.invoke(OpenEJBSecurityListener.java:97)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:609)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:810)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1623)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+14-Apr-2020 20:01:48.652 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardContext.reload Exception starting Context with name [/CinemaReservations-back-1.0]
+	org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/CinemaReservations-back-1.0]]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:440)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:198)
+		at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3759)
+		at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:1089)
+		at org.apache.catalina.manager.HTMLManagerServlet.reload(HTMLManagerServlet.java:635)
+		at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:212)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:211)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:109)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:668)
+		at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:348)
+		at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:52)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+		at org.apache.tomee.catalina.OpenEJBSecurityListener$RequestCapturer.invoke(OpenEJBSecurityListener.java:97)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:609)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:810)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1623)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+	Caused by: org.apache.tomee.catalina.TomEERuntimeException: org.apache.openejb.config.ValidationFailedException: Module failed validation. AppModule(name=CinemaReservations-back-1.0)
+		at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1315)
+		at org.apache.tomee.catalina.TomcatWebAppBuilder.configureStart(TomcatWebAppBuilder.java:1125)
+		at org.apache.tomee.catalina.GlobalListenerSupport.lifecycleEvent(GlobalListenerSupport.java:133)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5063)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		... 38 more
+	Caused by: org.apache.openejb.config.ValidationFailedException: Module failed validation. AppModule(name=CinemaReservations-back-1.0)
+		at org.apache.openejb.config.ReportValidationResults.deploy(ReportValidationResults.java:88)
+		at org.apache.openejb.config.AppInfoBuilder.build(AppInfoBuilder.java:327)
+		at org.apache.openejb.config.ConfigurationFactory.configureApplication(ConfigurationFactory.java:1040)
+		at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1281)
+		... 43 more
+14-Apr-2020 20:01:48.652 INFO [http-nio-8080-exec-9] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/CinemaReservations-back-1.0] is completed
+14-Apr-2020 20:01:56.723 INFO [http-nio-8080-exec-8] sun.reflect.DelegatingMethodAccessorImpl.invoke Undeploying context [/CinemaReservations-back-1.0]
+14-Apr-2020 20:02:23.188 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+14-Apr-2020 20:02:23.188 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Pausing ProtocolHandler ["http-nio-8080"]
+14-Apr-2020 20:02:23.783 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Pausing ProtocolHandler ["ajp-nio-8009"]
+14-Apr-2020 20:02:24.333 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping service [Catalina]
+14-Apr-2020 20:02:24.340 WARNING [localhost-startStop-2] com.sun.faces.config.ConfigureListener.contextDestroyed Unexpected state during contextDestroyed: no ConfigManager instance in current ServletContext but one is expected to exist.
+14-Apr-2020 20:02:24.348 INFO [localhost-startStop-2] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\docs
+14-Apr-2020 20:02:24.674 INFO [localhost-startStop-2] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\host-manager
+14-Apr-2020 20:02:24.863 INFO [localhost-startStop-2] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\manager
+14-Apr-2020 20:02:25.006 INFO [localhost-startStop-2] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-tomee-plume-7.1.2\webapps\ROOT
+14-Apr-2020 20:02:25.115 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping ProtocolHandler ["http-nio-8080"]
+14-Apr-2020 20:02:25.120 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping ProtocolHandler ["ajp-nio-8009"]
+14-Apr-2020 20:02:25.125 INFO [main] org.apache.openejb.server.SimpleServiceManager.stop Stopping server services
+14-Apr-2020 20:02:25.153 INFO [main] org.apache.openejb.assembler.classic.Assembler.doResourceDestruction Closing DataSource: Default JDBC Database
+14-Apr-2020 20:02:25.167 INFO [main] org.apache.openejb.assembler.classic.Assembler.doResourceDestruction Closing DataSource: Default Unmanaged JDBC Database
+14-Apr-2020 20:02:25.177 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Destroying ProtocolHandler ["http-nio-8080"]
+14-Apr-2020 20:02:25.179 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Destroying ProtocolHandler ["ajp-nio-8009"]
