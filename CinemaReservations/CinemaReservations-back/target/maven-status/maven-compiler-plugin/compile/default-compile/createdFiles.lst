@@ -1,2 +1,6 @@
 CinemaReservations\model\Reservation.class
+CinemaReservations\model\TheatreHall.class
+CinemaReservations\model\Film.class
 CinemaReservations\repository\ReservationRepository.class
+CinemaReservations\model\Projection.class
+CinemaReservations\model\MovieTiming.class
