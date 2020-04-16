@@ -19,6 +19,10 @@ public class Reservation {
 
     public Reservation() {
     }
+    public Reservation(String title, String desc) {
+        this.title = title;
+        this.desc = desc;
+    }
 
     public Long getId() {
         return id;

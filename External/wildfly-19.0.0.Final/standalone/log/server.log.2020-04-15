@@ -1,0 +1,938 @@
+2020-04-15 00:07:50,964 INFO  [org.jboss.modules] (main) JBoss Modules version 1.10.0.Final
+2020-04-15 00:07:51,366 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.11.Final
+2020-04-15 00:07:51,378 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2020-04-15 00:07:51,489 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: WildFly Full 19.0.0.Final (WildFly Core 11.0.0.Final) starting
+2020-04-15 00:07:51,495 DEBUG [org.jboss.as.config] (MSC service thread 1-1) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1250
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jdk1.8.0_191\jre\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jdk1.8.0_191\jre
+	java.io.tmpdir = C:\Users\ROBERT~1\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\TDM-GCC-64\bin;C:\Users\Robert Cia這wicz\AppData\Local\Programs\stack\x86_64-windows\ghc-8.6.5\bin;C:\Program Files\Git\cmd;C:\Users\Robert Cia這wicz\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2019.1.3\bin;C:\Users\Robert Cia這wicz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Robert Cia這wicz\AppData\Local\GitHubDesktop\bin;D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-maven-3.6.3\bin;D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-ant-1.10.7\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.4\bin;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_191-b12
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_191
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.191-b12
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final
+	jboss.host.name = laprobert
+	jboss.modules.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = laprobert
+	jboss.qualified.host.name = laprobert
+	jboss.server.base.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone
+	jboss.server.config.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration
+	jboss.server.data.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data
+	jboss.server.deploy.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content
+	jboss.server.log.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\log
+	jboss.server.name = laprobert
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration/logging.properties
+	module.path = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\modules
+	org.jboss.boot.log.file = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = standalone.bat
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jdk1.8.0_191\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_191\jre\classes
+	sun.boot.library.path = C:\Program Files\Java\jdk1.8.0_191\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\jboss-modules.jar -mp D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\modules org.jboss.as.standalone -Djboss.home.dir=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1250
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.stderr.encoding = cp852
+	sun.stdout.encoding = cp852
+	user.country = PL
+	user.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\bin
+	user.home = C:\Users\Robert Cia這wicz
+	user.language = pl
+	user.name = Robert Cia這wicz
+	user.script = 
+	user.timezone = Europe/Belgrade
+	user.variant = 
+2020-04-15 00:07:51,496 DEBUG [org.jboss.as.config] (MSC service thread 1-1) VM Arguments: -Dprogram.name=standalone.bat -Xms64M -Xmx512M -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Dorg.jboss.boot.log.file=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\log\server.log -Dlogging.configuration=file:D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration/logging.properties 
+2020-04-15 00:07:52,190 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.11.2.Final
+2020-04-15 00:07:52,624 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-04-15 00:07:52,640 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 10) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-04-15 00:07:52,764 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2020-04-15 00:07:52,800 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.7.7.Final
+2020-04-15 00:07:52,811 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.7.7.Final
+2020-04-15 00:07:52,850 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 61) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2020-04-15 00:07:52,858 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 62) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2020-04-15 00:07:52,868 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 54) WFLYRS0016: RESTEasy version 3.11.0.Final
+2020-04-15 00:07:52,887 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 65) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2020-04-15 00:07:52,892 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2020-04-15 00:07:52,895 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 66) WFLYNAM0001: Activating Naming Subsystem
+2020-04-15 00:07:52,907 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 52) WFLYCLINF0001: Activating Infinispan subsystem.
+2020-04-15 00:07:52,916 INFO  [org.wildfly.extension.microprofile.jwt.smallrye._private] (ServerService Thread Pool -- 63) WFLYJWT0001: Activating WildFly MicroProfile JWT Subsystem
+2020-04-15 00:07:52,927 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 72) WFLYSEC0002: Activating Security Subsystem
+2020-04-15 00:07:52,938 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2020-04-15 00:07:52,940 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 59) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2020-04-15 00:07:52,944 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2020-04-15 00:07:52,950 INFO  [org.jboss.as.security] (MSC service thread 1-3) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2020-04-15 00:07:53,085 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0003: Undertow 2.0.30.Final starting
+2020-04-15 00:07:53,092 INFO  [org.jboss.as.connector] (MSC service thread 1-4) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.20.Final)
+2020-04-15 00:07:53,128 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2020-04-15 00:07:53,161 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = h2
+2020-04-15 00:07:53,165 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
+2020-04-15 00:07:53,183 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2020-04-15 00:07:53,196 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path 'D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2020-04-15 00:07:53,656 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 53) WFLYIO001: Worker 'default' has auto-configured to 16 IO threads with 128 max task threads based on your 8 available processors
+2020-04-15 00:07:53,659 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2020-04-15 00:07:53,660 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2020-04-15 00:07:53,725 INFO  [org.jboss.remoting] (MSC service thread 1-3) JBoss Remoting version 5.0.17.Final
+2020-04-15 00:07:53,734 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+2020-04-15 00:07:53,738 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0018: Host default-host starting
+2020-04-15 00:07:53,740 INFO  [org.jboss.as.patching] (MSC service thread 1-4) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2020-04-15 00:07:53,771 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-3) WFLYDM0111: Keystore D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2020-04-15 00:07:53,778 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) WFLYDS0013: Started FileSystemDeploymentService for directory D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\deployments
+2020-04-15 00:07:53,826 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2020-04-15 00:07:53,841 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0493: EJB subsystem suspension complete
+2020-04-15 00:07:53,897 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2020-04-15 00:07:54,203 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2020-04-15 00:07:54,285 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.5) 
+2020-04-15 00:07:54,378 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2020-04-15 00:07:54,380 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2020-04-15 00:07:54,381 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2020-04-15 00:07:54,381 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 19.0.0.Final (WildFly Core 11.0.0.Final) started in 3869ms - Started 316 of 582 services (374 services are lazy, passive or on-demand)
+2020-04-15 00:08:10,380 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\46\596b9af49918da6c1bb5f3dfb0addc49d1d49a\content
+2020-04-15 00:08:10,399 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+2020-04-15 00:08:11,147 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0003: Processing weld deployment test.war
+2020-04-15 00:08:11,267 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-5) HV000001: Hibernate Validator 6.0.18.Final
+2020-04-15 00:08:11,660 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-5) No shutdown hook registered: Please call close() manually on application shutdown.
+2020-04-15 00:08:11,758 INFO  [org.jboss.weld.Version] (MSC service thread 1-8) WELD-000900: 3.1.3 (Final)
+2020-04-15 00:08:11,817 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-4) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.18.Final
+2020-04-15 00:08:12,150 INFO  [io.smallrye.metrics] (MSC service thread 1-6) MicroProfile: Metrics activated (SmallRye Metrics version: 2.4.0)
+2020-04-15 00:08:12,204 INFO  [org.jboss.weld.Bootstrap] (Weld Thread Pool -- 2) WELD-000119: Not generating any bean definitions from CinemaReservations.repository.ReservationRepository because of underlying class loading error: Type CinemaReservations.model.Reservation from [Module "deployment.test.war" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+2020-04-15 00:08:12,219 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2020-04-15 00:08:12,792 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 78) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+2020-04-15 00:08:12,854 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+2020-04-15 00:08:13,062 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 78) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+2020-04-15 00:08:13,126 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 75ms
+2020-04-15 00:08:13,158 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\46\596b9af49918da6c1bb5f3dfb0addc49d1d49a\content
+2020-04-15 00:08:13,159 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+2020-04-15 00:11:10,609 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\c5\8ed1df9a7eac6b1b999edac220ff8b24b5675e\content
+2020-04-15 00:11:10,611 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+2020-04-15 00:11:10,867 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0003: Processing weld deployment test.war
+2020-04-15 00:11:10,959 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-7) No shutdown hook registered: Please call close() manually on application shutdown.
+2020-04-15 00:11:11,063 INFO  [io.smallrye.metrics] (MSC service thread 1-5) MicroProfile: Metrics activated (SmallRye Metrics version: 2.4.0)
+2020-04-15 00:11:11,077 INFO  [org.jboss.weld.Bootstrap] (Weld Thread Pool -- 3) WELD-000119: Not generating any bean definitions from CinemaReservations.repository.ReservationRepository because of underlying class loading error: Type CinemaReservations.model.Reservation from [Module "deployment.test.war" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+2020-04-15 00:11:11,224 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 84) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+2020-04-15 00:11:11,264 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+2020-04-15 00:11:11,428 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 29) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+2020-04-15 00:11:11,470 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 43ms
+2020-04-15 00:11:11,507 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\c5\8ed1df9a7eac6b1b999edac220ff8b24b5675e\content
+2020-04-15 00:11:11,507 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+2020-04-15 00:15:03,397 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0272: Suspending server
+2020-04-15 00:15:03,399 INFO  [org.jboss.as.ejb3] (Thread-2) WFLYEJB0493: EJB subsystem suspension complete
+2020-04-15 00:15:03,401 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2020-04-15 00:15:03,412 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2020-04-15 00:15:03,413 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2020-04-15 00:15:03,415 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTPS listener https suspending
+2020-04-15 00:15:03,417 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2020-04-15 00:15:03,417 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0019: Host default-host stopping
+2020-04-15 00:15:03,423 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2020-04-15 00:15:03,425 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+2020-04-15 00:15:03,426 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2020-04-15 00:15:03,429 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 86) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2020-04-15 00:15:03,432 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0004: Undertow 2.0.30.Final stopping
+2020-04-15 00:15:03,443 INFO  [org.jboss.as] (MSC service thread 1-5) WFLYSRV0050: WildFly Full 19.0.0.Final (WildFly Core 11.0.0.Final) stopped in 39ms
+2020-04-15 00:24:59,223 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) WFLYDS0013: Started FileSystemDeploymentService for directory D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\deployments
+2020-04-15 00:24:59,244 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2020-04-15 00:24:59,269 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0493: EJB subsystem suspension complete
+2020-04-15 00:24:59,334 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2020-04-15 00:24:59,614 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2020-04-15 00:24:59,684 INFO  [org.jboss.ws.common.management] (MSC service thread 1-1) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.5) 
+2020-04-15 00:24:59,817 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2020-04-15 00:24:59,820 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2020-04-15 00:24:59,820 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2020-04-15 00:24:59,821 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 19.0.0.Final (WildFly Core 11.0.0.Final) started in 4625ms - Started 316 of 582 services (374 services are lazy, passive or on-demand)
+2020-04-15 00:29:43,607 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\69\5e84a7a89f7cedc81c9f477ff9ffb200a54868\content
+2020-04-15 00:33:22,217 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+2020-04-15 00:33:23,412 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment test.war
+2020-04-15 00:33:23,518 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0272: Suspending server
+2020-04-15 00:33:23,520 INFO  [org.jboss.as.ejb3] (Thread-2) WFLYEJB0493: EJB subsystem suspension complete
+2020-04-15 00:33:23,522 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2020-04-15 00:33:23,532 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2020-04-15 00:33:23,535 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0019: Host default-host stopping
+2020-04-15 00:33:23,536 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2020-04-15 00:33:23,543 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2020-04-15 00:33:23,556 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-6) HV000001: Hibernate Validator 6.0.18.Final
+2020-04-15 00:33:23,710 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-6) MSC000001: Failed to start service jboss.deployment.unit."test.war".POST_MODULE: org.jboss.msc.service.StartException in service jboss.deployment.unit."test.war".POST_MODULE: WFLYSRV0153: Failed to process phase POST_MODULE of deployment "test.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:183)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1739)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1701)
+	at org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1559)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Container is down
+	at org.jboss.msc.service.ServiceContainerImpl.install(ServiceContainerImpl.java:739)
+	at org.jboss.msc.service.ServiceTargetImpl.install(ServiceTargetImpl.java:260)
+	at org.jboss.msc.service.ServiceControllerImpl$ChildServiceTarget.install(ServiceControllerImpl.java:2065)
+	at org.jboss.msc.service.ServiceTargetImpl.install(ServiceTargetImpl.java:260)
+	at org.jboss.msc.service.ServiceControllerImpl$ChildServiceTarget.install(ServiceControllerImpl.java:2065)
+	at org.jboss.msc.service.ServiceBuilderImpl.install(ServiceBuilderImpl.java:192)
+	at org.jboss.as.ejb3.deployment.processors.DiscoveryRegistrationProcessor.deploy(DiscoveryRegistrationProcessor.java:99)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:176)
+	... 8 more
+
+2020-04-15 00:33:23,718 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+2020-04-15 00:33:23,717 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTPS listener https suspending
+2020-04-15 00:33:23,719 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2020-04-15 00:33:23,719 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2020-04-15 00:33:23,721 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0004: Undertow 2.0.30.Final stopping
+2020-04-15 00:33:23,745 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 220ms
+2020-04-15 00:42:25,997 INFO  [org.jboss.modules] (main) JBoss Modules version 1.10.0.Final
+2020-04-15 00:42:26,359 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.11.Final
+2020-04-15 00:42:26,369 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2020-04-15 00:42:26,466 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: WildFly Full 19.0.0.Final (WildFly Core 11.0.0.Final) starting
+2020-04-15 00:42:26,467 DEBUG [org.jboss.as.config] (MSC service thread 1-1) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1250
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jdk1.8.0_191\jre\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jdk1.8.0_191\jre
+	java.io.tmpdir = C:\Users\ROBERT~1\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\TDM-GCC-64\bin;C:\Users\Robert Cia這wicz\AppData\Local\Programs\stack\x86_64-windows\ghc-8.6.5\bin;C:\Program Files\Git\cmd;C:\Users\Robert Cia這wicz\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2019.1.3\bin;C:\Users\Robert Cia這wicz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Robert Cia這wicz\AppData\Local\GitHubDesktop\bin;D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-maven-3.6.3\bin;D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-ant-1.10.7\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.4\bin;;.
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_191-b12
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_191
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.191-b12
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final
+	jboss.host.name = laprobert
+	jboss.modules.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\modules
+	jboss.node.name = laprobert
+	jboss.qualified.host.name = laprobert
+	jboss.server.base.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone
+	jboss.server.config.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration
+	jboss.server.data.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data
+	jboss.server.deploy.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content
+	jboss.server.log.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\log
+	jboss.server.name = laprobert
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\tmp
+	jboss.socket.binding.port-offset = 2
+	line.separator = 
+
+	logging.configuration = file:D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration/logging.properties
+	module.path = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\modules
+	org.jboss.boot.log.file = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = standalone.bat
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jdk1.8.0_191\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_191\jre\classes
+	sun.boot.library.path = C:\Program Files\Java\jdk1.8.0_191\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\jboss-modules.jar -mp D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\modules org.jboss.as.standalone -Djboss.home.dir=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1250
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = PL
+	user.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\bin
+	user.home = C:\Users\Robert Cia這wicz
+	user.language = pl
+	user.name = Robert Cia這wicz
+	user.script = 
+	user.timezone = Europe/Belgrade
+	user.variant = 
+2020-04-15 00:42:26,468 DEBUG [org.jboss.as.config] (MSC service thread 1-1) VM Arguments: -Dprogram.name=standalone.bat -Djboss.socket.binding.port-offset=2 -Dorg.jboss.boot.log.file=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\log\server.log -Dlogging.configuration=file:D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration/logging.properties 
+2020-04-15 00:42:27,255 INFO  [org.wildfly.security] (ServerService Thread Pool -- 9) ELY00001: WildFly Elytron version 1.11.2.Final
+2020-04-15 00:42:27,850 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-04-15 00:42:27,874 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 29) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-04-15 00:42:27,935 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2020-04-15 00:42:27,956 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.7.7.Final
+2020-04-15 00:42:27,965 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.7.7.Final
+2020-04-15 00:42:28,024 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 52) WFLYCLINF0001: Activating Infinispan subsystem.
+2020-04-15 00:42:28,037 INFO  [org.wildfly.extension.microprofile.jwt.smallrye._private] (ServerService Thread Pool -- 63) WFLYJWT0001: Activating WildFly MicroProfile JWT Subsystem
+2020-04-15 00:42:28,042 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 61) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2020-04-15 00:42:28,049 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2020-04-15 00:42:28,059 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2020-04-15 00:42:28,065 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 66) WFLYNAM0001: Activating Naming Subsystem
+2020-04-15 00:42:28,067 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 59) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2020-04-15 00:42:28,073 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 62) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2020-04-15 00:42:28,088 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 72) WFLYSEC0002: Activating Security Subsystem
+2020-04-15 00:42:28,098 INFO  [org.jboss.as.connector] (MSC service thread 1-5) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.20.Final)
+2020-04-15 00:42:28,102 INFO  [org.jboss.as.security] (MSC service thread 1-5) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2020-04-15 00:42:28,111 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 65) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2020-04-15 00:42:28,119 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2020-04-15 00:42:28,126 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 54) WFLYRS0016: RESTEasy version 3.11.0.Final
+2020-04-15 00:42:28,140 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0003: Undertow 2.0.30.Final starting
+2020-04-15 00:42:28,168 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2020-04-15 00:42:28,235 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2020-04-15 00:42:28,403 INFO  [org.jboss.as.naming] (MSC service thread 1-6) WFLYNAM0003: Starting Naming Service
+2020-04-15 00:42:28,416 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2020-04-15 00:42:28,444 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path 'D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2020-04-15 00:42:28,880 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 53) WFLYIO001: Worker 'default' has auto-configured to 16 IO threads with 128 max task threads based on your 8 available processors
+2020-04-15 00:42:28,883 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2020-04-15 00:42:28,883 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2020-04-15 00:42:28,921 INFO  [org.jboss.as.patching] (MSC service thread 1-5) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2020-04-15 00:42:28,924 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+2020-04-15 00:42:28,926 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 5.0.17.Final
+2020-04-15 00:42:28,927 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0018: Host default-host starting
+2020-04-15 00:42:28,946 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-5) WFLYDM0111: Keystore D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2020-04-15 00:42:29,128 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\deployments
+2020-04-15 00:42:29,176 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8082
+2020-04-15 00:42:29,233 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0493: EJB subsystem suspension complete
+2020-04-15 00:42:29,292 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2020-04-15 00:42:29,586 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8445
+2020-04-15 00:42:29,666 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.5) 
+2020-04-15 00:42:29,831 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2020-04-15 00:42:29,833 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9992/management
+2020-04-15 00:42:29,833 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9992
+2020-04-15 00:42:29,833 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 19.0.0.Final (WildFly Core 11.0.0.Final) started in 4271ms - Started 316 of 582 services (374 services are lazy, passive or on-demand)
+2020-04-15 00:44:25,268 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0272: Suspending server
+2020-04-15 00:44:25,270 INFO  [org.jboss.as.ejb3] (management-handler-thread - 1) WFLYEJB0493: EJB subsystem suspension complete
+2020-04-15 00:44:25,274 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2020-04-15 00:44:25,285 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2020-04-15 00:44:25,295 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2020-04-15 00:44:25,299 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0019: Host default-host stopping
+2020-04-15 00:44:25,301 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2020-04-15 00:44:25,302 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTP listener default suspending
+2020-04-15 00:44:25,307 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8082
+2020-04-15 00:45:05,452 INFO  [org.jboss.modules] (main) JBoss Modules version 1.10.0.Final
+2020-04-15 00:45:05,817 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.11.Final
+2020-04-15 00:45:05,827 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2020-04-15 00:45:05,934 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 19.0.0.Final (WildFly Core 11.0.0.Final) starting
+2020-04-15 00:45:05,935 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1250
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jdk1.8.0_191\jre\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jdk1.8.0_191\jre
+	java.io.tmpdir = C:\Users\ROBERT~1\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\TDM-GCC-64\bin;C:\Users\Robert Cia這wicz\AppData\Local\Programs\stack\x86_64-windows\ghc-8.6.5\bin;C:\Program Files\Git\cmd;C:\Users\Robert Cia這wicz\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2019.1.3\bin;C:\Users\Robert Cia這wicz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Robert Cia這wicz\AppData\Local\GitHubDesktop\bin;D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-maven-3.6.3\bin;D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-ant-1.10.7\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.4\bin;;.
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_191-b12
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_191
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.191-b12
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final
+	jboss.host.name = laprobert
+	jboss.modules.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\modules
+	jboss.node.name = laprobert
+	jboss.qualified.host.name = laprobert
+	jboss.server.base.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone
+	jboss.server.config.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration
+	jboss.server.data.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data
+	jboss.server.deploy.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content
+	jboss.server.log.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\log
+	jboss.server.name = laprobert
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\tmp
+	jboss.socket.binding.port-offset = 1910
+	line.separator = 
+
+	logging.configuration = file:D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration/logging.properties
+	module.path = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\modules
+	org.jboss.boot.log.file = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = standalone.bat
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jdk1.8.0_191\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_191\jre\classes
+	sun.boot.library.path = C:\Program Files\Java\jdk1.8.0_191\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\jboss-modules.jar -mp D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\modules org.jboss.as.standalone -Djboss.home.dir=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1250
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = PL
+	user.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\bin
+	user.home = C:\Users\Robert Cia這wicz
+	user.language = pl
+	user.name = Robert Cia這wicz
+	user.script = 
+	user.timezone = Europe/Belgrade
+	user.variant = 
+2020-04-15 00:45:05,940 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=standalone.bat -Djboss.socket.binding.port-offset=1910 -Dorg.jboss.boot.log.file=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\log\server.log -Dlogging.configuration=file:D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration/logging.properties 
+2020-04-15 00:45:06,689 INFO  [org.wildfly.security] (ServerService Thread Pool -- 26) ELY00001: WildFly Elytron version 1.11.2.Final
+2020-04-15 00:45:07,257 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-04-15 00:45:07,298 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 30) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-04-15 00:45:07,348 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2020-04-15 00:45:07,369 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.7.7.Final
+2020-04-15 00:45:07,376 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.7.7.Final
+2020-04-15 00:45:07,418 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 52) WFLYCLINF0001: Activating Infinispan subsystem.
+2020-04-15 00:45:07,428 INFO  [org.wildfly.extension.microprofile.jwt.smallrye._private] (ServerService Thread Pool -- 63) WFLYJWT0001: Activating WildFly MicroProfile JWT Subsystem
+2020-04-15 00:45:07,439 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 61) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2020-04-15 00:45:07,446 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2020-04-15 00:45:07,449 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 54) WFLYRS0016: RESTEasy version 3.11.0.Final
+2020-04-15 00:45:07,463 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 65) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2020-04-15 00:45:07,474 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 62) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2020-04-15 00:45:07,478 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.20.Final)
+2020-04-15 00:45:07,484 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 66) WFLYNAM0001: Activating Naming Subsystem
+2020-04-15 00:45:07,486 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2020-04-15 00:45:07,489 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 72) WFLYSEC0002: Activating Security Subsystem
+2020-04-15 00:45:07,491 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0003: Undertow 2.0.30.Final starting
+2020-04-15 00:45:07,511 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 59) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2020-04-15 00:45:07,514 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2020-04-15 00:45:07,516 INFO  [org.jboss.as.security] (MSC service thread 1-3) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2020-04-15 00:45:07,527 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2020-04-15 00:45:07,552 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+2020-04-15 00:45:07,618 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Starting Naming Service
+2020-04-15 00:45:07,619 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2020-04-15 00:45:07,727 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path 'D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2020-04-15 00:45:08,206 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 53) WFLYIO001: Worker 'default' has auto-configured to 16 IO threads with 128 max task threads based on your 8 available processors
+2020-04-15 00:45:08,211 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2020-04-15 00:45:08,211 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2020-04-15 00:45:08,242 INFO  [org.jboss.as.patching] (MSC service thread 1-7) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2020-04-15 00:45:08,399 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 5.0.17.Final
+2020-04-15 00:45:08,405 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0012: Started server default-server.
+2020-04-15 00:45:08,416 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0018: Host default-host starting
+2020-04-15 00:45:08,416 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-2) WFLYDM0111: Keystore D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2020-04-15 00:45:08,421 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) WFLYDS0013: Started FileSystemDeploymentService for directory D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\deployments
+2020-04-15 00:45:08,464 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:9990
+2020-04-15 00:45:08,485 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0493: EJB subsystem suspension complete
+2020-04-15 00:45:08,550 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2020-04-15 00:45:08,842 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:10353
+2020-04-15 00:45:08,915 INFO  [org.jboss.ws.common.management] (MSC service thread 1-4) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.5) 
+2020-04-15 00:45:09,029 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2020-04-15 00:45:09,031 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:11900/management
+2020-04-15 00:45:09,032 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:11900
+2020-04-15 00:45:09,032 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 19.0.0.Final (WildFly Core 11.0.0.Final) started in 4026ms - Started 316 of 582 services (374 services are lazy, passive or on-demand)
+2020-04-15 00:50:55,061 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0272: Suspending server
+2020-04-15 00:50:55,064 INFO  [org.jboss.as.ejb3] (management-handler-thread - 1) WFLYEJB0493: EJB subsystem suspension complete
+2020-04-15 00:50:55,065 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2020-04-15 00:50:55,089 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2020-04-15 00:50:55,092 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0019: Host default-host stopping
+2020-04-15 00:50:55,093 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2020-04-15 00:50:55,094 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTPS listener https suspending
+2020-04-15 00:50:55,095 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:10353
+2020-04-15 00:50:55,096 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTP listener default suspending
+2020-04-15 00:50:55,096 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:9990
+2020-04-15 00:50:55,098 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0004: Undertow 2.0.30.Final stopping
+2020-04-15 00:55:38,936 INFO  [org.jboss.modules] (main) JBoss Modules version 1.10.0.Final
+2020-04-15 00:55:39,285 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.11.Final
+2020-04-15 00:55:39,295 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2020-04-15 00:55:39,393 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 19.0.0.Final (WildFly Core 11.0.0.Final) starting
+2020-04-15 00:55:39,394 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1250
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jdk1.8.0_191\jre\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jdk1.8.0_191\jre
+	java.io.tmpdir = C:\Users\ROBERT~1\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\TDM-GCC-64\bin;C:\Users\Robert Cia這wicz\AppData\Local\Programs\stack\x86_64-windows\ghc-8.6.5\bin;C:\Program Files\Git\cmd;C:\Users\Robert Cia這wicz\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2019.1.3\bin;C:\Users\Robert Cia這wicz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Robert Cia這wicz\AppData\Local\GitHubDesktop\bin;D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-maven-3.6.3\bin;D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-ant-1.10.7\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.4\bin;;.
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_191-b12
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_191
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.191-b12
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final
+	jboss.host.name = laprobert
+	jboss.modules.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\modules
+	jboss.node.name = laprobert
+	jboss.qualified.host.name = laprobert
+	jboss.server.base.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone
+	jboss.server.config.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration
+	jboss.server.data.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data
+	jboss.server.deploy.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content
+	jboss.server.log.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\log
+	jboss.server.name = laprobert
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\tmp
+	jboss.socket.binding.port-offset = 5
+	line.separator = 
+
+	logging.configuration = file:D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration/logging.properties
+	module.path = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\modules
+	org.jboss.boot.log.file = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = standalone.bat
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jdk1.8.0_191\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_191\jre\classes
+	sun.boot.library.path = C:\Program Files\Java\jdk1.8.0_191\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\jboss-modules.jar -mp D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\modules org.jboss.as.standalone -Djboss.home.dir=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1250
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = PL
+	user.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\bin
+	user.home = C:\Users\Robert Cia這wicz
+	user.language = pl
+	user.name = Robert Cia這wicz
+	user.script = 
+	user.timezone = Europe/Belgrade
+	user.variant = 
+2020-04-15 00:55:39,400 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=standalone.bat -Djboss.socket.binding.port-offset=5 -Dorg.jboss.boot.log.file=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\log\server.log -Dlogging.configuration=file:D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration/logging.properties 
+2020-04-15 00:55:40,201 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 1.11.2.Final
+2020-04-15 00:55:40,760 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-04-15 00:55:40,792 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 5) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-04-15 00:55:40,871 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2020-04-15 00:55:40,895 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.7.7.Final
+2020-04-15 00:55:40,904 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.7.7.Final
+2020-04-15 00:55:40,940 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 52) WFLYCLINF0001: Activating Infinispan subsystem.
+2020-04-15 00:55:40,942 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 61) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2020-04-15 00:55:40,954 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 54) WFLYRS0016: RESTEasy version 3.11.0.Final
+2020-04-15 00:55:40,959 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2020-04-15 00:55:40,968 INFO  [org.wildfly.extension.microprofile.jwt.smallrye._private] (ServerService Thread Pool -- 63) WFLYJWT0001: Activating WildFly MicroProfile JWT Subsystem
+2020-04-15 00:55:40,971 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 65) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2020-04-15 00:55:40,973 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 66) WFLYNAM0001: Activating Naming Subsystem
+2020-04-15 00:55:40,981 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 62) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2020-04-15 00:55:40,982 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 72) WFLYSEC0002: Activating Security Subsystem
+2020-04-15 00:55:40,987 INFO  [org.jboss.as.security] (MSC service thread 1-7) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2020-04-15 00:55:41,011 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2020-04-15 00:55:41,014 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 59) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2020-04-15 00:55:41,037 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2020-04-15 00:55:41,044 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0003: Undertow 2.0.30.Final starting
+2020-04-15 00:55:41,077 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2020-04-15 00:55:41,102 INFO  [org.jboss.as.connector] (MSC service thread 1-4) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.20.Final)
+2020-04-15 00:55:41,117 INFO  [org.jboss.as.naming] (MSC service thread 1-7) WFLYNAM0003: Starting Naming Service
+2020-04-15 00:55:41,118 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = h2
+2020-04-15 00:55:41,122 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2020-04-15 00:55:41,276 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path 'D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2020-04-15 00:55:41,786 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 53) WFLYIO001: Worker 'default' has auto-configured to 16 IO threads with 128 max task threads based on your 8 available processors
+2020-04-15 00:55:41,792 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2020-04-15 00:55:41,792 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2020-04-15 00:55:41,999 INFO  [org.jboss.as.patching] (MSC service thread 1-5) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2020-04-15 00:55:42,024 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 5.0.17.Final
+2020-04-15 00:55:42,025 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-4) WFLYDM0111: Keystore D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2020-04-15 00:55:42,030 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+2020-04-15 00:55:42,031 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\deployments
+2020-04-15 00:55:42,036 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0018: Host default-host starting
+2020-04-15 00:55:42,113 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8085
+2020-04-15 00:55:42,127 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0493: EJB subsystem suspension complete
+2020-04-15 00:55:42,187 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2020-04-15 00:55:42,512 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8448
+2020-04-15 00:55:42,589 INFO  [org.jboss.ws.common.management] (MSC service thread 1-1) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.5) 
+2020-04-15 00:55:42,747 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2020-04-15 00:55:42,750 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9995/management
+2020-04-15 00:55:42,751 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9995
+2020-04-15 00:55:42,751 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 19.0.0.Final (WildFly Core 11.0.0.Final) started in 4264ms - Started 316 of 582 services (374 services are lazy, passive or on-demand)
+2020-04-15 00:56:17,188 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0272: Suspending server
+2020-04-15 00:56:17,192 INFO  [org.jboss.as.ejb3] (management-handler-thread - 1) WFLYEJB0493: EJB subsystem suspension complete
+2020-04-15 00:56:17,193 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2020-04-15 00:56:17,210 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2020-04-15 00:56:17,215 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2020-04-15 00:56:25,968 INFO  [org.jboss.modules] (main) JBoss Modules version 1.10.0.Final
+2020-04-15 00:56:26,364 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.11.Final
+2020-04-15 00:56:26,378 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2020-04-15 00:56:26,495 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 19.0.0.Final (WildFly Core 11.0.0.Final) starting
+2020-04-15 00:56:26,497 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1250
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jdk1.8.0_191\jre\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jdk1.8.0_191\jre
+	java.io.tmpdir = C:\Users\ROBERT~1\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\TDM-GCC-64\bin;C:\Users\Robert Cia這wicz\AppData\Local\Programs\stack\x86_64-windows\ghc-8.6.5\bin;C:\Program Files\Git\cmd;C:\Users\Robert Cia這wicz\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2019.1.3\bin;C:\Users\Robert Cia這wicz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Robert Cia這wicz\AppData\Local\GitHubDesktop\bin;D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-maven-3.6.3\bin;D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-ant-1.10.7\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.4\bin;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_191-b12
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_191
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.191-b12
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final
+	jboss.host.name = laprobert
+	jboss.modules.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = laprobert
+	jboss.qualified.host.name = laprobert
+	jboss.server.base.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone
+	jboss.server.config.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration
+	jboss.server.data.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data
+	jboss.server.deploy.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content
+	jboss.server.log.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\log
+	jboss.server.name = laprobert
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration/logging.properties
+	module.path = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\modules
+	org.jboss.boot.log.file = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = standalone.bat
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jdk1.8.0_191\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_191\jre\classes
+	sun.boot.library.path = C:\Program Files\Java\jdk1.8.0_191\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\jboss-modules.jar -mp D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\modules org.jboss.as.standalone -Djboss.home.dir=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1250
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = PL
+	user.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\bin
+	user.home = C:\Users\Robert Cia這wicz
+	user.language = pl
+	user.name = Robert Cia這wicz
+	user.script = 
+	user.timezone = Europe/Belgrade
+	user.variant = 
+2020-04-15 00:56:26,497 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=standalone.bat -Xms64M -Xmx512M -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Dorg.jboss.boot.log.file=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\log\server.log -Dlogging.configuration=file:D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration/logging.properties 
+2020-04-15 00:56:27,384 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 1.11.2.Final
+2020-04-15 00:56:27,926 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-04-15 00:56:27,953 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 9) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-04-15 00:56:28,020 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2020-04-15 00:56:28,040 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.7.7.Final
+2020-04-15 00:56:28,050 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.7.7.Final
+2020-04-15 00:56:28,115 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 54) WFLYRS0016: RESTEasy version 3.11.0.Final
+2020-04-15 00:56:28,121 INFO  [org.wildfly.extension.microprofile.jwt.smallrye._private] (ServerService Thread Pool -- 63) WFLYJWT0001: Activating WildFly MicroProfile JWT Subsystem
+2020-04-15 00:56:28,125 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 61) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2020-04-15 00:56:28,125 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 72) WFLYSEC0002: Activating Security Subsystem
+2020-04-15 00:56:28,126 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2020-04-15 00:56:28,148 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2020-04-15 00:56:28,155 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2020-04-15 00:56:28,156 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 52) WFLYCLINF0001: Activating Infinispan subsystem.
+2020-04-15 00:56:28,166 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 59) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2020-04-15 00:56:28,168 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 66) WFLYNAM0001: Activating Naming Subsystem
+2020-04-15 00:56:28,179 INFO  [org.jboss.as.security] (MSC service thread 1-2) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2020-04-15 00:56:28,194 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 65) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2020-04-15 00:56:28,207 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 62) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2020-04-15 00:56:28,265 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.20.Final)
+2020-04-15 00:56:28,294 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0003: Undertow 2.0.30.Final starting
+2020-04-15 00:56:28,307 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2020-04-15 00:56:28,323 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2020-04-15 00:56:28,337 INFO  [org.jboss.as.naming] (MSC service thread 1-6) WFLYNAM0003: Starting Naming Service
+2020-04-15 00:56:28,357 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2020-04-15 00:56:28,451 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path 'D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2020-04-15 00:56:29,118 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 53) WFLYIO001: Worker 'default' has auto-configured to 16 IO threads with 128 max task threads based on your 8 available processors
+2020-04-15 00:56:29,123 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2020-04-15 00:56:29,123 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2020-04-15 00:56:29,179 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0012: Started server default-server.
+2020-04-15 00:56:29,182 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0018: Host default-host starting
+2020-04-15 00:56:29,189 INFO  [org.jboss.as.patching] (MSC service thread 1-6) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2020-04-15 00:56:29,197 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.17.Final
+2020-04-15 00:56:29,213 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-2) WFLYDM0111: Keystore D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2020-04-15 00:56:29,217 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\deployments
+2020-04-15 00:56:29,314 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2020-04-15 00:56:29,342 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0493: EJB subsystem suspension complete
+2020-04-15 00:56:29,477 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2020-04-15 00:56:29,990 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2020-04-15 00:56:30,125 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.5) 
+2020-04-15 00:56:30,298 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2020-04-15 00:56:30,301 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2020-04-15 00:56:30,302 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2020-04-15 00:56:30,302 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 19.0.0.Final (WildFly Core 11.0.0.Final) started in 4881ms - Started 316 of 582 services (374 services are lazy, passive or on-demand)
+2020-04-15 00:56:52,956 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\93\f6648c231fad60bad144d18e5cc4327a8cb7fe\content
+2020-04-15 00:56:52,977 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+2020-04-15 00:56:53,884 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0003: Processing weld deployment test.war
+2020-04-15 00:56:54,019 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-7) HV000001: Hibernate Validator 6.0.18.Final
+2020-04-15 00:56:54,334 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-7) No shutdown hook registered: Please call close() manually on application shutdown.
+2020-04-15 00:56:54,436 INFO  [org.jboss.weld.Version] (MSC service thread 1-8) WELD-000900: 3.1.3 (Final)
+2020-04-15 00:56:54,463 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-3) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.18.Final
+2020-04-15 00:56:54,927 INFO  [io.smallrye.metrics] (MSC service thread 1-1) MicroProfile: Metrics activated (SmallRye Metrics version: 2.4.0)
+2020-04-15 00:56:55,002 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2020-04-15 00:56:55,004 INFO  [org.jboss.weld.Bootstrap] (Weld Thread Pool -- 6) WELD-000119: Not generating any bean definitions from CinemaReservations.repository.ReservationRepository because of underlying class loading error: Type CinemaReservations.model.Reservation from [Module "deployment.test.war" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+2020-04-15 00:56:55,614 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 78) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+2020-04-15 00:56:55,682 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+2020-04-15 00:56:55,998 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 78) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+2020-04-15 00:56:56,064 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 76ms
+2020-04-15 00:56:56,089 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\93\f6648c231fad60bad144d18e5cc4327a8cb7fe\content
+2020-04-15 00:56:56,090 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+2020-04-15 00:59:56,119 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0272: Suspending server
+2020-04-15 00:59:56,167 INFO  [org.jboss.as.ejb3] (management-handler-thread - 1) WFLYEJB0493: EJB subsystem suspension complete
+2020-04-15 00:59:56,179 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2020-04-15 00:59:56,196 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2020-04-15 00:59:56,197 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2020-04-15 00:59:56,199 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTPS listener https suspending
+2020-04-15 00:59:56,200 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2020-04-15 00:59:56,207 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0019: Host default-host stopping
+2020-04-15 00:59:56,208 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2020-04-15 01:01:20,946 INFO  [org.jboss.modules] (main) JBoss Modules version 1.10.0.Final
+2020-04-15 01:01:21,385 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.11.Final
+2020-04-15 01:01:21,396 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2020-04-15 01:01:21,509 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 19.0.0.Final (WildFly Core 11.0.0.Final) starting
+2020-04-15 01:01:21,511 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1250
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jdk1.8.0_191\jre\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jdk1.8.0_191\jre
+	java.io.tmpdir = C:\Users\ROBERT~1\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\TDM-GCC-64\bin;C:\Users\Robert Cia這wicz\AppData\Local\Programs\stack\x86_64-windows\ghc-8.6.5\bin;C:\Program Files\Git\cmd;C:\Users\Robert Cia這wicz\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2019.1.3\bin;C:\Users\Robert Cia這wicz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Robert Cia這wicz\AppData\Local\GitHubDesktop\bin;D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-maven-3.6.3\bin;D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-ant-1.10.7\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.4\bin;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_191-b12
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_191
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.191-b12
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final
+	jboss.host.name = laprobert
+	jboss.modules.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = laprobert
+	jboss.qualified.host.name = laprobert
+	jboss.server.base.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone
+	jboss.server.config.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration
+	jboss.server.data.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data
+	jboss.server.deploy.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content
+	jboss.server.log.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\log
+	jboss.server.name = laprobert
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration/logging.properties
+	module.path = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\modules
+	org.jboss.boot.log.file = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = standalone.bat
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jdk1.8.0_191\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_191\jre\classes
+	sun.boot.library.path = C:\Program Files\Java\jdk1.8.0_191\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\jboss-modules.jar -mp D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\modules org.jboss.as.standalone -Djboss.home.dir=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1250
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = PL
+	user.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\bin
+	user.home = C:\Users\Robert Cia這wicz
+	user.language = pl
+	user.name = Robert Cia這wicz
+	user.script = 
+	user.timezone = Europe/Belgrade
+	user.variant = 
+2020-04-15 01:01:21,512 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=standalone.bat -Xms64M -Xmx512M -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Dorg.jboss.boot.log.file=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\log\server.log -Dlogging.configuration=file:D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration/logging.properties 
+2020-04-15 01:01:22,485 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 1.11.2.Final
+2020-04-15 01:01:23,121 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-04-15 01:01:23,301 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 26) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-04-15 01:01:23,424 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2020-04-15 01:01:23,457 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.7.7.Final
+2020-04-15 01:01:23,469 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.7.7.Final
+2020-04-15 01:01:23,521 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2020-04-15 01:01:23,529 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 61) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2020-04-15 01:01:23,535 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 62) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2020-04-15 01:01:23,540 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 52) WFLYCLINF0001: Activating Infinispan subsystem.
+2020-04-15 01:01:23,547 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 54) WFLYRS0016: RESTEasy version 3.11.0.Final
+2020-04-15 01:01:23,557 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 66) WFLYNAM0001: Activating Naming Subsystem
+2020-04-15 01:01:23,568 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 65) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2020-04-15 01:01:23,569 INFO  [org.wildfly.extension.microprofile.jwt.smallrye._private] (ServerService Thread Pool -- 63) WFLYJWT0001: Activating WildFly MicroProfile JWT Subsystem
+2020-04-15 01:01:23,582 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2020-04-15 01:01:23,610 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 59) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2020-04-15 01:01:23,613 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 72) WFLYSEC0002: Activating Security Subsystem
+2020-04-15 01:01:23,630 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.20.Final)
+2020-04-15 01:01:23,635 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2020-04-15 01:01:23,644 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2020-04-15 01:01:23,650 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0003: Undertow 2.0.30.Final starting
+2020-04-15 01:01:23,701 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2020-04-15 01:01:23,702 INFO  [org.jboss.as.security] (MSC service thread 1-6) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2020-04-15 01:01:23,708 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Starting Naming Service
+2020-04-15 01:01:23,712 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2020-04-15 01:01:23,866 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path 'D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2020-04-15 01:01:24,656 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 53) WFLYIO001: Worker 'default' has auto-configured to 16 IO threads with 128 max task threads based on your 8 available processors
+2020-04-15 01:01:24,661 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2020-04-15 01:01:24,661 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2020-04-15 01:01:24,748 INFO  [org.jboss.as.patching] (MSC service thread 1-6) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2020-04-15 01:01:24,752 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 5.0.17.Final
+2020-04-15 01:01:24,756 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0012: Started server default-server.
+2020-04-15 01:01:24,759 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0018: Host default-host starting
+2020-04-15 01:01:24,780 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-1) WFLYDM0111: Keystore D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2020-04-15 01:01:24,806 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) WFLYDS0013: Started FileSystemDeploymentService for directory D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\deployments
+2020-04-15 01:01:24,867 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2020-04-15 01:01:24,911 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0493: EJB subsystem suspension complete
+2020-04-15 01:01:25,008 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2020-04-15 01:01:25,460 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2020-04-15 01:01:25,656 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.5) 
+2020-04-15 01:01:25,951 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2020-04-15 01:01:25,956 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2020-04-15 01:01:25,957 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2020-04-15 01:01:25,957 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 19.0.0.Final (WildFly Core 11.0.0.Final) started in 5547ms - Started 316 of 582 services (374 services are lazy, passive or on-demand)
+2020-04-15 01:01:35,568 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\67\ba2b551c6635ea6ba26330ee1392bea3e4740d\content
+2020-04-15 01:01:35,597 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+2020-04-15 01:01:36,829 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0003: Processing weld deployment test.war
+2020-04-15 01:01:37,011 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-7) HV000001: Hibernate Validator 6.0.18.Final
+2020-04-15 01:01:37,393 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-7) No shutdown hook registered: Please call close() manually on application shutdown.
+2020-04-15 01:01:37,520 INFO  [org.jboss.weld.Version] (MSC service thread 1-8) WELD-000900: 3.1.3 (Final)
+2020-04-15 01:01:37,555 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-4) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.18.Final
+2020-04-15 01:01:38,109 INFO  [io.smallrye.metrics] (MSC service thread 1-2) MicroProfile: Metrics activated (SmallRye Metrics version: 2.4.0)
+2020-04-15 01:01:38,181 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2020-04-15 01:01:38,210 INFO  [org.jboss.weld.Bootstrap] (Weld Thread Pool -- 4) WELD-000119: Not generating any bean definitions from CinemaReservations.repository.ReservationRepository because of underlying class loading error: Type CinemaReservations.model.Reservation from [Module "deployment.test.war" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+2020-04-15 01:01:39,106 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 78) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+2020-04-15 01:01:39,205 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+2020-04-15 01:01:39,753 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 78) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+2020-04-15 01:01:39,881 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 140ms
+2020-04-15 01:01:39,915 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\67\ba2b551c6635ea6ba26330ee1392bea3e4740d\content
+2020-04-15 01:01:39,915 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+2020-04-15 01:10:26,608 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\c3\982322f2ccbb998569460097b54a0221b93ef5\content
+2020-04-15 01:10:26,611 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+2020-04-15 01:10:26,858 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0003: Processing weld deployment test.war
+2020-04-15 01:10:26,948 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-5) No shutdown hook registered: Please call close() manually on application shutdown.
+2020-04-15 01:10:27,092 INFO  [io.smallrye.metrics] (MSC service thread 1-8) MicroProfile: Metrics activated (SmallRye Metrics version: 2.4.0)
+2020-04-15 01:10:27,109 INFO  [org.jboss.weld.Bootstrap] (Weld Thread Pool -- 2) WELD-000119: Not generating any bean definitions from CinemaReservations.repository.ReservationRepository because of underlying class loading error: Type CinemaReservations.model.Reservation from [Module "deployment.test.war" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+2020-04-15 01:10:27,313 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 85) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+2020-04-15 01:10:27,388 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+2020-04-15 01:10:27,792 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 78) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+2020-04-15 01:10:27,845 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 53ms
+2020-04-15 01:10:27,876 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\c3\982322f2ccbb998569460097b54a0221b93ef5\content
+2020-04-15 01:10:27,876 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+2020-04-15 01:11:07,633 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0272: Suspending server
+2020-04-15 01:11:07,685 INFO  [org.jboss.as.ejb3] (management-handler-thread - 1) WFLYEJB0493: EJB subsystem suspension complete
+2020-04-15 01:11:07,699 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2020-04-15 01:11:07,712 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2020-04-15 01:11:07,714 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2020-04-15 01:11:07,715 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0019: Host default-host stopping
+2020-04-15 01:11:07,718 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTPS listener https suspending
+2020-04-15 01:11:07,719 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2020-04-15 01:11:07,722 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = h2

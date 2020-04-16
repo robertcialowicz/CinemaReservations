@@ -1,5 +1,6 @@
 package CinemaReservations;
 
+import CinemaReservations.model.Reservation;
 import CinemaReservations.repository.ReservationRepository;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
@@ -8,25 +9,47 @@ import org.jboss.shrinkwrap.api.asset.EmptyAsset;
 import org.jboss.shrinkwrap.api.spec.JavaArchive;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.junit.Assert;
+import javax.inject.Inject;
 
 @RunWith(Arquillian.class)
 public class ReservationRepositoryTest {
 
-    private static final String APPLICATION_XML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
-            + "<application xmlns=\"http://java.sun.com/xml/ns/javaee\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_6.xsd\" version=\"6\">"            + "<display-name>org.acme.project</display-name>"
-            // the WAR must be added to the application.xml !
-            + "<module><web><web-uri>test.war</web-uri><context-root>/test</context-root></web></module>"
-            + "</application>";
+    @Inject
+    private ReservationRepository reservationRepository;
 
     @Test
-    public void create() {
+    public void create() throws Exception {
+        //Tests counting reservations
+        Assert.assertEquals(Long.valueOf(0), reservationRepository.countAll());
+        Assert.assertEquals(Long.valueOf(0), Long.valueOf(reservationRepository.findAll().size()));
+
+        //Create a resevation
+        Reservation reservation = new Reservation("Avatar", "very long story bro");
+        reservationRepository.create(reservation);
+        Long reservationId = reservation.getId();
+
+        //Check created reservation
+        Assert.assertNotNull(reservationId);
+
+        //Find created reservation
+        Assert.assertEquals("very long story bro",reservationRepository.find(reservationId).getDesc());
+
+        //Tests counting reservations
+        Assert.assertEquals(Long.valueOf(1), reservationRepository.countAll());
+
+        //Delete the book
+        reservationRepository.delete(reservationId);
+        Assert.assertEquals(Long.valueOf(0), reservationRepository.countAll());
     }
 
     @Deployment
     public static JavaArchive createDeployment() {
         return ShrinkWrap.create(JavaArchive.class)
                 .addClass(ReservationRepository.class)
-                .addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
+                .addClass(Reservation.class)
+                .addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml")
+                .addAsManifestResource("META-INF/test-persistence.xml", "persistence.xml");
     }
 
 

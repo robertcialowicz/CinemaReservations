@@ -526,7 +526,7 @@
     </socket-binding-group>
     <deployments>
         <deployment name="test.war" runtime-name="test.war">
-            <content sha1="b3dad99174534de8bdacb8231c0ab51ef64b2be8"/>
+            <content sha1="67ba2b551c6635ea6ba26330ee1392bea3e4740d"/>
         </deployment>
     </deployments>
 </server>
