@@ -1,8 +1,10 @@
 package CinemaReservations.model;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+@Entity
 public class Film {
     @Id
     @GeneratedValue
@@ -12,8 +14,10 @@ public class Film {
 
     private String description;
 
-    Film(Long id, String title, String description){
-        this.id = id;
+    public Film(){
+    }
+
+    Film(String title, String description){
         this.title = title;
         this.description = description;
     }
