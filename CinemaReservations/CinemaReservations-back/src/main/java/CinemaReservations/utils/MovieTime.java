@@ -1,4 +1,4 @@
-package CinemaReservations.model;
+package CinemaReservations.utils;
 
 import java.time.LocalDate;
 import java.time.LocalTime;

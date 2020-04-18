@@ -19,7 +19,7 @@
           <factory-entry name="CinemaReservationsPU" />
         </datasource-mapping>
         <naming-strategy-map />
-        <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/test/resources/META-INF/test-persistence.xml" />
+        <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />
       </configuration>
     </facet>
   </component>
@@ -163,5 +163,6 @@
     <orderEntry type="library" name="Maven: org.jboss.marshalling:jboss-marshalling-river:2.0.0.Final" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.marshalling:jboss-marshalling:2.0.0.Final" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.arquillian.core:arquillian-core-api:1.1.13.Final" level="project" />
+    <orderEntry type="library" name="Maven: com.vladmihalcea:hibernate-types-43:2.9.8" level="project" />
   </component>
 </module>
