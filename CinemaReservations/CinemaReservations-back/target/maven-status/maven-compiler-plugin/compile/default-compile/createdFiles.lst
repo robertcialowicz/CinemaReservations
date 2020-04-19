@@ -1,6 +1,10 @@
 CinemaReservations\model\Reservation.class
+CinemaReservations\utils\MovieTime.class
+CinemaReservations\model\SeatStatus.class
+CinemaReservations\repository\ReservationRepository.class
 CinemaReservations\model\TheatreHall.class
 CinemaReservations\model\Film.class
-CinemaReservations\repository\ReservationRepository.class
-CinemaReservations\model\Projection.class
-CinemaReservations\model\MovieTiming.class
+CinemaReservations\model\MovieShow.class
+CinemaReservations\repository\TheatreHallRepository.class
+CinemaReservations\repository\FilmRepository.class
+CinemaReservations\repository\MovieShowRepository.class

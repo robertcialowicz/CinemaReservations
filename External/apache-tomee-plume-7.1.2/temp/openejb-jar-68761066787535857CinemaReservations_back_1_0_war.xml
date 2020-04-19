@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<openejb-jar xmlns="http://www.openejb.org/openejb-jar/1.1">
+    <properties></properties>
+    <ejb-deployment container-id="Default Managed Container" deployment-id="CinemaReservations_back_1_0_war.Comp386286956" ejb-name="CinemaReservations_back_1_0_war.Comp"/>
+</openejb-jar>

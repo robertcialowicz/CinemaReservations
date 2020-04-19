@@ -19,16 +19,6 @@ public class ReservationRepository {
         return em.find(Reservation.class, id);
     }
 
-    public List<Reservation> findAll(){
-        TypedQuery<Reservation> query = em.createQuery("SELECT b FROM Reservation b ORDER BY b.id",Reservation.class);
-        return query.getResultList();
-    }
-
-    public Long countAll(){
-        TypedQuery<Long> query = em.createQuery("SELECT COUNT(b) FROM Reservation b", Long.class);
-        return query.getSingleResult();
-    }
-
     @Transactional(REQUIRED)
     public Reservation create(Reservation reservation){
         em.persist(reservation);
@@ -39,5 +29,16 @@ public class ReservationRepository {
     public void delete(Long id){
         em.remove(em.getReference(Reservation.class, id));
     }
+
+    public List<Reservation> findAll(){
+        TypedQuery<Reservation> query = em.createQuery("SELECT b FROM Reservation b ORDER BY b.id",Reservation.class);
+        return query.getResultList();
+    }
+
+    public Long countAll(){
+        TypedQuery<Long> query = em.createQuery("SELECT COUNT(b) FROM Reservation b", Long.class);
+        return query.getSingleResult();
+    }
+
 
 }

@@ -1,14 +1,7 @@
 package CinemaReservations.model;
 
 import javax.persistence.*;
-import javax.swing.text.html.CSS;
-import javax.validation.GroupSequence;
-import javax.validation.constraints.Max;
-import javax.validation.groups.ConvertGroup;
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import java.util.stream.Collectors;
 
 @Entity(name = "TheatreHall")

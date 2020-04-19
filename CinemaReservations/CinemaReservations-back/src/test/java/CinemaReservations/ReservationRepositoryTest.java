@@ -23,24 +23,6 @@ public class ReservationRepositoryTest {
         //Tests counting reservations
         Assert.assertEquals(Long.valueOf(0), reservationRepository.countAll());
         Assert.assertEquals(Long.valueOf(0), Long.valueOf(reservationRepository.findAll().size()));
-
-        //Create a resevation
-        Reservation reservation = new Reservation("Avatar", "very long story bro");
-        reservationRepository.create(reservation);
-        Long reservationId = reservation.getId();
-
-        //Check created reservation
-        Assert.assertNotNull(reservationId);
-
-        //Find created reservation
-        Assert.assertEquals("very long story bro",reservationRepository.find(reservationId).getDesc());
-
-        //Tests counting reservations
-        Assert.assertEquals(Long.valueOf(1), reservationRepository.countAll());
-
-        //Delete the book
-        reservationRepository.delete(reservationId);
-        Assert.assertEquals(Long.valueOf(0), reservationRepository.countAll());
     }
 
     @Deployment

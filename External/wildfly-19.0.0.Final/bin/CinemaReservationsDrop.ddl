@@ -8,3 +8,8 @@ drop table Reservation if exists
 drop sequence if exists hibernate_sequence
 drop table Reservation if exists
 drop sequence if exists hibernate_sequence
+drop table Film if exists
+drop table MovieShow if exists
+drop table Reservation if exists
+drop table TheatreHall if exists
+drop sequence if exists hibernate_sequence

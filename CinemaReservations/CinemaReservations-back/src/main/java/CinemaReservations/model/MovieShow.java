@@ -14,7 +14,7 @@ public class MovieShow {
     @Column(name = "MOVIESHOW_ID")
     private Long id;
 
-    @Column(name = "DATE", length = 1000)
+    @Column(name = "DATE", length = 1005)
     private String date;
 
     @Column(name = "TIME", length = 1000)
