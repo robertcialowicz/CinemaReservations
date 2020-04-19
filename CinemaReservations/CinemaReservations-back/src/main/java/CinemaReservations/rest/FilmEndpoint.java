@@ -4,6 +4,7 @@ import CinemaReservations.model.Film;
 import CinemaReservations.repository.FilmRepository;
 import javax.inject.Inject;
 import javax.ws.rs.GET;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
@@ -20,19 +21,9 @@ public class FilmEndpoint {
     public FilmEndpoint(){
     }
 
-    @Inject
-    public FilmEndpoint(FilmRepository filmRepository){
-        this.filmRepository = filmRepository;
-    }
-
+    //TODO Delegate all methods for FilmRepositroy class and overwrite with JAXRS as example below
     @GET
     @Produces(APPLICATION_JSON)
-    public String getDesc(){
-        return "Hello world";
-    }
-
-    //@GET
-    //@Produces(APPLICATION_JSON)
     public Response getFilms() {
         List<Film> films = filmRepository.findAll();
         if(films.size() == 0)

@@ -5,6 +5,8 @@ import javax.persistence.*;
 @Entity
 public class Reservation {
 
+    //TODO Validation of data provided in constructors
+
     @Id
     @GeneratedValue
     private Long id;

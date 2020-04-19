@@ -1,4 +1,5 @@
 D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\CinemaReservations\CinemaReservations-back\src\main\java\CinemaReservations\repository\FilmRepository.java
+D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\CinemaReservations\CinemaReservations-back\src\main\java\CinemaReservations\rest\ReservationEndpoint.java
 D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\CinemaReservations\CinemaReservations-back\src\main\java\CinemaReservations\model\Reservation.java
 D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\CinemaReservations\CinemaReservations-back\src\main\java\CinemaReservations\rest\JAXRSConfiguration.java
 D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\CinemaReservations\CinemaReservations-back\src\main\java\CinemaReservations\model\MovieShow.java
@@ -8,6 +9,7 @@ D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\Ci
 D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\CinemaReservations\CinemaReservations-back\src\main\java\CinemaReservations\model\TheatreHall.java
 D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\CinemaReservations\CinemaReservations-back\src\main\java\CinemaReservations\utils\MovieTime.java
 D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\CinemaReservations\CinemaReservations-back\src\main\java\CinemaReservations\repository\TheatreHallRepository.java
-D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\CinemaReservations\CinemaReservations-back\src\main\java\CinemaReservations\utils\UtilsJPA.java
+D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\CinemaReservations\CinemaReservations-back\src\main\java\CinemaReservations\rest\MovieShowEndpoint.java
+D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\CinemaReservations\CinemaReservations-back\src\main\java\CinemaReservations\rest\TheatreHallEndpoint.java
 D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\CinemaReservations\CinemaReservations-back\src\main\java\CinemaReservations\model\SeatStatus.java
 D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\CinemaReservations\CinemaReservations-back\src\main\java\CinemaReservations\rest\FilmEndpoint.java

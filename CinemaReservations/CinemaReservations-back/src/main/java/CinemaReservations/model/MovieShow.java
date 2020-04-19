@@ -9,6 +9,8 @@ import java.util.List;
 @Entity(name = "MovieShow")
 public class MovieShow {
 
+    //TODO Validation of data provided in constructors
+
     @Id
     @GeneratedValue
     @Column(name = "MOVIESHOW_ID")

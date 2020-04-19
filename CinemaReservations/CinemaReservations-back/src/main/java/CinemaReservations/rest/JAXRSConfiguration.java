@@ -8,4 +8,5 @@ import javax.ws.rs.ext.Provider;
 
 @ApplicationPath("api")
 public class JAXRSConfiguration extends Application {
+
 }

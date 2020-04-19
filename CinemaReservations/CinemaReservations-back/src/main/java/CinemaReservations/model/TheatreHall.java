@@ -7,6 +7,8 @@ import java.util.stream.Collectors;
 @Entity(name = "TheatreHall")
 public class TheatreHall {
 
+    //TODO Validation of data provided in constructors
+
     @Id
     @GeneratedValue
     private Long id;

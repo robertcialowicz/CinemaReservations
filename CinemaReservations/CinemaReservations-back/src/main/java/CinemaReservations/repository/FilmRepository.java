@@ -1,13 +1,8 @@
 package CinemaReservations.repository;
 
 import CinemaReservations.model.Film;
-import CinemaReservations.utils.UtilsJPA;
-import org.eclipse.persistence.internal.jpa.EntityManagerImpl;
 
-import javax.ejb.Stateful;
-import javax.inject.Inject;
 import javax.persistence.*;
-import javax.rmi.CORBA.Util;
 import javax.transaction.Transactional;
 import java.util.List;
 import static javax.transaction.Transactional.TxType.REQUIRED;
@@ -16,9 +11,11 @@ import static javax.transaction.Transactional.TxType.SUPPORTS;
 @Transactional(SUPPORTS)
 public class FilmRepository {
 
-    //TODO Injection of Entity manager here doesn't work. First idea is to replace Derby database to mySql
-    @PersistenceContext(unitName = "CinemaReservationsPU")
+   @PersistenceContext(unitName = "CinemaReservationsPU")
     private EntityManager em;
+
+    public FilmRepository() {
+    }
 
     public Film find(Long id){
         return em.find(Film.class, id);

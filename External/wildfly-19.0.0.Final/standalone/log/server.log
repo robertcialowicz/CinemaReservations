@@ -1,265 +1,8 @@
-2020-04-18 18:29:33,692 INFO  [org.jboss.modules] (main) JBoss Modules version 1.10.0.Final
-2020-04-18 18:29:34,224 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.11.Final
-2020-04-18 18:29:34,237 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
-2020-04-18 18:29:34,380 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 19.0.0.Final (WildFly Core 11.0.0.Final) starting
-2020-04-18 18:29:34,382 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
-	awt.toolkit = sun.awt.windows.WToolkit
-	file.encoding = Cp1250
-	file.encoding.pkg = sun.io
-	file.separator = \
-	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
-	java.awt.printerjob = sun.awt.windows.WPrinterJob
-	java.class.path = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\jboss-modules.jar
-	java.class.version = 52.0
-	java.endorsed.dirs = C:\Program Files\Java\jdk1.8.0_191\jre\lib\endorsed
-	java.ext.dirs = C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
-	java.home = C:\Program Files\Java\jdk1.8.0_191\jre
-	java.io.tmpdir = C:\Users\ROBERT~1\AppData\Local\Temp\
-	java.library.path = C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\TDM-GCC-64\bin;C:\Users\Robert Cia這wicz\AppData\Local\Programs\stack\x86_64-windows\ghc-8.6.5\bin;C:\Program Files\Git\cmd;C:\Users\Robert Cia這wicz\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2019.1.3\bin;C:\Users\Robert Cia這wicz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Robert Cia這wicz\AppData\Local\GitHubDesktop\bin;D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-maven-3.6.3\bin;D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-ant-1.10.7\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.4\bin;;.
-	java.net.preferIPv4Stack = true
-	java.runtime.name = Java(TM) SE Runtime Environment
-	java.runtime.version = 1.8.0_191-b12
-	java.specification.name = Java Platform API Specification
-	java.specification.vendor = Oracle Corporation
-	java.specification.version = 1.8
-	java.util.logging.manager = org.jboss.logmanager.LogManager
-	java.vendor = Oracle Corporation
-	java.vendor.url = http://java.oracle.com/
-	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
-	java.version = 1.8.0_191
-	java.vm.info = mixed mode
-	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
-	java.vm.specification.name = Java Virtual Machine Specification
-	java.vm.specification.vendor = Oracle Corporation
-	java.vm.specification.version = 1.8
-	java.vm.vendor = Oracle Corporation
-	java.vm.version = 25.191-b12
-	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
-	jboss.home.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final
-	jboss.host.name = laprobert
-	jboss.modules.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\modules
-	jboss.modules.system.pkgs = org.jboss.byteman
-	jboss.node.name = laprobert
-	jboss.qualified.host.name = laprobert
-	jboss.server.base.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone
-	jboss.server.config.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration
-	jboss.server.data.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data
-	jboss.server.deploy.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content
-	jboss.server.log.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\log
-	jboss.server.name = laprobert
-	jboss.server.persist.config = true
-	jboss.server.temp.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\tmp
-	line.separator = 
-
-	logging.configuration = file:D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration/logging.properties
-	module.path = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\modules
-	org.jboss.boot.log.file = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\log\server.log
-	org.jboss.resolver.warning = true
-	os.arch = amd64
-	os.name = Windows 10
-	os.version = 10.0
-	path.separator = ;
-	program.name = standalone.bat
-	sun.arch.data.model = 64
-	sun.boot.class.path = C:\Program Files\Java\jdk1.8.0_191\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_191\jre\classes
-	sun.boot.library.path = C:\Program Files\Java\jdk1.8.0_191\jre\bin
-	sun.cpu.endian = little
-	sun.cpu.isalist = amd64
-	sun.desktop = windows
-	sun.io.unicode.encoding = UnicodeLittle
-	sun.java.command = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\jboss-modules.jar -mp D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\modules org.jboss.as.standalone -Djboss.home.dir=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final
-	sun.java.launcher = SUN_STANDARD
-	sun.jnu.encoding = Cp1250
-	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
-	sun.os.patch.level = 
-	user.country = PL
-	user.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\bin
-	user.home = C:\Users\Robert Cia這wicz
-	user.language = pl
-	user.name = Robert Cia這wicz
-	user.script = 
-	user.timezone = Europe/Belgrade
-	user.variant = 
-2020-04-18 18:29:34,382 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=standalone.bat -Xms64M -Xmx512M -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Dorg.jboss.boot.log.file=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\log\server.log -Dlogging.configuration=file:D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration/logging.properties 
-2020-04-18 18:29:35,292 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 1.11.2.Final
-2020-04-18 18:29:35,892 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
-2020-04-18 18:29:35,911 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 11) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
-2020-04-18 18:29:35,976 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
-2020-04-18 18:29:36,000 INFO  [org.xnio] (MSC service thread 1-6) XNIO version 3.7.7.Final
-2020-04-18 18:29:36,009 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.7.7.Final
-2020-04-18 18:29:36,153 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 52) WFLYCLINF0001: Activating Infinispan subsystem.
-2020-04-18 18:29:36,169 INFO  [org.wildfly.extension.microprofile.jwt.smallrye._private] (ServerService Thread Pool -- 63) WFLYJWT0001: Activating WildFly MicroProfile JWT Subsystem
-2020-04-18 18:29:36,182 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 61) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
-2020-04-18 18:29:36,192 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 59) WFLYJSF0007: Activated the following JSF Implementations: [main]
-2020-04-18 18:29:36,194 INFO  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.20.Final)
-2020-04-18 18:29:36,199 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
-2020-04-18 18:29:36,201 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 65) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
-2020-04-18 18:29:36,213 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
-2020-04-18 18:29:36,221 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 54) WFLYRS0016: RESTEasy version 3.11.0.Final
-2020-04-18 18:29:36,227 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 72) WFLYSEC0002: Activating Security Subsystem
-2020-04-18 18:29:36,237 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 62) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
-2020-04-18 18:29:36,252 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 66) WFLYNAM0001: Activating Naming Subsystem
-2020-04-18 18:29:36,259 INFO  [org.jboss.as.security] (MSC service thread 1-8) WFLYSEC0001: Current PicketBox version=5.0.3.Final
-2020-04-18 18:29:36,268 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 2.0.30.Final starting
-2020-04-18 18:29:36,270 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
-2020-04-18 18:29:36,714 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path 'D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
-2020-04-18 18:29:36,763 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
-2020-04-18 18:29:36,856 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = h2
-2020-04-18 18:29:36,888 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Starting Naming Service
-2020-04-18 18:29:36,904 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
-2020-04-18 18:29:36,958 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 53) WFLYIO001: Worker 'default' has auto-configured to 16 IO threads with 128 max task threads based on your 8 available processors
-2020-04-18 18:29:36,974 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
-2020-04-18 18:29:36,974 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
-2020-04-18 18:29:37,022 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 5.0.17.Final
-2020-04-18 18:29:37,024 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
-2020-04-18 18:29:37,025 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
-2020-04-18 18:29:37,076 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
-2020-04-18 18:29:37,100 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0493: EJB subsystem suspension complete
-2020-04-18 18:29:37,136 INFO  [org.jboss.as.patching] (MSC service thread 1-4) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
-2020-04-18 18:29:37,136 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-1) WFLYDM0111: Keystore D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
-2020-04-18 18:29:37,152 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\deployments
-2020-04-18 18:29:37,168 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
-2020-04-18 18:29:37,573 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
-2020-04-18 18:29:37,732 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.5) 
-2020-04-18 18:29:37,888 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
-2020-04-18 18:29:37,890 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
-2020-04-18 18:29:37,890 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
-2020-04-18 18:29:37,891 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 19.0.0.Final (WildFly Core 11.0.0.Final) started in 4799ms - Started 316 of 582 services (374 services are lazy, passive or on-demand)
-2020-04-18 18:29:57,927 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\95\8ec3030fac2f93182917872ceb5bc7a6dd8ef5\content
-2020-04-18 18:29:57,943 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
-2020-04-18 18:29:58,536 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for CinemaReservationsPU
-2020-04-18 18:29:58,682 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment test.war
-2020-04-18 18:29:58,830 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-3) HV000001: Hibernate Validator 6.0.18.Final
-2020-04-18 18:29:58,906 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-4) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.18.Final
-2020-04-18 18:29:59,110 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 6) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
-2020-04-18 18:29:59,116 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-3) No shutdown hook registered: Please call close() manually on application shutdown.
-2020-04-18 18:29:59,139 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 6) HHH000204: Processing PersistenceUnitInfo [
-	name: CinemaReservationsPU
-	...]
-2020-04-18 18:29:59,225 INFO  [org.jboss.weld.Version] (MSC service thread 1-4) WELD-000900: 3.1.3 (Final)
-2020-04-18 18:29:59,260 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 6) HHH000412: Hibernate Core {5.3.15.Final}
-2020-04-18 18:29:59,262 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 6) HHH000206: hibernate.properties not found
-2020-04-18 18:29:59,349 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 81) WFLYCLINF0002: Started client-mappings cache from ejb container
-2020-04-18 18:29:59,513 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 6) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
-2020-04-18 18:29:59,635 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 6) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'test.war#CinemaReservationsPU'
-2020-04-18 18:30:00,014 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 6) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2020-04-18 18:30:00,021 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 6) HHH000431: Unable to determine H2 database version, certain features may not work
-2020-04-18 18:30:00,079 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 6) Envers integration enabled? : true
-2020-04-18 18:30:00,167 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 6) MSC000001: Failed to start service jboss.persistenceunit."test.war#CinemaReservationsPU": org.jboss.msc.service.StartException in service jboss.persistenceunit."test.war#CinemaReservationsPU": java.lang.NoClassDefFoundError: CinemaReservations/model/MovieShow
-	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:198)
-	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:128)
-	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:658)
-	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:212)
-	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
-	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
-	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
-	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
-	at java.lang.Thread.run(Thread.java:748)
-	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
-Caused by: java.lang.NoClassDefFoundError: CinemaReservations/model/MovieShow
-	at java.lang.Class.getDeclaredMethods0(Native Method)
-	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
-	at java.lang.Class.getDeclaredMethods(Class.java:1975)
-	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredMethodProperties(JavaXClass.java:95)
-	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredProperties(JavaXClass.java:112)
-	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredProperties(JavaXClass.java:104)
-	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:252)
-	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
-	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775)
-	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:250)
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:231)
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:274)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1215)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1246)
-	at org.jboss.as.jpa.hibernate5.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44)
-	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:170)
-	... 9 more
-Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.MovieShow from [Module "deployment.test.war" from Service Module Loader]
-	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:255)
-	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:410)
-	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398)
-	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
-	... 25 more
-
-2020-04-18 18:30:00,171 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 1) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "test.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"test.war#CinemaReservationsPU\"" => "java.lang.NoClassDefFoundError: CinemaReservations/model/MovieShow
-    Caused by: java.lang.NoClassDefFoundError: CinemaReservations/model/MovieShow
-    Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.MovieShow from [Module \"deployment.test.war\" from Service Module Loader]"}}
-2020-04-18 18:30:00,172 ERROR [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0021: Deploy of deployment "test.war" was rolled back with the following failure message: 
-{"WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"test.war#CinemaReservationsPU\"" => "java.lang.NoClassDefFoundError: CinemaReservations/model/MovieShow
-    Caused by: java.lang.NoClassDefFoundError: CinemaReservations/model/MovieShow
-    Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.MovieShow from [Module \"deployment.test.war\" from Service Module Loader]"}}
-2020-04-18 18:30:00,178 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 81) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
-2020-04-18 18:30:00,218 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 45ms
-2020-04-18 18:35:51,851 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\cf\21fbeac16e44dfc701d444f15f2e6cae4be8b1\content
-2020-04-18 18:35:51,853 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
-2020-04-18 18:35:52,034 INFO  [org.jboss.as.jpa] (MSC service thread 1-3) WFLYJPA0002: Read persistence.xml for CinemaReservationsPU
-2020-04-18 18:35:52,059 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0003: Processing weld deployment test.war
-2020-04-18 18:35:52,417 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 81) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
-2020-04-18 18:35:52,417 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 81) HHH000204: Processing PersistenceUnitInfo [
-	name: CinemaReservationsPU
-	...]
-2020-04-18 18:35:52,458 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-5) No shutdown hook registered: Please call close() manually on application shutdown.
-2020-04-18 18:35:52,514 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 81) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'test.war#CinemaReservationsPU'
-2020-04-18 18:35:52,516 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 81) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2020-04-18 18:35:52,516 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 81) HHH000431: Unable to determine H2 database version, certain features may not work
-2020-04-18 18:35:52,520 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 81) Envers integration enabled? : true
-2020-04-18 18:35:52,523 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 81) MSC000001: Failed to start service jboss.persistenceunit."test.war#CinemaReservationsPU": org.jboss.msc.service.StartException in service jboss.persistenceunit."test.war#CinemaReservationsPU": java.lang.NoClassDefFoundError: CinemaReservations/model/MovieShow
-	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:198)
-	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:128)
-	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:658)
-	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:212)
-	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
-	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
-	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
-	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
-	at java.lang.Thread.run(Thread.java:748)
-	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
-Caused by: java.lang.NoClassDefFoundError: CinemaReservations/model/MovieShow
-	at java.lang.Class.getDeclaredMethods0(Native Method)
-	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
-	at java.lang.Class.getDeclaredMethods(Class.java:1975)
-	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredMethodProperties(JavaXClass.java:95)
-	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredProperties(JavaXClass.java:112)
-	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredProperties(JavaXClass.java:104)
-	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:252)
-	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
-	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775)
-	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:250)
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:231)
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:274)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1215)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1246)
-	at org.jboss.as.jpa.hibernate5.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44)
-	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:170)
-	... 9 more
-Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.MovieShow from [Module "deployment.test.war" from Service Module Loader]
-	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:255)
-	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:410)
-	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398)
-	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
-	... 25 more
-
-2020-04-18 18:35:52,524 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 1) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "test.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"test.war#CinemaReservationsPU\"" => "java.lang.NoClassDefFoundError: CinemaReservations/model/MovieShow
-    Caused by: java.lang.NoClassDefFoundError: CinemaReservations/model/MovieShow
-    Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.MovieShow from [Module \"deployment.test.war\" from Service Module Loader]"}}
-2020-04-18 18:35:52,525 ERROR [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0021: Deploy of deployment "test.war" was rolled back with the following failure message: 
-{"WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"test.war#CinemaReservationsPU\"" => "java.lang.NoClassDefFoundError: CinemaReservations/model/MovieShow
-    Caused by: java.lang.NoClassDefFoundError: CinemaReservations/model/MovieShow
-    Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.MovieShow from [Module \"deployment.test.war\" from Service Module Loader]"}}
-2020-04-18 18:35:52,526 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 81) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
-2020-04-18 18:35:52,563 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 38ms
-2020-04-18 18:39:34,777 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 79) WFLYDR0009: Content D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\95\8ec3030fac2f93182917872ceb5bc7a6dd8ef5 is obsolete and will be removed
-2020-04-18 18:39:34,779 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 79) WFLYDR0002: Content removed from location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\95\8ec3030fac2f93182917872ceb5bc7a6dd8ef5\content
-2020-04-18 18:44:34,780 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 79) WFLYDR0009: Content D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\cf\21fbeac16e44dfc701d444f15f2e6cae4be8b1 is obsolete and will be removed
-2020-04-18 18:44:34,782 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 79) WFLYDR0002: Content removed from location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\cf\21fbeac16e44dfc701d444f15f2e6cae4be8b1\content
-2020-04-18 19:03:16,588 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0272: Suspending server
-2020-04-18 19:03:16,609 INFO  [org.jboss.as.ejb3] (management-handler-thread - 2) WFLYEJB0493: EJB subsystem suspension complete
-2020-04-18 19:03:16,612 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
-2020-04-18 20:50:29,645 INFO  [org.jboss.modules] (main) JBoss Modules version 1.10.0.Final
-2020-04-18 20:50:30,138 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.11.Final
-2020-04-18 20:50:30,149 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
-2020-04-18 20:50:30,284 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 19.0.0.Final (WildFly Core 11.0.0.Final) starting
-2020-04-18 20:50:30,286 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+2020-04-19 10:43:50,046 INFO  [org.jboss.modules] (main) JBoss Modules version 1.10.0.Final
+2020-04-19 10:43:50,652 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.11.Final
+2020-04-19 10:43:50,664 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2020-04-19 10:43:50,805 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 19.0.0.Final (WildFly Core 11.0.0.Final) starting
+2020-04-19 10:43:50,810 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
 	awt.toolkit = sun.awt.windows.WToolkit
 	file.encoding = Cp1250
 	file.encoding.pkg = sun.io
@@ -337,81 +80,915 @@ Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.MovieShow 
 	user.script = 
 	user.timezone = Europe/Belgrade
 	user.variant = 
-2020-04-18 20:50:30,292 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=standalone.bat -Xms64M -Xmx512M -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Dorg.jboss.boot.log.file=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\log\server.log -Dlogging.configuration=file:D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration/logging.properties 
-2020-04-18 20:50:31,225 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 1.11.2.Final
-2020-04-18 20:50:31,796 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
-2020-04-18 20:50:31,817 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 8) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
-2020-04-18 20:50:31,899 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
-2020-04-18 20:50:31,930 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.7.7.Final
-2020-04-18 20:50:31,941 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.7.7.Final
-2020-04-18 20:50:31,981 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 61) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
-2020-04-18 20:50:31,990 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 62) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
-2020-04-18 20:50:32,009 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 52) WFLYCLINF0001: Activating Infinispan subsystem.
-2020-04-18 20:50:32,010 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 54) WFLYRS0016: RESTEasy version 3.11.0.Final
-2020-04-18 20:50:32,016 INFO  [org.wildfly.extension.microprofile.jwt.smallrye._private] (ServerService Thread Pool -- 63) WFLYJWT0001: Activating WildFly MicroProfile JWT Subsystem
-2020-04-18 20:50:32,024 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
-2020-04-18 20:50:32,031 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 66) WFLYNAM0001: Activating Naming Subsystem
-2020-04-18 20:50:32,036 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 59) WFLYJSF0007: Activated the following JSF Implementations: [main]
-2020-04-18 20:50:32,042 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
-2020-04-18 20:50:32,049 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.20.Final)
-2020-04-18 20:50:32,050 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 72) WFLYSEC0002: Activating Security Subsystem
-2020-04-18 20:50:32,065 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 65) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
-2020-04-18 20:50:32,069 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
-2020-04-18 20:50:32,078 INFO  [org.jboss.as.security] (MSC service thread 1-2) WFLYSEC0001: Current PicketBox version=5.0.3.Final
-2020-04-18 20:50:32,117 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0003: Undertow 2.0.30.Final starting
-2020-04-18 20:50:32,185 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
-2020-04-18 20:50:32,210 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
-2020-04-18 20:50:32,238 INFO  [org.jboss.as.naming] (MSC service thread 1-6) WFLYNAM0003: Starting Naming Service
-2020-04-18 20:50:32,387 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
-2020-04-18 20:50:32,478 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path 'D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
-2020-04-18 20:50:32,961 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 53) WFLYIO001: Worker 'default' has auto-configured to 16 IO threads with 128 max task threads based on your 8 available processors
-2020-04-18 20:50:32,964 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
-2020-04-18 20:50:32,964 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
-2020-04-18 20:50:32,995 INFO  [org.jboss.as.patching] (MSC service thread 1-2) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
-2020-04-18 20:50:33,001 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 5.0.17.Final
-2020-04-18 20:50:33,003 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0012: Started server default-server.
-2020-04-18 20:50:33,006 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0018: Host default-host starting
-2020-04-18 20:50:33,021 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-7) WFLYDM0111: Keystore D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
-2020-04-18 20:50:33,031 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\deployments
-2020-04-18 20:50:33,069 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
-2020-04-18 20:50:33,082 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0493: EJB subsystem suspension complete
-2020-04-18 20:50:33,153 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
-2020-04-18 20:50:33,490 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
-2020-04-18 20:50:33,605 INFO  [org.jboss.ws.common.management] (MSC service thread 1-4) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.5) 
-2020-04-18 20:50:33,779 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
-2020-04-18 20:50:33,781 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
-2020-04-18 20:50:33,781 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
-2020-04-18 20:50:33,781 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 19.0.0.Final (WildFly Core 11.0.0.Final) started in 4717ms - Started 316 of 582 services (374 services are lazy, passive or on-demand)
-2020-04-18 21:06:44,610 INFO  [org.jboss.as.repository] (External Management Request Threads -- 1) WFLYDR0001: Content added at location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\c6\47b1e2bb58a363dc4e41d8eb0af6a7b1b1207d\content
-2020-04-18 21:06:44,672 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "CinemaReservations-back-1.0.war" (runtime-name: "CinemaReservations.war")
-2020-04-18 21:06:47,579 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for CinemaReservationsPU
-2020-04-18 21:06:48,134 WARN  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0013: Deployment CinemaReservations.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
-2020-04-18 21:06:48,152 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-2) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.18.Final
-2020-04-18 21:06:48,387 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 6) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'CinemaReservations.war#CinemaReservationsPU'
-2020-04-18 21:06:48,411 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 6) HHH000204: Processing PersistenceUnitInfo [
+2020-04-19 10:43:50,811 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=standalone.bat -Xms64M -Xmx512M -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Dorg.jboss.boot.log.file=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\log\server.log -Dlogging.configuration=file:D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration/logging.properties 
+2020-04-19 10:43:51,761 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 1.11.2.Final
+2020-04-19 10:43:52,367 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-04-19 10:43:52,384 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 35) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-04-19 10:43:52,513 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2020-04-19 10:43:52,536 INFO  [org.xnio] (MSC service thread 1-6) XNIO version 3.7.7.Final
+2020-04-19 10:43:52,545 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.7.7.Final
+2020-04-19 10:43:52,595 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2020-04-19 10:43:52,633 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 61) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2020-04-19 10:43:52,640 INFO  [org.wildfly.extension.microprofile.jwt.smallrye._private] (ServerService Thread Pool -- 63) WFLYJWT0001: Activating WildFly MicroProfile JWT Subsystem
+2020-04-19 10:43:52,650 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2020-04-19 10:43:52,651 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 52) WFLYCLINF0001: Activating Infinispan subsystem.
+2020-04-19 10:43:52,648 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 54) WFLYRS0016: RESTEasy version 3.11.0.Final
+2020-04-19 10:43:52,655 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 65) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2020-04-19 10:43:52,663 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 66) WFLYNAM0001: Activating Naming Subsystem
+2020-04-19 10:43:52,674 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2020-04-19 10:43:52,679 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 62) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2020-04-19 10:43:52,681 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 72) WFLYSEC0002: Activating Security Subsystem
+2020-04-19 10:43:52,720 INFO  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.20.Final)
+2020-04-19 10:43:52,721 INFO  [org.jboss.as.security] (MSC service thread 1-2) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2020-04-19 10:43:52,759 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2020-04-19 10:43:52,774 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 59) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2020-04-19 10:43:52,794 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0003: Undertow 2.0.30.Final starting
+2020-04-19 10:43:52,797 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = h2
+2020-04-19 10:43:52,800 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+2020-04-19 10:43:52,812 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2020-04-19 10:43:52,911 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path 'D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2020-04-19 10:43:53,500 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 53) WFLYIO001: Worker 'default' has auto-configured to 16 IO threads with 128 max task threads based on your 8 available processors
+2020-04-19 10:43:53,504 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2020-04-19 10:43:53,504 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2020-04-19 10:43:53,553 INFO  [org.jboss.as.patching] (MSC service thread 1-3) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2020-04-19 10:43:53,556 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0012: Started server default-server.
+2020-04-19 10:43:53,557 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 5.0.17.Final
+2020-04-19 10:43:53,558 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0018: Host default-host starting
+2020-04-19 10:43:53,607 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-3) WFLYDM0111: Keystore D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2020-04-19 10:43:53,621 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) WFLYDS0013: Started FileSystemDeploymentService for directory D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\deployments
+2020-04-19 10:43:53,623 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2020-04-19 10:43:53,631 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "CinemaReservations-back-1.0.war" (runtime-name: "CinemaReservations.war")
+2020-04-19 10:43:53,727 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0493: EJB subsystem suspension complete
+2020-04-19 10:43:53,817 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2020-04-19 10:43:54,318 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2020-04-19 10:43:54,470 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.5) 
+2020-04-19 10:43:56,405 INFO  [org.jboss.as.jpa] (MSC service thread 1-8) WFLYJPA0002: Read persistence.xml for CinemaReservationsPU
+2020-04-19 10:43:56,904 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-7) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.18.Final
+2020-04-19 10:43:56,910 WARN  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0013: Deployment CinemaReservations.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+2020-04-19 10:43:57,133 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'CinemaReservations.war#CinemaReservationsPU'
+2020-04-19 10:43:57,164 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 78) HHH000204: Processing PersistenceUnitInfo [
 	name: CinemaReservationsPU
 	...]
-2020-04-18 21:06:48,522 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 6) HHH000412: Hibernate Core {5.3.15.Final}
-2020-04-18 21:06:48,523 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 6) HHH000206: hibernate.properties not found
-2020-04-18 21:06:48,594 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 81) WFLYCLINF0002: Started client-mappings cache from ejb container
-2020-04-18 21:06:48,746 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 6) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
-2020-04-18 21:06:48,917 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 6) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'CinemaReservations.war#CinemaReservationsPU'
-2020-04-18 21:06:49,156 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 6) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2020-04-18 21:06:49,167 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 6) HHH000431: Unable to determine H2 database version, certain features may not work
-2020-04-18 21:06:49,225 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 6) Envers integration enabled? : true
-2020-04-18 21:06:49,524 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 6) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-2020-04-18 21:06:49,605 INFO  [org.hibernate.validator.internal.util.Version] (ServerService Thread Pool -- 6) HV000001: Hibernate Validator 6.0.18.Final
-2020-04-18 21:06:50,201 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 6) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@29cabcba'
-2020-04-18 21:06:50,237 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 6) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@29cabcba'
-2020-04-18 21:06:50,784 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 6) RESTEASY002225: Deploying javax.ws.rs.core.Application: class CinemaReservations.rest.JAXRSConfig
-2020-04-18 21:06:50,820 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 6) WFLYUT0021: Registered web context: '/CinemaReservations' for server 'default-server'
-2020-04-18 21:06:50,915 INFO  [org.jboss.as.server] (External Management Request Threads -- 1) WFLYSRV0010: Deployed "CinemaReservations-back-1.0.war" (runtime-name : "CinemaReservations.war")
-2020-04-18 21:07:08,391 INFO  [org.hibernate.jpa.internal.util.LogHelper] (default task-2) HHH000204: Processing PersistenceUnitInfo [
+2020-04-19 10:43:57,279 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 78) HHH000412: Hibernate Core {5.3.15.Final}
+2020-04-19 10:43:57,281 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 78) HHH000206: hibernate.properties not found
+2020-04-19 10:43:57,338 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 79) WFLYCLINF0002: Started client-mappings cache from ejb container
+2020-04-19 10:43:57,467 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 78) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+2020-04-19 10:43:57,613 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'CinemaReservations.war#CinemaReservationsPU'
+2020-04-19 10:43:57,824 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 78) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-19 10:43:57,837 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 78) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-19 10:43:57,899 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 78) Envers integration enabled? : true
+2020-04-19 10:43:58,190 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 78) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2020-04-19 10:43:58,270 INFO  [org.hibernate.validator.internal.util.Version] (ServerService Thread Pool -- 78) HV000001: Hibernate Validator 6.0.18.Final
+2020-04-19 10:43:58,898 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 78) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@24230f73'
+2020-04-19 10:43:58,926 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 78) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@24230f73'
+2020-04-19 10:44:00,062 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 78) RESTEASY002225: Deploying javax.ws.rs.core.Application: class CinemaReservations.rest.JAXRSConfig
+2020-04-19 10:44:00,110 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 78) WFLYUT0021: Registered web context: '/CinemaReservations' for server 'default-server'
+2020-04-19 10:44:00,239 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "CinemaReservations-back-1.0.war" (runtime-name : "CinemaReservations.war")
+2020-04-19 10:44:00,307 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2020-04-19 10:44:00,310 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2020-04-19 10:44:00,310 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2020-04-19 10:44:00,310 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 19.0.0.Final (WildFly Core 11.0.0.Final) started in 10821ms - Started 436 of 653 services (379 services are lazy, passive or on-demand)
+2020-04-19 10:44:22,822 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\72\64a70e075f1212e3c3f6d68999afebe60137e1\content
+2020-04-19 10:44:22,826 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+2020-04-19 10:44:23,138 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) WFLYJPA0002: Read persistence.xml for CinemaReservationsPU
+2020-04-19 10:44:23,174 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 10:44:23,174 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 78) HHH000204: Processing PersistenceUnitInfo [
 	name: CinemaReservationsPU
 	...]
-2020-04-18 21:07:08,402 WARN  [org.hibernate.engine.jdbc.connections.internal.ConnectionProviderInitiator] (default task-2) HHH000181: No appropriate connection provider encountered, assuming application will be supplying connections
-2020-04-18 21:07:08,403 WARN  [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator] (default task-2) HHH000342: Could not obtain connection to query metadata : The application must supply JDBC connections
-2020-04-18 21:07:08,413 ERROR [io.undertow.request] (default task-2) UT005023: Exception handling request to /CinemaReservations/api/films: org.jboss.resteasy.spi.UnhandledException: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2020-04-19 10:44:23,204 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment test.war
+2020-04-19 10:44:23,579 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-2) No shutdown hook registered: Please call close() manually on application shutdown.
+2020-04-19 10:44:23,674 INFO  [org.jboss.weld.Version] (MSC service thread 1-1) WELD-000900: 3.1.3 (Final)
+2020-04-19 10:44:24,142 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 10:44:24,143 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 78) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-19 10:44:24,144 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 78) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-19 10:44:24,150 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 78) Envers integration enabled? : true
+2020-04-19 10:44:24,152 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 78) MSC000001: Failed to start service jboss.persistenceunit."test.war#CinemaReservationsPU": org.jboss.msc.service.StartException in service jboss.persistenceunit."test.war#CinemaReservationsPU": java.lang.TypeNotPresentException: Type CinemaReservations.model.MovieShow not present
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:198)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:128)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:658)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:212)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.lang.Thread.run(Thread.java:748)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: java.lang.TypeNotPresentException: Type CinemaReservations.model.MovieShow not present
+	at sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at sun.reflect.generics.repository.MethodRepository.getReturnType(MethodRepository.java:68)
+	at java.lang.reflect.Method.getGenericReturnType(Method.java:255)
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredMethodProperties(JavaXClass.java:96)
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredProperties(JavaXClass.java:112)
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredProperties(JavaXClass.java:104)
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:252)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:250)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:231)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:274)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1215)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1246)
+	at org.jboss.as.jpa.hibernate5.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:170)
+	... 9 more
+Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.MovieShow from [Module "deployment.test.war" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:255)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:410)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 29 more
+
+2020-04-19 10:44:24,165 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 1) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "test.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"test.war#CinemaReservationsPU\"" => "java.lang.TypeNotPresentException: Type CinemaReservations.model.MovieShow not present
+    Caused by: java.lang.TypeNotPresentException: Type CinemaReservations.model.MovieShow not present
+    Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.MovieShow from [Module \"deployment.test.war\" from Service Module Loader]"}}
+2020-04-19 10:44:24,166 ERROR [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0021: Deploy of deployment "test.war" was rolled back with the following failure message: 
+{"WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"test.war#CinemaReservationsPU\"" => "java.lang.TypeNotPresentException: Type CinemaReservations.model.MovieShow not present
+    Caused by: java.lang.TypeNotPresentException: Type CinemaReservations.model.MovieShow not present
+    Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.MovieShow from [Module \"deployment.test.war\" from Service Module Loader]"}}
+2020-04-19 10:44:24,173 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 10:44:24,248 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 81ms
+2020-04-19 10:44:25,021 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\87\e8a21f523031d98a48524d828e1ac45209ebb9\content
+2020-04-19 10:44:25,024 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+2020-04-19 10:44:25,219 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for CinemaReservationsPU
+2020-04-19 10:44:25,243 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 10:44:25,243 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 78) HHH000204: Processing PersistenceUnitInfo [
+	name: CinemaReservationsPU
+	...]
+2020-04-19 10:44:25,252 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0003: Processing weld deployment test.war
+2020-04-19 10:44:25,359 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-7) No shutdown hook registered: Please call close() manually on application shutdown.
+2020-04-19 10:44:25,432 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 10:44:25,433 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 78) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-19 10:44:25,433 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 78) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-19 10:44:25,437 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 78) Envers integration enabled? : true
+2020-04-19 10:44:25,439 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 78) MSC000001: Failed to start service jboss.persistenceunit."test.war#CinemaReservationsPU": org.jboss.msc.service.StartException in service jboss.persistenceunit."test.war#CinemaReservationsPU": java.lang.NoClassDefFoundError: CinemaReservations/model/MovieShow
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:198)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:128)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:658)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:212)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.lang.Thread.run(Thread.java:748)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: java.lang.NoClassDefFoundError: CinemaReservations/model/MovieShow
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredMethodProperties(JavaXClass.java:95)
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredProperties(JavaXClass.java:112)
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredProperties(JavaXClass.java:104)
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:252)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:250)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:231)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:274)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1215)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1246)
+	at org.jboss.as.jpa.hibernate5.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:170)
+	... 9 more
+Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.MovieShow from [Module "deployment.test.war" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:255)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:410)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	... 25 more
+
+2020-04-19 10:44:25,441 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 1) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "test.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"test.war#CinemaReservationsPU\"" => "java.lang.NoClassDefFoundError: CinemaReservations/model/MovieShow
+    Caused by: java.lang.NoClassDefFoundError: CinemaReservations/model/MovieShow
+    Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.MovieShow from [Module \"deployment.test.war\" from Service Module Loader]"}}
+2020-04-19 10:44:25,442 ERROR [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0021: Deploy of deployment "test.war" was rolled back with the following failure message: 
+{"WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"test.war#CinemaReservationsPU\"" => "java.lang.NoClassDefFoundError: CinemaReservations/model/MovieShow
+    Caused by: java.lang.NoClassDefFoundError: CinemaReservations/model/MovieShow
+    Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.MovieShow from [Module \"deployment.test.war\" from Service Module Loader]"}}
+2020-04-19 10:44:25,443 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 10:44:25,482 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 40ms
+2020-04-19 10:45:49,540 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\4d\1f30787a76da69b028af5ddeaa4e1b806e19f9\content
+2020-04-19 10:45:49,543 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+2020-04-19 10:45:49,699 INFO  [org.jboss.as.jpa] (MSC service thread 1-1) WFLYJPA0002: Read persistence.xml for CinemaReservationsPU
+2020-04-19 10:45:49,725 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 10:45:49,725 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 78) HHH000204: Processing PersistenceUnitInfo [
+	name: CinemaReservationsPU
+	...]
+2020-04-19 10:45:49,732 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment test.war
+2020-04-19 10:45:49,797 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-4) No shutdown hook registered: Please call close() manually on application shutdown.
+2020-04-19 10:45:49,841 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 10:45:49,843 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 78) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-19 10:45:49,844 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 78) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-19 10:45:49,846 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 78) Envers integration enabled? : true
+2020-04-19 10:45:49,848 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 78) MSC000001: Failed to start service jboss.persistenceunit."test.war#CinemaReservationsPU": org.jboss.msc.service.StartException in service jboss.persistenceunit."test.war#CinemaReservationsPU": java.lang.TypeNotPresentException: Type CinemaReservations.model.MovieShow not present
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:198)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:128)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:658)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:212)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.lang.Thread.run(Thread.java:748)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: java.lang.TypeNotPresentException: Type CinemaReservations.model.MovieShow not present
+	at sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at sun.reflect.generics.repository.MethodRepository.getReturnType(MethodRepository.java:68)
+	at java.lang.reflect.Method.getGenericReturnType(Method.java:255)
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredMethodProperties(JavaXClass.java:96)
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredProperties(JavaXClass.java:112)
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredProperties(JavaXClass.java:104)
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:252)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:250)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:231)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:274)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1215)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1246)
+	at org.jboss.as.jpa.hibernate5.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:170)
+	... 9 more
+Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.MovieShow from [Module "deployment.test.war" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:255)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:410)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 29 more
+
+2020-04-19 10:45:49,851 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 1) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "test.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"test.war#CinemaReservationsPU\"" => "java.lang.TypeNotPresentException: Type CinemaReservations.model.MovieShow not present
+    Caused by: java.lang.TypeNotPresentException: Type CinemaReservations.model.MovieShow not present
+    Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.MovieShow from [Module \"deployment.test.war\" from Service Module Loader]"}}
+2020-04-19 10:45:49,851 ERROR [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0021: Deploy of deployment "test.war" was rolled back with the following failure message: 
+{"WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"test.war#CinemaReservationsPU\"" => "java.lang.TypeNotPresentException: Type CinemaReservations.model.MovieShow not present
+    Caused by: java.lang.TypeNotPresentException: Type CinemaReservations.model.MovieShow not present
+    Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.MovieShow from [Module \"deployment.test.war\" from Service Module Loader]"}}
+2020-04-19 10:45:49,852 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 10:45:49,885 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 33ms
+2020-04-19 10:50:40,267 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\ec\6f14299e7a4c816acd20ff764e91056f8fa870\content
+2020-04-19 10:50:40,270 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+2020-04-19 10:50:40,433 INFO  [org.jboss.as.jpa] (MSC service thread 1-1) WFLYJPA0002: Read persistence.xml for CinemaReservationsPU
+2020-04-19 10:50:40,445 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 10:50:40,445 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 78) HHH000204: Processing PersistenceUnitInfo [
+	name: CinemaReservationsPU
+	...]
+2020-04-19 10:50:40,450 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment test.war
+2020-04-19 10:50:40,503 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-1) No shutdown hook registered: Please call close() manually on application shutdown.
+2020-04-19 10:50:40,537 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 10:50:40,538 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 78) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-19 10:50:40,538 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 78) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-19 10:50:40,540 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 78) Envers integration enabled? : true
+2020-04-19 10:50:40,542 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 78) MSC000001: Failed to start service jboss.persistenceunit."test.war#CinemaReservationsPU": org.jboss.msc.service.StartException in service jboss.persistenceunit."test.war#CinemaReservationsPU": java.lang.TypeNotPresentException: Type CinemaReservations.model.MovieShow not present
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:198)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:128)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:658)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:212)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.lang.Thread.run(Thread.java:748)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: java.lang.TypeNotPresentException: Type CinemaReservations.model.MovieShow not present
+	at sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at sun.reflect.generics.repository.MethodRepository.getReturnType(MethodRepository.java:68)
+	at java.lang.reflect.Method.getGenericReturnType(Method.java:255)
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredMethodProperties(JavaXClass.java:96)
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredProperties(JavaXClass.java:112)
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredProperties(JavaXClass.java:104)
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:252)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:250)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:231)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:274)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1215)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1246)
+	at org.jboss.as.jpa.hibernate5.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:170)
+	... 9 more
+Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.MovieShow from [Module "deployment.test.war" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:255)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:410)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 29 more
+
+2020-04-19 10:50:40,548 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 1) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "test.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"test.war#CinemaReservationsPU\"" => "java.lang.TypeNotPresentException: Type CinemaReservations.model.MovieShow not present
+    Caused by: java.lang.TypeNotPresentException: Type CinemaReservations.model.MovieShow not present
+    Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.MovieShow from [Module \"deployment.test.war\" from Service Module Loader]"}}
+2020-04-19 10:50:40,549 ERROR [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0021: Deploy of deployment "test.war" was rolled back with the following failure message: 
+{"WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"test.war#CinemaReservationsPU\"" => "java.lang.TypeNotPresentException: Type CinemaReservations.model.MovieShow not present
+    Caused by: java.lang.TypeNotPresentException: Type CinemaReservations.model.MovieShow not present
+    Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.MovieShow from [Module \"deployment.test.war\" from Service Module Loader]"}}
+2020-04-19 10:50:40,551 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 10:50:40,571 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 21ms
+2020-04-19 10:51:53,559 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\fe\a98b77ed3e06c68a0da4d7e2d9ad4188773ee0\content
+2020-04-19 10:51:53,561 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+2020-04-19 10:51:53,720 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for CinemaReservationsPU
+2020-04-19 10:51:53,735 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 82) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 10:51:53,735 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 82) HHH000204: Processing PersistenceUnitInfo [
+	name: CinemaReservationsPU
+	...]
+2020-04-19 10:51:53,742 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment test.war
+2020-04-19 10:51:53,819 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-3) No shutdown hook registered: Please call close() manually on application shutdown.
+2020-04-19 10:51:53,861 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 82) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 10:51:53,863 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 82) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-19 10:51:53,864 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 82) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-19 10:51:53,867 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 82) Envers integration enabled? : true
+2020-04-19 10:51:53,869 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 82) MSC000001: Failed to start service jboss.persistenceunit."test.war#CinemaReservationsPU": org.jboss.msc.service.StartException in service jboss.persistenceunit."test.war#CinemaReservationsPU": java.lang.NoClassDefFoundError: CinemaReservations/model/TheatreHall
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:198)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:128)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:658)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:212)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.lang.Thread.run(Thread.java:748)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: java.lang.NoClassDefFoundError: CinemaReservations/model/TheatreHall
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredMethodProperties(JavaXClass.java:95)
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredProperties(JavaXClass.java:112)
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredProperties(JavaXClass.java:104)
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:252)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:250)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:231)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:274)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1215)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1246)
+	at org.jboss.as.jpa.hibernate5.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:170)
+	... 9 more
+Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.TheatreHall from [Module "deployment.test.war" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:255)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:410)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	... 25 more
+
+2020-04-19 10:51:53,871 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 1) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "test.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"test.war#CinemaReservationsPU\"" => "java.lang.NoClassDefFoundError: CinemaReservations/model/TheatreHall
+    Caused by: java.lang.NoClassDefFoundError: CinemaReservations/model/TheatreHall
+    Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.TheatreHall from [Module \"deployment.test.war\" from Service Module Loader]"}}
+2020-04-19 10:51:53,872 ERROR [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0021: Deploy of deployment "test.war" was rolled back with the following failure message: 
+{"WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"test.war#CinemaReservationsPU\"" => "java.lang.NoClassDefFoundError: CinemaReservations/model/TheatreHall
+    Caused by: java.lang.NoClassDefFoundError: CinemaReservations/model/TheatreHall
+    Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.TheatreHall from [Module \"deployment.test.war\" from Service Module Loader]"}}
+2020-04-19 10:51:53,874 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 83) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 10:51:53,899 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 27ms
+2020-04-19 10:53:51,249 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 81) WFLYDR0009: Content D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\72\64a70e075f1212e3c3f6d68999afebe60137e1 is obsolete and will be removed
+2020-04-19 10:53:51,258 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 81) WFLYDR0002: Content removed from location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\72\64a70e075f1212e3c3f6d68999afebe60137e1\content
+2020-04-19 10:53:51,259 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 81) WFLYDR0009: Content D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\4d\1f30787a76da69b028af5ddeaa4e1b806e19f9 is obsolete and will be removed
+2020-04-19 10:53:51,260 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 81) WFLYDR0002: Content removed from location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\4d\1f30787a76da69b028af5ddeaa4e1b806e19f9\content
+2020-04-19 10:53:51,260 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 81) WFLYDR0009: Content D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\87\e8a21f523031d98a48524d828e1ac45209ebb9 is obsolete and will be removed
+2020-04-19 10:53:51,261 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 81) WFLYDR0002: Content removed from location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\87\e8a21f523031d98a48524d828e1ac45209ebb9\content
+2020-04-19 10:54:45,139 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0272: Suspending server
+2020-04-19 10:54:45,152 INFO  [org.jboss.as.ejb3] (management-handler-thread - 1) WFLYEJB0493: EJB subsystem suspension complete
+2020-04-19 10:54:45,155 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2020-04-19 10:54:52,784 INFO  [org.jboss.modules] (main) JBoss Modules version 1.10.0.Final
+2020-04-19 10:54:53,188 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.11.Final
+2020-04-19 10:54:53,198 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2020-04-19 10:54:53,317 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 19.0.0.Final (WildFly Core 11.0.0.Final) starting
+2020-04-19 10:54:53,318 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1250
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jdk1.8.0_191\jre\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jdk1.8.0_191\jre
+	java.io.tmpdir = C:\Users\ROBERT~1\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\TDM-GCC-64\bin;C:\Users\Robert Cia這wicz\AppData\Local\Programs\stack\x86_64-windows\ghc-8.6.5\bin;C:\Program Files\Git\cmd;C:\Users\Robert Cia這wicz\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2019.1.3\bin;C:\Users\Robert Cia這wicz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Robert Cia這wicz\AppData\Local\GitHubDesktop\bin;D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-maven-3.6.3\bin;D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\apache-ant-1.10.7\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.4\bin;;D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\db-derby-10.2.1.6-bin\bin;C:\Program Files\Java\jdk1.8.0_191\bin;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_191-b12
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_191
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.191-b12
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final
+	jboss.host.name = laprobert
+	jboss.modules.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = laprobert
+	jboss.qualified.host.name = laprobert
+	jboss.server.base.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone
+	jboss.server.config.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration
+	jboss.server.data.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data
+	jboss.server.deploy.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content
+	jboss.server.log.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\log
+	jboss.server.name = laprobert
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration/logging.properties
+	module.path = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\modules
+	org.jboss.boot.log.file = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = standalone.bat
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jdk1.8.0_191\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_191\jre\classes
+	sun.boot.library.path = C:\Program Files\Java\jdk1.8.0_191\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\jboss-modules.jar -mp D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\modules org.jboss.as.standalone -Djboss.home.dir=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1250
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = PL
+	user.dir = D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\bin
+	user.home = C:\Users\Robert Cia這wicz
+	user.language = pl
+	user.name = Robert Cia這wicz
+	user.script = 
+	user.timezone = Europe/Belgrade
+	user.variant = 
+2020-04-19 10:54:53,323 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=standalone.bat -Xms64M -Xmx512M -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Dorg.jboss.boot.log.file=D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\log\server.log -Dlogging.configuration=file:D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration/logging.properties 
+2020-04-19 10:54:54,224 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 1.11.2.Final
+2020-04-19 10:54:54,805 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-04-19 10:54:54,831 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 29) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-04-19 10:54:54,931 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2020-04-19 10:54:54,953 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.7.7.Final
+2020-04-19 10:54:54,965 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.7.7.Final
+2020-04-19 10:54:55,029 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 61) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2020-04-19 10:54:55,036 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 54) WFLYRS0016: RESTEasy version 3.11.0.Final
+2020-04-19 10:54:55,053 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 62) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2020-04-19 10:54:55,060 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 65) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2020-04-19 10:54:55,062 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 66) WFLYNAM0001: Activating Naming Subsystem
+2020-04-19 10:54:55,086 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2020-04-19 10:54:55,104 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+2020-04-19 10:54:55,133 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 52) WFLYCLINF0001: Activating Infinispan subsystem.
+2020-04-19 10:54:55,136 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2020-04-19 10:54:55,140 INFO  [org.wildfly.extension.microprofile.jwt.smallrye._private] (ServerService Thread Pool -- 63) WFLYJWT0001: Activating WildFly MicroProfile JWT Subsystem
+2020-04-19 10:54:55,143 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 72) WFLYSEC0002: Activating Security Subsystem
+2020-04-19 10:54:55,157 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2020-04-19 10:54:55,161 INFO  [org.jboss.as.security] (MSC service thread 1-5) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2020-04-19 10:54:55,322 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 59) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2020-04-19 10:54:55,326 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2020-04-19 10:54:55,328 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.20.Final)
+2020-04-19 10:54:55,362 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = h2
+2020-04-19 10:54:55,381 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 2.0.30.Final starting
+2020-04-19 10:54:55,382 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2020-04-19 10:54:55,670 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path 'D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2020-04-19 10:54:56,331 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 53) WFLYIO001: Worker 'default' has auto-configured to 16 IO threads with 128 max task threads based on your 8 available processors
+2020-04-19 10:54:56,335 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2020-04-19 10:54:56,336 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2020-04-19 10:54:56,399 INFO  [org.jboss.as.patching] (MSC service thread 1-6) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2020-04-19 10:54:56,419 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0012: Started server default-server.
+2020-04-19 10:54:56,434 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 5.0.17.Final
+2020-04-19 10:54:56,422 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host starting
+2020-04-19 10:54:56,470 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-4) WFLYDM0111: Keystore D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2020-04-19 10:54:56,497 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\deployments
+2020-04-19 10:54:56,519 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "CinemaReservations-back-1.0.war" (runtime-name: "CinemaReservations.war")
+2020-04-19 10:54:56,547 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2020-04-19 10:54:56,565 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0493: EJB subsystem suspension complete
+2020-04-19 10:54:56,676 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2020-04-19 10:54:57,554 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2020-04-19 10:54:57,930 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.5) 
+2020-04-19 10:55:00,758 INFO  [org.jboss.as.jpa] (MSC service thread 1-1) WFLYJPA0002: Read persistence.xml for CinemaReservationsPU
+2020-04-19 10:55:01,622 WARN  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0013: Deployment CinemaReservations.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+2020-04-19 10:55:01,803 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-1) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.18.Final
+2020-04-19 10:55:02,087 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'CinemaReservations.war#CinemaReservationsPU'
+2020-04-19 10:55:02,118 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 78) HHH000204: Processing PersistenceUnitInfo [
+	name: CinemaReservationsPU
+	...]
+2020-04-19 10:55:02,250 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 78) HHH000412: Hibernate Core {5.3.15.Final}
+2020-04-19 10:55:02,252 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 78) HHH000206: hibernate.properties not found
+2020-04-19 10:55:02,307 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 79) WFLYCLINF0002: Started client-mappings cache from ejb container
+2020-04-19 10:55:02,499 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 78) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+2020-04-19 10:55:02,658 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'CinemaReservations.war#CinemaReservationsPU'
+2020-04-19 10:55:02,887 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 78) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-19 10:55:02,905 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 78) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-19 10:55:03,008 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 78) Envers integration enabled? : true
+2020-04-19 10:55:03,386 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 78) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2020-04-19 10:55:03,498 INFO  [org.hibernate.validator.internal.util.Version] (ServerService Thread Pool -- 78) HV000001: Hibernate Validator 6.0.18.Final
+2020-04-19 10:55:04,205 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 78) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@63df1ba2'
+2020-04-19 10:55:04,252 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 78) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@63df1ba2'
+2020-04-19 10:55:05,318 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 78) RESTEASY002225: Deploying javax.ws.rs.core.Application: class CinemaReservations.rest.JAXRSConfig
+2020-04-19 10:55:05,358 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 78) WFLYUT0021: Registered web context: '/CinemaReservations' for server 'default-server'
+2020-04-19 10:55:05,463 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "CinemaReservations-back-1.0.war" (runtime-name : "CinemaReservations.war")
+2020-04-19 10:55:05,514 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2020-04-19 10:55:05,518 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2020-04-19 10:55:05,518 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2020-04-19 10:55:05,518 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 19.0.0.Final (WildFly Core 11.0.0.Final) started in 13204ms - Started 436 of 653 services (379 services are lazy, passive or on-demand)
+2020-04-19 10:55:06,065 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\f2\ca6ccdf01a2651c7f47f879c2fb97fff134ea7\content
+2020-04-19 10:55:06,067 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+2020-04-19 10:55:06,282 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) WFLYJPA0002: Read persistence.xml for CinemaReservationsPU
+2020-04-19 10:55:06,336 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 10:55:06,336 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 78) HHH000204: Processing PersistenceUnitInfo [
+	name: CinemaReservationsPU
+	...]
+2020-04-19 10:55:06,348 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment test.war
+2020-04-19 10:55:06,512 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-6) No shutdown hook registered: Please call close() manually on application shutdown.
+2020-04-19 10:55:06,563 INFO  [org.jboss.weld.Version] (MSC service thread 1-3) WELD-000900: 3.1.3 (Final)
+2020-04-19 10:55:06,795 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 10:55:06,796 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 78) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-19 10:55:06,796 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 78) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-19 10:55:06,801 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 78) Envers integration enabled? : true
+2020-04-19 10:55:06,804 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 78) MSC000001: Failed to start service jboss.persistenceunit."test.war#CinemaReservationsPU": org.jboss.msc.service.StartException in service jboss.persistenceunit."test.war#CinemaReservationsPU": java.lang.NoClassDefFoundError: CinemaReservations/model/TheatreHall
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:198)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:128)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:658)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:212)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.lang.Thread.run(Thread.java:748)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: java.lang.NoClassDefFoundError: CinemaReservations/model/TheatreHall
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredMethodProperties(JavaXClass.java:95)
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredProperties(JavaXClass.java:112)
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredProperties(JavaXClass.java:104)
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:252)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:250)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:231)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:274)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1215)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1246)
+	at org.jboss.as.jpa.hibernate5.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:170)
+	... 9 more
+Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.TheatreHall from [Module "deployment.test.war" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:255)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:410)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	... 25 more
+
+2020-04-19 10:55:06,808 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 1) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "test.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"test.war#CinemaReservationsPU\"" => "java.lang.NoClassDefFoundError: CinemaReservations/model/TheatreHall
+    Caused by: java.lang.NoClassDefFoundError: CinemaReservations/model/TheatreHall
+    Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.TheatreHall from [Module \"deployment.test.war\" from Service Module Loader]"}}
+2020-04-19 10:55:06,809 ERROR [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0021: Deploy of deployment "test.war" was rolled back with the following failure message: 
+{"WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"test.war#CinemaReservationsPU\"" => "java.lang.NoClassDefFoundError: CinemaReservations/model/TheatreHall
+    Caused by: java.lang.NoClassDefFoundError: CinemaReservations/model/TheatreHall
+    Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.TheatreHall from [Module \"deployment.test.war\" from Service Module Loader]"}}
+2020-04-19 10:55:06,813 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 10:55:06,872 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 63ms
+2020-04-19 10:55:56,598 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\5c\c26c08e10660d52ae9e583be4ffa6598c9e1ff\content
+2020-04-19 10:55:56,601 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+2020-04-19 10:55:56,751 INFO  [org.jboss.as.jpa] (MSC service thread 1-1) WFLYJPA0002: Read persistence.xml for CinemaReservationsPU
+2020-04-19 10:55:56,765 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 10:55:56,765 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 78) HHH000204: Processing PersistenceUnitInfo [
+	name: CinemaReservationsPU
+	...]
+2020-04-19 10:55:56,771 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0003: Processing weld deployment test.war
+2020-04-19 10:55:56,831 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-8) No shutdown hook registered: Please call close() manually on application shutdown.
+2020-04-19 10:55:56,885 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 10:55:56,886 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 78) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-19 10:55:56,886 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 78) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-19 10:55:56,889 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 78) Envers integration enabled? : true
+2020-04-19 10:55:56,894 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 78) MSC000001: Failed to start service jboss.persistenceunit."test.war#CinemaReservationsPU": org.jboss.msc.service.StartException in service jboss.persistenceunit."test.war#CinemaReservationsPU": java.lang.TypeNotPresentException: Type CinemaReservations.model.Reservation not present
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:198)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:128)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:658)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:212)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.lang.Thread.run(Thread.java:748)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: java.lang.TypeNotPresentException: Type CinemaReservations.model.Reservation not present
+	at sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at sun.reflect.generics.repository.MethodRepository.getReturnType(MethodRepository.java:68)
+	at java.lang.reflect.Method.getGenericReturnType(Method.java:255)
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredMethodProperties(JavaXClass.java:96)
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredProperties(JavaXClass.java:112)
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredProperties(JavaXClass.java:104)
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:252)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:250)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:231)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:274)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1215)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1246)
+	at org.jboss.as.jpa.hibernate5.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:170)
+	... 9 more
+Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.Reservation from [Module "deployment.test.war" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:255)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:410)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 29 more
+
+2020-04-19 10:55:56,898 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 1) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "test.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"test.war#CinemaReservationsPU\"" => "java.lang.TypeNotPresentException: Type CinemaReservations.model.Reservation not present
+    Caused by: java.lang.TypeNotPresentException: Type CinemaReservations.model.Reservation not present
+    Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.Reservation from [Module \"deployment.test.war\" from Service Module Loader]"}}
+2020-04-19 10:55:56,899 ERROR [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0021: Deploy of deployment "test.war" was rolled back with the following failure message: 
+{"WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"test.war#CinemaReservationsPU\"" => "java.lang.TypeNotPresentException: Type CinemaReservations.model.Reservation not present
+    Caused by: java.lang.TypeNotPresentException: Type CinemaReservations.model.Reservation not present
+    Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.Reservation from [Module \"deployment.test.war\" from Service Module Loader]"}}
+2020-04-19 10:55:56,899 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 10:55:56,927 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 28ms
+2020-04-19 10:56:35,638 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\0c\a91170c248678c8f7a53db6dc0a8c7bbab25a1\content
+2020-04-19 10:56:35,641 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+2020-04-19 10:56:35,819 INFO  [org.jboss.as.jpa] (MSC service thread 1-1) WFLYJPA0002: Read persistence.xml for CinemaReservationsPU
+2020-04-19 10:56:35,834 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 10:56:35,834 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 78) HHH000204: Processing PersistenceUnitInfo [
+	name: CinemaReservationsPU
+	...]
+2020-04-19 10:56:35,841 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0003: Processing weld deployment test.war
+2020-04-19 10:56:35,906 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-5) No shutdown hook registered: Please call close() manually on application shutdown.
+2020-04-19 10:56:35,961 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 10:56:35,962 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 78) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-19 10:56:35,963 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 78) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-19 10:56:35,966 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 78) Envers integration enabled? : true
+2020-04-19 10:56:36,095 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 78) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@63df1ba2'
+2020-04-19 10:56:36,112 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 78) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@63df1ba2'
+2020-04-19 10:56:36,225 INFO  [io.smallrye.metrics] (MSC service thread 1-7) MicroProfile: Metrics activated (SmallRye Metrics version: 2.4.0)
+2020-04-19 10:56:36,679 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 86) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+2020-04-19 10:56:36,739 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+2020-04-19 10:56:37,121 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-2) HHH000397: Using ASTQueryTranslatorFactory
+2020-04-19 10:56:37,295 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 86) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+2020-04-19 10:56:37,312 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 86) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 10:56:37,313 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 86) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@4acfe8c8
+2020-04-19 10:56:37,315 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 86) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 10:56:37,342 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 60ms
+2020-04-19 10:56:37,365 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\0c\a91170c248678c8f7a53db6dc0a8c7bbab25a1\content
+2020-04-19 10:56:37,365 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+2020-04-19 11:01:41,494 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\91\643ce9886b1f0f0a3cffa406626f7bf3f47e0a\content
+2020-04-19 11:01:41,496 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+2020-04-19 11:01:41,628 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) WFLYJPA0002: Read persistence.xml for CinemaReservationsPU
+2020-04-19 11:01:41,641 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 86) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:01:41,641 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 86) HHH000204: Processing PersistenceUnitInfo [
+	name: CinemaReservationsPU
+	...]
+2020-04-19 11:01:41,645 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0003: Processing weld deployment test.war
+2020-04-19 11:01:41,734 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-7) No shutdown hook registered: Please call close() manually on application shutdown.
+2020-04-19 11:01:41,775 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 86) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:01:41,775 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 86) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-19 11:01:41,776 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 86) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-19 11:01:41,779 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 86) Envers integration enabled? : true
+2020-04-19 11:01:41,860 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 86) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@63df1ba2'
+2020-04-19 11:01:41,870 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 86) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@63df1ba2'
+2020-04-19 11:01:41,902 INFO  [io.smallrye.metrics] (MSC service thread 1-2) MicroProfile: Metrics activated (SmallRye Metrics version: 2.4.0)
+2020-04-19 11:01:42,070 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 91) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+2020-04-19 11:01:42,105 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+2020-04-19 11:01:42,403 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-1) HHH000397: Using ASTQueryTranslatorFactory
+2020-04-19 11:01:42,569 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 91) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+2020-04-19 11:01:42,587 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 86) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:01:42,587 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 86) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@162a5726
+2020-04-19 11:01:42,587 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 86) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:01:42,616 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 77ms
+2020-04-19 11:01:42,643 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\91\643ce9886b1f0f0a3cffa406626f7bf3f47e0a\content
+2020-04-19 11:01:42,643 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+2020-04-19 11:03:01,002 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\33\5add7ace6ea4d48db0cdc1c7b9ccba78c72a0f\content
+2020-04-19 11:03:01,004 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+2020-04-19 11:03:01,145 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) WFLYJPA0002: Read persistence.xml for CinemaReservationsPU
+2020-04-19 11:03:01,160 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 86) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:03:01,161 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 86) HHH000204: Processing PersistenceUnitInfo [
+	name: CinemaReservationsPU
+	...]
+2020-04-19 11:03:01,166 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment test.war
+2020-04-19 11:03:01,214 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-3) No shutdown hook registered: Please call close() manually on application shutdown.
+2020-04-19 11:03:01,249 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 86) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:03:01,249 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 86) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-19 11:03:01,250 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 86) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-19 11:03:01,252 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 86) Envers integration enabled? : true
+2020-04-19 11:03:01,317 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 86) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@63df1ba2'
+2020-04-19 11:03:01,326 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 86) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@63df1ba2'
+2020-04-19 11:03:01,363 INFO  [io.smallrye.metrics] (MSC service thread 1-3) MicroProfile: Metrics activated (SmallRye Metrics version: 2.4.0)
+2020-04-19 11:03:01,537 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 94) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+2020-04-19 11:03:01,565 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+2020-04-19 11:03:01,823 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-1) HHH000397: Using ASTQueryTranslatorFactory
+2020-04-19 11:03:01,915 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 86) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+2020-04-19 11:03:01,926 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 94) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:03:01,926 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 94) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@77d8f225
+2020-04-19 11:03:01,927 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 94) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:03:01,951 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 39ms
+2020-04-19 11:03:01,982 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\33\5add7ace6ea4d48db0cdc1c7b9ccba78c72a0f\content
+2020-04-19 11:03:01,982 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+2020-04-19 11:03:36,061 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\29\7c23e94e608520d2cbe858b4f0762d3c6f4047\content
+2020-04-19 11:03:36,063 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+2020-04-19 11:03:36,172 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) WFLYJPA0002: Read persistence.xml for CinemaReservationsPU
+2020-04-19 11:03:36,186 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 94) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:03:36,186 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 94) HHH000204: Processing PersistenceUnitInfo [
+	name: CinemaReservationsPU
+	...]
+2020-04-19 11:03:36,191 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment test.war
+2020-04-19 11:03:36,248 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-4) No shutdown hook registered: Please call close() manually on application shutdown.
+2020-04-19 11:03:36,289 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 94) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:03:36,290 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 94) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-19 11:03:36,291 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 94) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-19 11:03:36,294 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 94) Envers integration enabled? : true
+2020-04-19 11:03:36,367 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 94) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@63df1ba2'
+2020-04-19 11:03:36,378 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 94) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@63df1ba2'
+2020-04-19 11:03:36,404 INFO  [io.smallrye.metrics] (MSC service thread 1-7) MicroProfile: Metrics activated (SmallRye Metrics version: 2.4.0)
+2020-04-19 11:03:36,550 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 97) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+2020-04-19 11:03:36,575 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+2020-04-19 11:03:36,844 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-1) HHH000397: Using ASTQueryTranslatorFactory
+2020-04-19 11:03:36,919 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 94) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+2020-04-19 11:03:36,931 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 98) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:03:36,931 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 98) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@50d9baf6
+2020-04-19 11:03:36,932 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 98) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:03:36,955 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 40ms
+2020-04-19 11:03:36,979 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\29\7c23e94e608520d2cbe858b4f0762d3c6f4047\content
+2020-04-19 11:03:36,979 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+2020-04-19 11:04:45,113 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\92\1fcfeea44378d093fce6f8cecb6a074142502c\content
+2020-04-19 11:04:45,115 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+2020-04-19 11:04:45,249 INFO  [org.jboss.as.jpa] (MSC service thread 1-6) WFLYJPA0002: Read persistence.xml for CinemaReservationsPU
+2020-04-19 11:04:45,261 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 98) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:04:45,262 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 98) HHH000204: Processing PersistenceUnitInfo [
+	name: CinemaReservationsPU
+	...]
+2020-04-19 11:04:45,265 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0003: Processing weld deployment test.war
+2020-04-19 11:04:45,325 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-5) No shutdown hook registered: Please call close() manually on application shutdown.
+2020-04-19 11:04:45,358 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 98) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:04:45,359 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 98) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-19 11:04:45,359 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 98) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-19 11:04:45,363 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 98) Envers integration enabled? : true
+2020-04-19 11:04:45,418 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 98) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@63df1ba2'
+2020-04-19 11:04:45,428 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 98) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@63df1ba2'
+2020-04-19 11:04:45,454 INFO  [io.smallrye.metrics] (MSC service thread 1-2) MicroProfile: Metrics activated (SmallRye Metrics version: 2.4.0)
+2020-04-19 11:04:45,581 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 101) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+2020-04-19 11:04:45,600 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+2020-04-19 11:04:45,818 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-2) HHH000397: Using ASTQueryTranslatorFactory
+2020-04-19 11:04:46,024 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 98) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+2020-04-19 11:04:46,034 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 101) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:04:46,035 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 101) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@4013d067
+2020-04-19 11:04:46,035 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 101) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:04:46,052 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 31ms
+2020-04-19 11:04:46,068 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\92\1fcfeea44378d093fce6f8cecb6a074142502c\content
+2020-04-19 11:04:46,068 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+2020-04-19 11:04:53,696 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 80) WFLYDR0009: Content D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\f2\ca6ccdf01a2651c7f47f879c2fb97fff134ea7 is obsolete and will be removed
+2020-04-19 11:04:53,697 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 80) WFLYDR0002: Content removed from location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\f2\ca6ccdf01a2651c7f47f879c2fb97fff134ea7\content
+2020-04-19 11:04:53,697 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 80) WFLYDR0009: Content D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\5c\c26c08e10660d52ae9e583be4ffa6598c9e1ff is obsolete and will be removed
+2020-04-19 11:04:53,698 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 80) WFLYDR0002: Content removed from location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\5c\c26c08e10660d52ae9e583be4ffa6598c9e1ff\content
+2020-04-19 11:04:53,698 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 80) WFLYDR0009: Content D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\fe\a98b77ed3e06c68a0da4d7e2d9ad4188773ee0 is obsolete and will be removed
+2020-04-19 11:04:53,699 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 80) WFLYDR0002: Content removed from location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\fe\a98b77ed3e06c68a0da4d7e2d9ad4188773ee0\content
+2020-04-19 11:04:53,700 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 80) WFLYDR0009: Content D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\ec\6f14299e7a4c816acd20ff764e91056f8fa870 is obsolete and will be removed
+2020-04-19 11:04:53,701 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 80) WFLYDR0002: Content removed from location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\ec\6f14299e7a4c816acd20ff764e91056f8fa870\content
+2020-04-19 11:07:20,693 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\41\71e059381336124ab4b7ed82e5e4ce78426028\content
+2020-04-19 11:07:20,695 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+2020-04-19 11:07:20,822 INFO  [org.jboss.as.jpa] (MSC service thread 1-1) WFLYJPA0002: Read persistence.xml for CinemaReservationsPU
+2020-04-19 11:07:20,839 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 101) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:07:20,839 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 101) HHH000204: Processing PersistenceUnitInfo [
+	name: CinemaReservationsPU
+	...]
+2020-04-19 11:07:20,845 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment test.war
+2020-04-19 11:07:20,944 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-6) No shutdown hook registered: Please call close() manually on application shutdown.
+2020-04-19 11:07:21,052 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 101) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:07:21,053 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 101) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-19 11:07:21,053 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 101) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-19 11:07:21,062 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 101) Envers integration enabled? : true
+2020-04-19 11:07:21,137 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 101) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@63df1ba2'
+2020-04-19 11:07:21,148 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 101) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@63df1ba2'
+2020-04-19 11:07:21,178 INFO  [io.smallrye.metrics] (MSC service thread 1-3) MicroProfile: Metrics activated (SmallRye Metrics version: 2.4.0)
+2020-04-19 11:07:21,294 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 105) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+2020-04-19 11:07:21,326 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+2020-04-19 11:07:21,518 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-2) HHH000397: Using ASTQueryTranslatorFactory
+2020-04-19 11:07:21,723 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 101) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+2020-04-19 11:07:21,732 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 104) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:07:21,732 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 104) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@2552b790
+2020-04-19 11:07:21,733 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 104) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:07:21,755 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 34ms
+2020-04-19 11:07:21,772 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\41\71e059381336124ab4b7ed82e5e4ce78426028\content
+2020-04-19 11:07:21,772 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+2020-04-19 11:08:01,552 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\87\fa69f2b73d32d025511169208ec54eec104fdd\content
+2020-04-19 11:08:01,555 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+2020-04-19 11:08:01,693 INFO  [org.jboss.as.jpa] (MSC service thread 1-3) WFLYJPA0002: Read persistence.xml for CinemaReservationsPU
+2020-04-19 11:08:01,706 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 104) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:08:01,707 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 104) HHH000204: Processing PersistenceUnitInfo [
+	name: CinemaReservationsPU
+	...]
+2020-04-19 11:08:01,710 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment test.war
+2020-04-19 11:08:01,754 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-3) No shutdown hook registered: Please call close() manually on application shutdown.
+2020-04-19 11:08:01,785 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 104) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:08:01,786 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 104) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-19 11:08:01,786 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 104) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-19 11:08:01,790 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 104) Envers integration enabled? : true
+2020-04-19 11:08:01,853 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 104) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@63df1ba2'
+2020-04-19 11:08:01,864 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 104) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@63df1ba2'
+2020-04-19 11:08:01,898 INFO  [io.smallrye.metrics] (MSC service thread 1-4) MicroProfile: Metrics activated (SmallRye Metrics version: 2.4.0)
+2020-04-19 11:08:02,032 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 110) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+2020-04-19 11:08:02,053 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+2020-04-19 11:08:02,253 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-1) HHH000397: Using ASTQueryTranslatorFactory
+2020-04-19 11:08:02,370 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 110) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+2020-04-19 11:08:02,378 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 110) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:08:02,378 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 110) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@1b95116
+2020-04-19 11:08:02,379 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 110) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:08:02,395 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 26ms
+2020-04-19 11:08:02,411 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\87\fa69f2b73d32d025511169208ec54eec104fdd\content
+2020-04-19 11:08:02,411 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+2020-04-19 11:08:43,300 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\79\dbaf181d21e49836fcafee9c62e34ef5cca1fb\content
+2020-04-19 11:08:43,302 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+2020-04-19 11:08:43,407 INFO  [org.jboss.as.jpa] (MSC service thread 1-3) WFLYJPA0002: Read persistence.xml for CinemaReservationsPU
+2020-04-19 11:08:43,420 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 110) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:08:43,420 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 110) HHH000204: Processing PersistenceUnitInfo [
+	name: CinemaReservationsPU
+	...]
+2020-04-19 11:08:43,425 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment test.war
+2020-04-19 11:08:43,486 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-2) No shutdown hook registered: Please call close() manually on application shutdown.
+2020-04-19 11:08:43,521 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 110) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:08:43,521 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 110) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-19 11:08:43,521 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 110) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-19 11:08:43,524 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 110) Envers integration enabled? : true
+2020-04-19 11:08:43,587 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 110) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@63df1ba2'
+2020-04-19 11:08:43,597 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 110) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@63df1ba2'
+2020-04-19 11:08:43,631 INFO  [io.smallrye.metrics] (MSC service thread 1-5) MicroProfile: Metrics activated (SmallRye Metrics version: 2.4.0)
+2020-04-19 11:08:43,749 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 113) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+2020-04-19 11:08:43,771 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+2020-04-19 11:08:44,082 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-1) HHH000397: Using ASTQueryTranslatorFactory
+2020-04-19 11:08:44,179 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 110) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+2020-04-19 11:08:44,192 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 111) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:08:44,193 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 111) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@4eb2480e
+2020-04-19 11:08:44,194 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 111) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#CinemaReservationsPU'
+2020-04-19 11:08:44,216 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 38ms
+2020-04-19 11:08:44,236 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\79\dbaf181d21e49836fcafee9c62e34ef5cca1fb\content
+2020-04-19 11:08:44,236 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+2020-04-19 11:20:08,008 INFO  [org.jboss.as.repository] (External Management Request Threads -- 1) WFLYDR0001: Content added at location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\13\ce629b1f70293efa7a7acb1fa3d41a022133da\content
+2020-04-19 11:20:08,013 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 111) WFLYUT0022: Unregistered web context: '/CinemaReservations' from server 'default-server'
+2020-04-19 11:20:08,020 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 111) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'CinemaReservations.war#CinemaReservationsPU'
+2020-04-19 11:20:08,021 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 111) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'CinemaReservations.war#CinemaReservationsPU'
+2020-04-19 11:20:08,339 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment CinemaReservations-back-1.0.war (runtime-name: CinemaReservations.war) in 327ms
+2020-04-19 11:20:08,341 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "CinemaReservations-back-1.0.war" (runtime-name: "CinemaReservations.war")
+2020-04-19 11:20:12,159 INFO  [org.jboss.as.jpa] (MSC service thread 1-8) WFLYJPA0002: Read persistence.xml for CinemaReservationsPU
+2020-04-19 11:20:12,358 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 111) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'CinemaReservations.war#CinemaReservationsPU'
+2020-04-19 11:20:12,358 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 111) HHH000204: Processing PersistenceUnitInfo [
+	name: CinemaReservationsPU
+	...]
+2020-04-19 11:20:12,371 WARN  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0013: Deployment CinemaReservations.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+2020-04-19 11:20:12,383 WARN  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0101: Duplicate servlet mapping /api/* found
+2020-04-19 11:20:12,397 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 111) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'CinemaReservations.war#CinemaReservationsPU'
+2020-04-19 11:20:12,398 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 111) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-19 11:20:12,398 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 111) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-19 11:20:12,402 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 111) Envers integration enabled? : true
+2020-04-19 11:20:12,417 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 111) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2020-04-19 11:20:12,473 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 111) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@63df1ba2'
+2020-04-19 11:20:12,485 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 111) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@63df1ba2'
+2020-04-19 11:20:12,526 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 115) RESTEASY002225: Deploying javax.ws.rs.core.Application: class CinemaReservations.rest.JAXRSConfiguration
+2020-04-19 11:20:12,632 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 115) RESTEASY002225: Deploying javax.ws.rs.core.Application: class CinemaReservations.rest.JAXRSConfig
+2020-04-19 11:20:12,668 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 115) WFLYUT0021: Registered web context: '/CinemaReservations' for server 'default-server'
+2020-04-19 11:20:12,701 INFO  [org.jboss.as.server] (External Management Request Threads -- 1) WFLYSRV0016: Replaced deployment "CinemaReservations.war" with deployment "CinemaReservations.war"
+2020-04-19 11:20:12,707 INFO  [org.jboss.as.repository] (External Management Request Threads -- 1) WFLYDR0002: Content removed from location D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\External\wildfly-19.0.0.Final\standalone\data\content\c6\47b1e2bb58a363dc4e41d8eb0af6a7b1b1207d\content
+2020-04-19 11:20:24,170 ERROR [io.undertow.request] (default task-1) UT005023: Exception handling request to /CinemaReservations/api/films: org.jboss.resteasy.spi.UnhandledException: java.lang.NullPointerException
 	at org.jboss.resteasy.core.ExceptionHandler.handleApplicationException(ExceptionHandler.java:82)
 	at org.jboss.resteasy.core.ExceptionHandler.handleException(ExceptionHandler.java:346)
 	at org.jboss.resteasy.core.SynchronousDispatcher.writeException(SynchronousDispatcher.java:193)
@@ -468,49 +1045,29 @@ Caused by: java.lang.ClassNotFoundException: CinemaReservations.model.MovieShow 
 	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
 	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
-	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:179)
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:119)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1215)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1246)
-	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:56)
-	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
-	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
-	at CinemaReservations.repository.FilmRepository.<init>(FilmRepository.java:17)
-	at CinemaReservations.rest.FilmEndpoint.<init>(FilmEndpoint.java:16)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.jboss.resteasy.core.ConstructorInjectorImpl.construct(ConstructorInjectorImpl.java:102)
-	at org.jboss.resteasy.plugins.server.resourcefactory.POJOResourceFactory.createResource(POJOResourceFactory.java:67)
-	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:319)
+Caused by: java.lang.NullPointerException
+	at CinemaReservations.rest.FilmEndpoint.getFilms(FilmEndpoint.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:138)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:526)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:415)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$0(ResourceMethodInvoker.java:376)
+	at org.jboss.resteasy.core.interception.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:356)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:378)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:347)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:320)
 	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:440)
 	... 52 more
-Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
-	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
-	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:137)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
-	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:94)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
-	... 75 more
 
-2020-04-18 21:07:53,089 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0272: Suspending server
-2020-04-18 21:07:53,092 INFO  [org.jboss.as.ejb3] (management-handler-thread - 2) WFLYEJB0493: EJB subsystem suspension complete
-2020-04-18 21:07:53,095 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
-2020-04-18 21:07:53,113 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
-2020-04-18 21:07:53,126 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 6) WFLYUT0022: Unregistered web context: '/CinemaReservations' from server 'default-server'
-2020-04-18 21:07:53,134 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0019: Host default-host stopping
-2020-04-18 21:07:53,135 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 82) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'CinemaReservations.war#CinemaReservationsPU'
-2020-04-18 21:07:53,142 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 82) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'CinemaReservations.war#CinemaReservationsPU'
-2020-04-18 21:07:53,145 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
-2020-04-18 21:07:53,146 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 6) WFLYCLINF0003: Stopped client-mappings cache from ejb container
-2020-04-18 21:07:53,154 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2020-04-19 11:31:37,040 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0272: Suspending server
+2020-04-19 11:31:37,081 INFO  [org.jboss.as.ejb3] (management-handler-thread - 2) WFLYEJB0493: EJB subsystem suspension complete
+2020-04-19 11:31:37,087 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2020-04-19 11:31:37,120 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2020-04-19 11:31:37,124 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 116) WFLYUT0022: Unregistered web context: '/CinemaReservations' from server 'default-server'
+2020-04-19 11:31:37,139 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 115) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'CinemaReservations.war#CinemaReservationsPU'
+2020-04-19 11:31:37,141 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0019: Host default-host stopping
+2020-04-19 11:31:37,150 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 115) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'CinemaReservations.war#CinemaReservationsPU'
+2020-04-19 11:31:37,152 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]

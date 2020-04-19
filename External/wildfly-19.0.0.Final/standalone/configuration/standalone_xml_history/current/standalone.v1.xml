@@ -524,4 +524,9 @@
             <remote-destination host="localhost" port="25"/>
         </outbound-socket-binding>
     </socket-binding-group>
+    <deployments>
+        <deployment name="CinemaReservations-back-1.0.war" runtime-name="CinemaReservations.war">
+            <content sha1="c647b1e2bb58a363dc4e41d8eb0af6a7b1b1207d"/>
+        </deployment>
+    </deployments>
 </server>

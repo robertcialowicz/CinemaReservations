@@ -526,7 +526,7 @@
     </socket-binding-group>
     <deployments>
         <deployment name="CinemaReservations-back-1.0.war" runtime-name="CinemaReservations.war">
-            <content sha1="c647b1e2bb58a363dc4e41d8eb0af6a7b1b1207d"/>
+            <content sha1="13ce629b1f70293efa7a7acb1fa3d41a022133da"/>
         </deployment>
     </deployments>
 </server>

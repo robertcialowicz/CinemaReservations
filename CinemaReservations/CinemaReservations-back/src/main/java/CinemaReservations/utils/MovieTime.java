@@ -6,6 +6,8 @@ import java.time.DayOfWeek;
 
 public class MovieTime {
 
+    //TODO this bean to be used when dealing with MovieShow.MovieTime attribute
+
     private LocalTime time;
     private LocalDate date;
     private DayOfWeek dayOfWeek;

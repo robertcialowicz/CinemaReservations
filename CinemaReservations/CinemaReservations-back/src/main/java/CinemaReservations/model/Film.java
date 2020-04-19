@@ -3,9 +3,12 @@ package CinemaReservations.model;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 @Entity(name = "Film")
 public class Film {
+
+    //TODO Validation of data provided in constructors
 
     @Id
     @GeneratedValue
@@ -22,6 +25,12 @@ public class Film {
     private List<MovieShow> movieShows = new ArrayList<>();
 
     public Film(){
+    }
+
+    public Film(String title, String description){
+        //this.id = new Random(1234).nextLong();
+        this.title = title;
+        this.description = description;
     }
 
     @Override
