@@ -43,4 +43,8 @@ public class MovieShowRepository {
         return query.getSingleResult();
     }
 
+    public MovieShow find(Long id){
+        return em.find(MovieShow.class, id);
+    }
+
 }

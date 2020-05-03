@@ -71,6 +71,35 @@ public class TheatreHall {
                 '}';
     }
 
+    public Long getId() {
+        return id;
+    }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
 
+    public String getSeatsReservationMatrixAsString() {
+        return seatsReservationMatrixAsString;
+    }
+
+    public void setSeatsReservationMatrixAsString(String seatsReservationMatrixAsString) {
+        this.seatsReservationMatrixAsString = seatsReservationMatrixAsString;
+    }
+
+    public Long getWhichHall() {
+        return whichHall;
+    }
+
+    public void setWhichHall(Long whichHall) {
+        this.whichHall = whichHall;
+    }
+
+    public MovieShow getMovieShow() {
+        return movieShow;
+    }
+
+    public void setMovieShow(MovieShow movieShow) {
+        this.movieShow = movieShow;
+    }
 }
