@@ -80,9 +80,6 @@
           <element id="library" level="project" name="Maven: org.jboss.marshalling:jboss-marshalling:2.0.0.Final" />
           <element id="library" level="project" name="Maven: org.jboss.arquillian.core:arquillian-core-api:1.1.13.Final" />
           <element id="library" level="project" name="Maven: com.vladmihalcea:hibernate-types-43:2.9.8" />
-          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-server:1.19.4" />
-          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-core:1.19.4" />
-          <element id="library" level="project" name="Maven: javax.ws.rs:jsr311-api:1.1.1" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-entitymanager:5.4.14.Final" />
           <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.3.2.Final" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-core:5.4.14.Final" />
@@ -117,7 +114,6 @@
           <element id="library" level="project" name="Maven: org.apache.xbean:xbean-asm7-shaded:4.12" />
           <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-jpa_2.2_spec:1.0" />
           <element id="library" level="project" name="Maven: javax.transaction:jta:1.1" />
-          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-client:1.19.2" />
         </element>
       </element>
       <element id="directory" name="META-INF">

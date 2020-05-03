@@ -16,7 +16,8 @@ public class TheatreHallRepository {
     @PersistenceContext(unitName = "CinemaReservationsPU")
     private EntityManager em;
 
-    //TODO Default constructor to be created
+    public TheatreHallRepository() {
+    }
 
     public TheatreHall find(Long id){
         return em.find(TheatreHall.class, id);
