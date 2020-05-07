@@ -1,0 +1,68 @@
+@import "../../theme";
+:host {
+  ::ng-deep {
+    .fc-button-primary {
+      color: white;
+      background-color: mat-color($my-accent, 500);
+      border-color: mat-color($my-accent, 500);
+
+      &:disabled {
+        background-color: rgba(mat-color($my-accent, 500), 0.5);
+        border-color: rgba(mat-color($my-accent, 500), 0.5);
+      }
+
+      &:active, .fc-button-active {
+        background-color: mat-color($my-accent, 900);
+        border-color: mat-color($my-accent, 900);
+      }
+    }
+  }
+
+  ::ng-deep .mat-card {
+
+    .fc-event {
+      background: #4f7623;
+    }
+
+    .fc-unthemed {
+      * {
+        border-color: unset!important;
+      }
+    }
+
+    .fc-today {
+      background: rgba(134, 194, 50, 0.2);
+    }
+
+    .fc-scroller {
+      &::-webkit-scrollbar-track
+      {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: #F5F5F5;
+      }
+
+      &::-webkit-scrollbar
+      {
+        width: 12px;
+        background-color: #F5F5F5;
+      }
+
+      &::-webkit-scrollbar-thumb
+      {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #ccc;
+      }
+
+    }
+  }
+  #events {
+    margin-bottom: 20px;
+    display: flex;
+    .fc-event {
+      border-color: #335912!important;
+      padding: 10px;
+      cursor: move;
+    }
+  }
+
+}

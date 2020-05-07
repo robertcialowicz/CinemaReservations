@@ -1,0 +1,33 @@
+<mat-toolbar color="primary" class="header">
+  <div (click)="goToHome()">Cinema Reservations</div>
+  <span class="nav-tool-items">
+      <mat-icon (click)="sidenav.toggle()" class="hamburger">menu</mat-icon>
+      <mat-icon (click)="logout()">logout</mat-icon>
+    </span>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <!-- Sidenav -->
+  <mat-sidenav #sidenav [mode]="isBiggerScreen() ? 'over' : 'side'" [(opened)]="opened" [fixedInViewport]="true"
+               [fixedTopGap]>
+    <mat-nav-list>
+      <a mat-list-item routerLink="dashboard" routerLinkActive="active">
+        <mat-icon>dashboard</mat-icon> Dashboard
+      </a>
+      <a mat-list-item routerLink="cinema-events">
+        <mat-icon>event</mat-icon> Cinema events
+      </a>
+      <a mat-list-item routerLink="shows">
+        <mat-icon>local_movies</mat-icon> Shows
+      </a>
+      <a mat-list-item routerLink="customer-reservations">
+        <mat-icon>confirmation_number</mat-icon> Reservations
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <!-- Main content -->
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
