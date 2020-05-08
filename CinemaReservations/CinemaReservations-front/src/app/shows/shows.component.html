@@ -1,0 +1,9 @@
+<div class="container">
+  <app-data-table-row-details [show]="show">></app-data-table-row-details>
+  <div>
+    <button style=" position: relative;top: 25px;right: 20px;" mat-mini-fab color="primary" aria-label="Add show" (click)="createShow()">
+      <mat-icon>add</mat-icon>
+    </button>
+    <app-data-table (showSelected)="onshowSelected($event)"></app-data-table>
+  </div>
+</div>

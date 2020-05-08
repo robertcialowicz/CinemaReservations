@@ -1,0 +1,13 @@
+.main-container {
+  height: auto;
+  min-height: 100vh;
+  background-color: #222629;
+}
+
+::ng-deep {
+  .mat-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+}

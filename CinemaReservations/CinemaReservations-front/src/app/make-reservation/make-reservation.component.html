@@ -1,0 +1,70 @@
+<div class="container">
+  <mat-card>
+    <mat-card-title>Reservation: </mat-card-title>
+    <mat-horizontal-stepper [linear]="'true'" #stepper>
+      <mat-step [stepControl]="firstFormGroup">
+        <form [formGroup]="firstFormGroup">
+          <ng-template matStepLabel>Select tickets amount</ng-template>
+          <mat-form-field appearance="outline">
+            <mat-label>Tickets amount</mat-label>
+            <input type="number" min="1" max="10" matInput formControlName="firstCtrl" required>
+            <mat-icon matSuffix>loyalty</mat-icon>
+          </mat-form-field>
+          <div>
+            <button mat-button matStepperNext>Next</button>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="secondFormGroup">
+        <form [formGroup]="secondFormGroup">
+          <ng-template matStepLabel>Choose places</ng-template>
+<!--          <mat-form-field>-->
+<!--            <mat-label>Address</mat-label>-->
+<!--            <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"-->
+<!--                   required>-->
+<!--          </mat-form-field>-->
+          <div class="scene ">
+            <div class="scene-left-side">
+              <div class="row" *ngFor="let row of numberOfRows; let i = index;" [id]="'seats-row' + row">
+                <div class="seat" *ngFor="let col of numberOfColsLeft; let j = index;" [id]="'seat-' + row + '-' + col" (click)="toggggleSelection(i + 1 , j)">
+                  {{namesOfRows[i]}}{{numberOfColsLeft[j]}}
+                </div>
+              </div>
+            </div>
+            <div class="scene-right-side">
+              <div class="row" *ngFor="let row of numberOfRows; let i = index;" [id]="'seats-row' + row">
+                <div class="seat" *ngFor="let col of numberOfColsRight; let j = index;" [id]="'seat-' + row + '-' + col" (click)="toggggleSelection(i + 1 , j + 11)">
+                  {{namesOfRows[i]}}{{numberOfColsRight[j]}}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button matStepperNext>Next</button>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step>
+        <ng-template matStepLabel>Fill in your contact data</ng-template>
+        <form [formGroup]="thirdFormGroup">
+          <mat-form-field appearance="outline" >
+            <mat-label>Email address</mat-label>
+            <input type="email" matInput formControlName="thirdCtrl" required>
+          </mat-form-field>
+        </form>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </mat-step>
+      <mat-step [stepControl]="firstFormGroup">
+        <ng-template matStepLabel>Summary</ng-template>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button>Confirm</button>
+        </div>
+      </mat-step>
+    </mat-horizontal-stepper>
+  </mat-card>
+</div>

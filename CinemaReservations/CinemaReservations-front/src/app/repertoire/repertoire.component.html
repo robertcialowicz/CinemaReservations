@@ -1,0 +1,67 @@
+<!--<div class="wrapper">-->
+<!--  <owl-carousel-o [options]="customOptions">-->
+<!--    <ng-container *ngFor="let slide of repertoire">-->
+<!--      <ng-template class="slide" carouselSlide [id]="slide.id">-->
+<!--        <img [src]="slide.poster" [alt]="slide.id" [title]="slide.id">-->
+<!--        <div class="button-container">-->
+<!--          <button mat-button color="primary" (click)="openDialog(slide)">{{slide.name}}</button>-->
+<!--        </div>-->
+<!--      </ng-template>-->
+<!--    </ng-container>-->
+<!--  </owl-carousel-o>-->
+<!--</div>-->
+<div class="container">
+  <mat-card *ngFor="let item of repertoire">
+    <mat-card-title>{{item.film.name}}</mat-card-title>
+    <mat-grid-list cols="3" rowHeight="300px">
+      <mat-grid-tile [colspan]="1">
+        <div class="image-container mat-elevation-z8">
+          <img [src]="item.film.poster" [alt]="item.id" [title]="item.id">
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2">
+        <table>
+          <tr>
+            <td>Type:</td>
+            <td>{{item.film.type}}</td>
+          </tr>
+          <tr>
+            <td>Director:</td>
+            <td>{{item.film.director}}</td>
+          </tr>
+          <tr>
+            <td>Scenario:</td>
+            <td>{{item.film.scenario}}</td>
+          </tr>
+          <tr>
+            <td>Release date:</td>
+            <td>{{item.film.releaseDate}}</td>
+          </tr>
+          <tr>
+            <td>Description:</td>
+            <td>{{item.film.description}}</td>
+          </tr>
+          <tr>
+            <td>Cast:</td>
+            <td>{{item.film.cast}}</td>
+          </tr>
+          <tr>
+            <td>Age limit:</td>
+            <td>{{item.film.ageLimit}}</td>
+          </tr>
+        </table>
+        <div class="upcoming-screenings">
+          <span>Reserve:</span>
+          <mat-chip-list aria-label="Fish selection">
+            <mat-chip
+              *ngFor="let screening of item.shows"
+              color="primary"
+              matTooltip="Click to make reservation"
+              (click)="makeReservation(screening.id)">{{screening.date}}
+            </mat-chip>
+          </mat-chip-list>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-card>
+</div>
