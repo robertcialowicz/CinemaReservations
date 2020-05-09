@@ -58,7 +58,9 @@ export class RepertoireResolversService {
           this.apiService.getImage(show.film.posterId).subscribe(data => {
             const reader = new FileReader();
             reader.addEventListener('load', () => {
-              show.film.poster = reader.result;
+              // show.film.poster = reader.result;
+              // this is for presentation purpose only
+              show.film.poster = `../../../assets/posters/${show.film.posterId}.jpg`
             }, false);
 
             if (data) {
@@ -78,7 +80,7 @@ export class RepertoireResolversService {
 @Injectable({
   providedIn: 'root'
 })
-export class SelectedShowResolversService {
+export class SelectedEventResolverService {
 
   constructor(private apiService: ApiService) { }
 
@@ -86,6 +88,8 @@ export class SelectedShowResolversService {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): Observable<any>|Promise<any>|any {
-    return;
-}
+      this.apiService.getEvent(route.queryParams['eventId']).subscribe(res => {
+      return res;
+    });
+  }
 }

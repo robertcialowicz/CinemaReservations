@@ -2,20 +2,38 @@
   padding: 0 20px;
   height: 100%;
   min-height: 100vh;
+  overflow: auto;
 }
 .mat-card {
   width: 70%;
   margin: 50px auto;
 }
+.mat-card-title {
+  margin-bottom: 15px;
+}
+
+.mat-form-field {
+  width: 500px;
+}
+
 ::ng-deep {
   .mat-horizontal-content-container {
     margin-top: 15px;
+    text-align: center;
   }
-  //.mat-horizontal-stepper-content {
-  //  display: flex;
-  //  justify-content: center;
-  //}
+  .mat-step-icon {
+    width: 50px!important;
+    height: 50px!important;
+  }
 }
+
+.btn-left {
+  float: left;
+}
+.btn-right {
+   float: right;
+ }
+
 
 .scene {
   display: flex;
@@ -30,23 +48,25 @@
     .row {
       display: flex;
       justify-content: space-between;
-
-      .seat {
-        margin: 5px;
-        width: 30px;
-        height: 30px;
-        background: #90ac6d;
-        color: white;
-        text-align: center;
-        cursor: pointer;
-        &:hover {
-          background-color: #799b4e;
-        }
-        &.selected {
-          background-color: purple;
-        }
-      }
     }
+  }
+}
+.seat {
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  background: #90ac6d;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    background-color: #799b4e;
+  }
+  &.selected {
+    background-color: purple;
+  }
+  &.disabled {
+    background-color: dimgray;
   }
 }
 

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {ActivatedRoute} from '@angular/router';
+import {ApiService} from '../services/api/api.service';
 
 @Component({
   selector: 'app-make-reservation',
@@ -14,8 +16,11 @@ export class MakeReservationComponent implements OnInit {
   namesOfRows = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
   numberOfColsLeft = Array<any>(10).fill(1).map((x, i) => i + 1);
   numberOfColsRight = Array<any>(10).fill(10).map((x, i) => i + 10 + 1);
+  seatsNumberToPick: any;
 
-  constructor(private formBuilder: FormBuilder) { }
+  event: any;
+
+  constructor(private formBuilder: FormBuilder, private route: ActivatedRoute, private apiService: ApiService) { }
 
   ngOnInit(): void {
     // TODO
@@ -28,13 +33,31 @@ export class MakeReservationComponent implements OnInit {
     this.thirdFormGroup = this.formBuilder.group({
       thirdCtrl: ['', Validators.required]
     });
+
+    this.apiService.getEvent(this.route.queryParams['eventId']).subscribe(res => {
+      this.event = res;
+    });
   }
 
   toggggleSelection(row: number, col: number) {
-    // TODO
     const selector = '#seat-' + row + '-' + col;
     const seat = document.querySelector(selector);
-    seat.classList.toggle('selected');
+    if(this.seatsNumberToPick) {
+      seat.classList.contains('selected') ? this.seatsNumberToPick += 1 : this.seatsNumberToPick -= 1;
+      seat.classList.toggle('selected');
+    } else {
+      if(seat.classList.contains('selected')) {
+        this.seatsNumberToPick += 1
+        seat.classList.toggle('selected');
+      }
+    }
+  }
+
+  setSeatsNumberToPick() {
+    const selectedSeats = document.querySelectorAll('div.selected[id^=seat]').forEach(el => {
+      el.classList.toggle('selected');
+    })
+    this.seatsNumberToPick = this.firstFormGroup.controls.firstCtrl.value;
   }
 
 }

@@ -12,16 +12,27 @@
   overflow:auto
 }
 .mat-card {
-  margin-bottom: 20px;
+  margin: 20px auto;
   padding: 25px;
+  width: 80%;
+}
+.mat-card-title {
+  margin-bottom: 15px;
 }
 
 .image-container {
   margin-right: auto;
+  width: 300px;
+  height: 300px;
 
   img {
-
+    max-width:100%;
+    max-height:100%;
   }
+}
+
+tr {
+  height: 20px;
 }
 
 .upcoming-screenings {

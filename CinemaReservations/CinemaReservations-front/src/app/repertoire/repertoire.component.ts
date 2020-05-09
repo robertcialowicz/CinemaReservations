@@ -65,8 +65,8 @@ export class RepertoireComponent implements OnInit, AfterViewInit {
   //   });
   // }
 
-  makeReservation(showId: any) {
-    this.router.navigate(['/cinema-reservations/make-reservation'], {queryParams: { showId}});
+  makeReservation(eventId: any) {
+    this.router.navigate(['/cinema-reservations/make-reservation'], {queryParams: { eventId}});
   }
 }
 

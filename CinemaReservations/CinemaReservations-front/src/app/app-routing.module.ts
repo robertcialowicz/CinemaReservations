@@ -3,7 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 import {CinemaEventsComponent} from './cinema-events/cinema-events.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
 import {ShowsComponent} from './shows/shows.component';
-import {ActiveShowsResolversService, RepertoireResolversService, ShowsResolversService} from './services/resolvers/resolvers.service';
+import {
+  ActiveShowsResolversService,
+  RepertoireResolversService,
+  SelectedEventResolverService,
+  ShowsResolversService
+} from './services/resolvers/resolvers.service';
 import {AuthGuard} from './authentication/auth.guard';
 import {LoginComponent} from './authentication/login/login.component';
 import {NavigationComponent} from './navigation/navigation.component';

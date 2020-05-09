@@ -1,0 +1,7 @@
+{
+  "/api/": {
+    "target": "http://localhost:808/CinemaReservations_back_war",
+    "secure": false,
+    "logLevel": "error"
+  }
+}
