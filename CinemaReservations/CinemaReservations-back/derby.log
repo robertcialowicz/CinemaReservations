@@ -1,0 +1,10 @@
+----------------------------------------------------------------
+2020-05-27 20:16:58.045 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.2.1.6 - (452058): instance c013800d-0172-57c7-e68d-00000e05cbe8
+on database directory C:\Users\dawid\OneDrive\Pulpit\ProjektTO\CinemaReservations\DataBase\db-derby-10.2.1.6-bin\DataBase  
+
+Database Class Loader started - derby.database.classpath=''
+
+2020-05-27 20:16:58.513 GMT:
+Shutting down instance c013800d-0172-57c7-e68d-00000e05cbe8
+----------------------------------------------------------------
