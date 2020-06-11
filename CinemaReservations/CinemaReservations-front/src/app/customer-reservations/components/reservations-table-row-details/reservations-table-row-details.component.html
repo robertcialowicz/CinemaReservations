@@ -1,0 +1,95 @@
+<div class="mat-elevation-z8">
+  <mat-card class="details" *ngIf="actualMode == 2">
+    <mat-card-title>Reservation number {{ show.id}}
+    </mat-card-title>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+      <mat-card-subtitle>
+        <table>
+          <tr>
+            <td>Film:</td>
+            <td>{{show.film}}</td>
+          </tr>
+          <tr>
+            <td>date:</td>
+            <td>{{show.date}}</td>
+          </tr>
+          <tr>
+            <td>Hall:</td>
+            <td>{{show.hall}}</td>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td>{{show.email}}</td>
+          </tr>
+          <tr>
+            <td>Seats:</td>
+            <td>{{show.seats}}</td>
+          </tr>
+        </table>
+      </mat-card-subtitle>
+    </mat-card-content>
+    <mat-divider></mat-divider>
+    <mat-card-actions>
+<!--      <button mat-button color="primary" (click)="switchToModeEdit(show)">Edit</button>-->
+      <button mat-button color="primary" (click)="editSeats(show)">Edit seats</button>
+      <button mat-button color="primary" class="delete-button" color="primary">Delete</button>
+    </mat-card-actions>
+  </mat-card>
+
+
+<!--  <mat-card class="details" *ngIf="actualMode == 0 || actualMode == 1">-->
+<!--    <form [formGroup]="reservationItemDetails">-->
+<!--      <mat-card-title>-->
+<!--        <mat-form-field class="form-element" appearance="outline">-->
+<!--          <mat-label>name</mat-label>-->
+<!--          <input matInput formControlName="id">-->
+<!--        </mat-form-field>-->
+<!--      </mat-card-title>-->
+<!--      <mat-divider></mat-divider>-->
+<!--      <mat-card-content>-->
+<!--        <mat-card-subtitle>-->
+<!--          <mat-form-field appearance="outline">-->
+<!--            <mat-label>Film</mat-label>-->
+<!--            <input matInput formControlName="film">-->
+<!--          </mat-form-field>-->
+<!--          <mat-form-field appearance="outline">-->
+<!--            <mat-label>Date</mat-label>-->
+<!--            <input matInput formControlName="date">-->
+<!--          </mat-form-field>-->
+<!--          </mat-form-field>-->
+<!--          <mat-form-field appearance="outline">-->
+<!--            <mat-label>Hall</mat-label>-->
+<!--            <input matInput formControlName="hall">-->
+<!--          </mat-form-field>-->
+<!--          <mat-form-field appearance="outline">-->
+<!--            <mat-label>Email</mat-label>-->
+<!--            <input matInput formControlName="email">-->
+<!--          </mat-form-field>-->
+<!--          <mat-form-field appearance="outline">-->
+<!--            <mat-chip-list #chipList formArrayName="seats">-->
+<!--              <mat-chip *ngFor="let seat of reservationItemDetails.get('seats')['controls']; let i=index;"-->
+<!--                        [selectable]="selectable"-->
+<!--                        [removable]="removable"-->
+<!--                        (removed)="remove(i)">-->
+<!--                {{ seat['value'].seat}}-->
+<!--                <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>-->
+<!--              </mat-chip>-->
+<!--              <input placeholder="Add seat"-->
+<!--                     [matChipInputFor]="chipList"-->
+<!--                     [matChipInputSeparatorKeyCodes]="separatorKeysCodes"-->
+<!--                     [matChipInputAddOnBlur]="addOnBlur"-->
+<!--                     (matChipInputTokenEnd)="add($event)">-->
+<!--            </mat-chip-list>-->
+<!--          </mat-form-field>-->
+<!--          <mat-divider></mat-divider>-->
+<!--        </mat-card-subtitle>-->
+<!--      </mat-card-content>-->
+<!--      <mat-divider></mat-divider>-->
+<!--      <mat-card-actions>-->
+<!--        <button mat-button color="primary" (click)="saveChanges()">Save</button>-->
+<!--        <button mat-button class="delete-button" color="primary" class="delete-button" color="primary" (click)="discardChanges()">Discard</button>-->
+<!--      </mat-card-actions>-->
+<!--    </form>-->
+<!--  </mat-card>-->
+</div>

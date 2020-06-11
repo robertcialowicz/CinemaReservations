@@ -1,8 +1,9 @@
-import {AfterViewInit, Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
+import {AfterViewInit, Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
 import {FormArray, FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {COMMA, ENTER} from '@angular/cdk/keycodes';
 import {MatChipInputEvent} from '@angular/material/chips';
 import {MatDatepickerInputEvent} from '@angular/material/datepicker';
+import {ApiService} from '../../services/api/api.service';
 
 export enum showDetailsMode {
   editMode = 0,
@@ -17,6 +18,7 @@ export enum showDetailsMode {
 })
 export class DataTableRowDetailsComponent implements OnInit, AfterViewInit, OnChanges {
   @Input() show: any;
+  @Output() showUpdated = new EventEmitter<any>();
   defaultShow: any;
   actualMode = showDetailsMode.displayMode;
   showItemDetails: FormGroup;
@@ -26,24 +28,11 @@ export class DataTableRowDetailsComponent implements OnInit, AfterViewInit, OnCh
   removable = true;
   addOnBlur = true;
   readonly separatorKeysCodes: number[] = [ENTER, COMMA];
-  constructor( private formBuilder: FormBuilder) {
+  constructor( private formBuilder: FormBuilder, private apiService: ApiService) {
     this.showItemDetails = this.formBuilder.group({
-      screeningData: this.formBuilder.group({
-        screeningTime: ['',  Validators.required],
-        screeningStartPeriod: ['',  Validators.required],
-        screeningEndPeriod: ['',  Validators.required]
-      }),
-      generalData: this.formBuilder.group({
-        id: ['',  Validators.required],
-        name: ['',  Validators.required],
-        type: [''],
-        director: [''],
-        scenario: [''],
-        releaseDate: [''],
-        description: [''],
-        cast: this.formBuilder.array([]),
-        ageLimit: ['']
-      })
+      id: [null],
+      title: ['',  Validators.required],
+      description: ['']
     });
   }
 
@@ -58,22 +47,9 @@ export class DataTableRowDetailsComponent implements OnInit, AfterViewInit, OnCh
   ngOnChanges(changes: SimpleChanges) {
     if (Object.keys(changes.show.currentValue).length === 0) {
       this.show = {
-        screeningData: {
-          screeningTime: 0,
-          screeningStartPeriod: 0,
-          screeningEndPeriod: 0,
-        },
-        generalData: {
-          id: null,
-          name: '',
-          type: [],
-          director: '',
-          scenario: '',
-          releaseDate: null,
-          description: '',
-          cast: [],
-          ageLimit: null,
-        }
+        id: null,
+        title: '',
+        description: ''
       };
       return this.switchToModeCreate();
 
@@ -82,7 +58,6 @@ export class DataTableRowDetailsComponent implements OnInit, AfterViewInit, OnCh
   }
 
   add(event: MatChipInputEvent): void {
-    console.log(event)
     const input = event.input;
     const value = event.value;
     //
@@ -117,37 +92,31 @@ export class DataTableRowDetailsComponent implements OnInit, AfterViewInit, OnCh
 
   private setFormValues() {
     this.showItemDetails.patchValue({
-      generalData: {
-        name: this.show.generalData.name,
-        type: this.show.generalData.name,
-        director: this.show.generalData.director,
-        scenario: this.show.generalData.scenario,
-        releaseDate: this.show.generalData.releaseDate,
-        description: this.show.generalData.description,
-        ageLimit: this.show.generalData.ageLimit
-      },
-      screeningData: {
-        screeningTime: this.show.screeningData.screeningTime,
-        screeningStartPeriod: this.show.screeningData.screeningStartPeriod,
-        screeningEndPeriod: this.show.screeningData.screeningEndPeriod
-      }
+      id: this.show.id,
+      title: this.show.title,
+      description: this.show.description
     });
 
-    const formArray = (this.showItemDetails.get('generalData.cast') as FormArray);
-    while (formArray.length !== 0) {
-      formArray.removeAt(0);
-    }
-    this.show.generalData.cast.forEach(item => {
-      formArray.push(this.formBuilder.group({person: item}));
-    });
+    // const formArray = (this.showItemDetails.get('generalData.cast') as FormArray);
+    // while (formArray.length !== 0) {
+    //   formArray.removeAt(0);
+    // }
+    // this.show.generalData.cast.forEach(item => {
+    //   formArray.push(this.formBuilder.group({person: item}));
+    // });
   }
 
   saveChanges() {
-    if (this.actualMode === 1)  {
-      // TODO send created show details
-    }
-    // TODO send update show details
-    console.log(this.showItemDetails);
+    Object.assign(this.showItemDetails.value, {movieShows: []})
+    this.apiService.postFilms(this.showItemDetails.value).subscribe(rep => {
+      this.apiService.getFilms().subscribe((rep1: any) => {
+        this.showUpdated.emit(true);
+        this.show =  rep1.find(el => {
+          return el.title === this.showItemDetails.value.title;
+        });
+        this.actualMode = showDetailsMode.displayMode;
+      });
+    });
   }
 
   discardChanges() {

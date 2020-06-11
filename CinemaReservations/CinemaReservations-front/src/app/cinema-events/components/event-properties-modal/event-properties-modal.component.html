@@ -1,0 +1,25 @@
+<h1 mat-dialog-title>{{data.event.filmTitle}}</h1>
+<div mat-dialog-content>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Date Time</mat-label>
+    <input [disabled]="data.mode === 'view'" matInput [ngxMatDatetimePicker]="picker" placeholder="Choose a start date ang time" [(ngModel)]="data.event.startDate"
+           [min]="minDate" [max]="maxDate">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <ngx-mat-datetime-picker #picker [showSpinners]="showSpinners" [showSeconds]="showSeconds"
+                             [stepHour]="stepHour" [stepMinute]="stepMinute" [stepSecond]="stepSecond" [touchUi]="touchUi"
+                              [enableMeridian]="enableMeridian">
+    </ngx-mat-datetime-picker>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Duration (minutes)</mat-label>
+    <input [disabled]="data.mode === 'view'" type="number" matInput [(ngModel)]="data.event.duration" autocomplete="off" step=30 min=0>
+  </mat-form-field>
+
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Discard</button>
+  <button mat-button *ngIf="data.mode === 'view'" [mat-dialog-close]="data">Delete</button>
+  <button mat-button *ngIf="data.mode === 'create'" [disabled]="!data.event.startDate || !data.event.duration" [mat-dialog-close]="data" cdkFocusInitial>Create</button>
+</div>

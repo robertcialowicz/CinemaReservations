@@ -23,7 +23,6 @@ export class NavigationComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(window.innerWidth)
     if (window.innerWidth < 768) {
       this.sidenav.fixedTopGap = 65;
       this.opened = false;

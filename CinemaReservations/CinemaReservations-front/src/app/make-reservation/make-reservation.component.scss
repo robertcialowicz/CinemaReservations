@@ -9,7 +9,10 @@
   margin: 50px auto;
 }
 .mat-card-title {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+}
+.mat-card-subtitle {
+  margin-left: 30px;
 }
 
 .mat-form-field {
@@ -68,6 +71,20 @@
   &.disabled {
     background-color: dimgray;
   }
+}
+.selected-mock {
+  background-color: purple;
+}
+.details-item {
+  color: #fff;
+  font-weight: 600;
+}
+tr {
+  height: 20px;
+}
+table {
+  margin: auto;
+  text-align: left;
 }
 
 

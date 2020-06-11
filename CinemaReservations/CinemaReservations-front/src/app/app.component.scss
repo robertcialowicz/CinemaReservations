@@ -4,7 +4,17 @@
   background-color: #222629;
 }
 
+#events {
+  display: flex;
+  width: 200px;
+  flex-wrap: wrap;
+}
+
 ::ng-deep {
+  #events {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .mat-toolbar {
     position: sticky;
     top: 0;

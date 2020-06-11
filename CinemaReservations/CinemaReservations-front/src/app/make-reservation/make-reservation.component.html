@@ -1,29 +1,26 @@
 <div class="container">
   <mat-card>
     <mat-card-title>Reservation details</mat-card-title>
-    <mat-card-subtitle>{{event?.name}} {{event?.date}}</mat-card-subtitle>
+    <mat-card-subtitle><span class="details-item">Movie:</span> {{event?.film.title}}</mat-card-subtitle>
+    <mat-card-subtitle><span class="details-item">Date:</span> {{event?.date}}</mat-card-subtitle>
+    <mat-card-subtitle><span class="details-item">Hall:</span> {{event?.theatreHall.whichHall}}</mat-card-subtitle>
     <mat-horizontal-stepper [linear]="'true'" #stepper>
       <mat-step [stepControl]="firstFormGroup">
-        <form [formGroup]="firstFormGroup">
-          <ng-template matStepLabel>Select tickets amount</ng-template>
+            <form [formGroup]="firstFormGroup">
+              <ng-template matStepLabel>Select tickets amount</ng-template>
           <mat-form-field appearance="outline">
             <mat-label>Tickets amount</mat-label>
             <input type="number" min="1" max="10" matInput formControlName="firstCtrl" required autocomplete="off">
             <mat-icon matSuffix>loyalty</mat-icon>
           </mat-form-field>
           <div>
-            <button class="btn-right" mat-button matStepperNext (click)="setSeatsNumberToPick()">Next</button>
+            <button class="btn-right" mat-button matStepperNext (click)="setSeatsNumberToPick()" [disabled]="firstFormGroup.invalid">Next</button>
           </div>
         </form>
       </mat-step>
       <mat-step [stepControl]="secondFormGroup">
         <form [formGroup]="secondFormGroup">
           <ng-template matStepLabel>Choose places</ng-template>
-<!--          <mat-form-field>-->
-<!--            <mat-label>Address</mat-label>-->
-<!--            <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"-->
-<!--                   required>-->
-<!--          </mat-form-field>-->
           <div>
             <div>
               Left to pick: {{seatsNumberToPick}}
@@ -32,14 +29,14 @@
               <div class="scene ">
               <div class="scene-left-side">
                 <div class="row" *ngFor="let row of numberOfRows; let i = index;" [id]="'row-seats' + row">
-                  <div class="seat" *ngFor="let col of numberOfColsLeft; let j = index;" [id]="'seat-' + row + '-' + col" (click)="toggggleSelection(i + 1 , j + 1)">
+                  <div class="seat" *ngFor="let col of numberOfColsLeft; let j = index;" [id]="namesOfRows[i] + numberOfColsLeft[j]" (click)="toggggleSelection(namesOfRows[i] + numberOfColsLeft[j])">
                     {{namesOfRows[i]}}{{numberOfColsLeft[j]}}
                   </div>
                 </div>
               </div>
               <div class="scene-right-side">
                 <div class="row" *ngFor="let row of numberOfRows; let i = index;" [id]="'row-seats' + row">
-                  <div class="seat" *ngFor="let col of numberOfColsRight; let j = index;" [id]="'seat-' + row + '-' + col" (click)="toggggleSelection(i + 1 , j + 11)">
+                  <div class="seat" *ngFor="let col of numberOfColsRight; let j = index;" [id]="namesOfRows[i] + numberOfColsRight[j]" (click)="toggggleSelection(namesOfRows[i] + numberOfColsRight[j])">
                     {{namesOfRows[i]}}{{numberOfColsRight[j]}}
                   </div>
                 </div>
@@ -56,14 +53,14 @@
                 <td>occupied</td>
               </tr>
               <tr>
-                <td><div class="seat selected"></div></td>
+                <td><div class="seat selected-mock"></div></td>
                 <td>selected</td>
               </tr>
             </table>
           </div>
           <div>
             <button class="btn-left" mat-button matStepperPrevious>Back</button>
-            <button class="btn-right" mat-button matStepperNext>Next</button>
+            <button class="btn-right" mat-button matStepperNext [disabled]="seatsNumberToPick !== 0" (click)="setSelectedSeats()">Next</button>
           </div>
         </form>
       </mat-step>
@@ -71,20 +68,51 @@
         <ng-template matStepLabel>Fill in your contact data</ng-template>
         <form [formGroup]="thirdFormGroup">
           <mat-form-field appearance="outline" >
+            <mat-label>Name</mat-label>
+            <input type="email" matInput formControlName="name" required>
+          </mat-form-field>
+          <mat-form-field appearance="outline" >
+            <mat-label>Surname</mat-label>
+            <input type="email" matInput formControlName="surname" required>
+          </mat-form-field>
+          <mat-form-field appearance="outline" >
             <mat-label>Email address</mat-label>
-            <input type="email" matInput formControlName="thirdCtrl" required>
+            <input type="email" matInput formControlName="email" required>
           </mat-form-field>
         </form>
         <div>
           <button mat-button matStepperPrevious class="btn-left">Back</button>
-          <button mat-button matStepperNext class="btn-right">Next</button>
+          <button mat-button matStepperNext class="btn-right" [disabled]="thirdFormGroup.invalid" (click)="createSummary()">Next</button>
         </div>
       </mat-step>
       <mat-step [stepControl]="firstFormGroup">
         <ng-template matStepLabel>Summary</ng-template>
+        <h3>Summary of your reservation</h3>
+        <table>
+          <tr>
+            <td>Name:</td>
+            <td>{{sumamry?.name}}</td>
+          </tr>
+          <tr>
+            <td>Surname:</td>
+            <td>{{sumamry?.surname}}</td>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td>{{sumamry?.email}}</td>
+          </tr>
+          <tr>
+            <td>Tickets amount:</td>
+            <td>{{firstFormGroup.controls.firstCtrl.value}}</td>
+          </tr>
+          <tr>
+            <td>Selected seats:</td>
+            <td>{{secondFormGroup.controls.bookedSeats.value}}</td>
+          </tr>
+        </table>
         <div>
           <button mat-button matStepperPrevious class="btn-left">Back</button>
-          <button mat-button class="btn-right">Confirm</button>
+          <button mat-button class="btn-right" (click)="navigateToPayment()">Confirm</button>
         </div>
       </mat-step>
     </mat-horizontal-stepper>

@@ -1,1 +1,6 @@
-<p>customer-reservations works!</p>
+<div class="container">
+  <app-reservations-table-row-details [show]="show" (showUpdated)="onShowUpdated()"></app-reservations-table-row-details>
+  <div>
+    <app-reservations-table (showSelected)="onshowSelected($event)" ></app-reservations-table>
+  </div>
+</div>

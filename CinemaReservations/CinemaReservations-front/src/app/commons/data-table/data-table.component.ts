@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, EventEmitter, OnInit, Output, ViewChild} from '@angular/core';
+import {AfterViewInit, ChangeDetectorRef, Component, EventEmitter, OnInit, Output, ViewChild} from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTable } from '@angular/material/table';
@@ -18,9 +18,10 @@ export class DataTableComponent implements AfterViewInit, OnInit {
   dataSource: DataTableDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
+  // displayedColumns = ['name', 'type', 'director', 'scenario', 'releaseDate', 'description'];
   displayedColumns = ['name', 'type', 'director', 'scenario', 'releaseDate', 'description'];
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute, private changeDetectorRefs: ChangeDetectorRef) {}
 
   ngOnInit() {
     this.dataSource = new DataTableDataSource(this.route);
@@ -35,4 +36,9 @@ export class DataTableComponent implements AfterViewInit, OnInit {
   rowClicked(row) {
     this.showSelected.emit(row);
   }
+
+  refresh() {
+    this.table.dataSource = this.dataSource;
+  }
+
 }

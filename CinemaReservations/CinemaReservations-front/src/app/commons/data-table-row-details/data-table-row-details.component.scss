@@ -1,9 +1,7 @@
 .mat-card-content {
   padding: 8px 0;
 }
-.delete-button {
-  float: right;
-}
+
 .mat-form-field {
   width: 100%;
 
@@ -11,7 +9,3 @@
     padding-bottom: 0;
   }
 }
-
-//::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
-//  color: white;
-//}

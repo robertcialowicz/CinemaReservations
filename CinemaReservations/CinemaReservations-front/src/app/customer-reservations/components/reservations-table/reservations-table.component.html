@@ -1,0 +1,58 @@
+<div class="mat-elevation-z8">
+  <table mat-table class="full-width-table" matSort aria-label="Elements">
+    <ng-container matColumnDef="ReservationNumber">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>ReservationNumber</th>
+      <td mat-cell *matCellDef="let row">{{row.id}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="Film">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Film</th>
+      <td mat-cell *matCellDef="let row">{{row.film}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="Date">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Date</th>
+      <td mat-cell *matCellDef="let row">{{row.date}}</td>
+    </ng-container>
+
+    <!-- Scenario Column -->
+    <ng-container matColumnDef="Hall">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Hall</th>
+      <td mat-cell *matCellDef="let row">{{row.hall}}</td>
+    </ng-container>
+
+    <!-- Release date Column -->
+    <ng-container matColumnDef="Email">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Email</th>
+      <td mat-cell *matCellDef="let row">{{row.email}}</td>
+    </ng-container>
+
+    <!-- Description Column -->
+    <ng-container matColumnDef="Seats">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Seats</th>
+      <td mat-cell *matCellDef="let row">{{row.seats}}</td>
+    </ng-container>
+
+    <!--    &lt;!&ndash; more info Column &ndash;&gt;-->
+    <!--    <ng-container matColumnDef="moreInfo">-->
+    <!--      <th mat-header-cell *matHeaderCellDef mat-sort-header></th>-->
+    <!--      <td mat-cell *matCellDef="let row">-->
+    <!--        <span matTooltip="More details" [matTooltipPosition]="'left'"><mat-icon>more_vert</mat-icon></span>-->
+    <!--      </td>-->
+    <!--    </ng-container>-->
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"
+        (click)="rowClicked(row)"
+        matTooltip="Click to see more details"
+        [matTooltipShowDelay]="800">
+    </tr>
+  </table>
+
+  <mat-paginator #paginator
+                 [length]="dataSource?.data.length"
+                 [pageIndex]="0"
+                 [pageSize]="50"
+                 [pageSizeOptions]="[25, 50, 100, 250]">
+  </mat-paginator>
+</div>

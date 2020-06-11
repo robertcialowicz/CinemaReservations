@@ -1,6 +1,8 @@
 import { AfterViewInit, Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {MatDialog} from '@angular/material/dialog';
+import {ApiService} from '../services/api/api.service';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-repertoire',
@@ -9,61 +11,55 @@ import {MatDialog} from '@angular/material/dialog';
 })
 export class RepertoireComponent implements OnInit, AfterViewInit {
   repertoire: any;
-
-  // customOptions: OwlOptions = {
-  //   loop: true,
-  //   center: true,
-  //   dots: true,
-  //   responsive: {
-  //     0: {
-  //       items: 1,
-  //     },
-  //     1: {
-  //       items: 1,
-  //     },
-  //     2: {
-  //       items: 2,
-  //     },
-  //     3: {
-  //       items: 3,
-  //     },
-  //     4: {
-  //       items: 3,
-  //     },
-  //     400: {
-  //       items: 2
-  //     },
-  //     740: {
-  //       items: 3
-  //     },
-  //     940: {
-  //       items: 4
-  //     }
-  //   }
-  // }
+  shows: any;
+  films: any;
 
   constructor(
     private route: ActivatedRoute, public dialog: MatDialog,
-    private router: Router) {
+    private router: Router,
+    private apiService: ApiService) {
   }
 
   ngOnInit(): void {
-    this.repertoire = this.route.snapshot.data['repertoire'];
+    this.shows = this.route.snapshot.data['shows'];
+    this.films = this.route.snapshot.data['films'];
+    if(this.shows) {
+      this.shows.forEach(show => {
+        show.date = (moment(show.date, "x").format("LLLL"))
+        this.films.map(film => {
+          if (film.id == show.film.id) {
+            film.movieShows.push(show)
+          }
+        })
+      })
+    }
+    this.films = this.films.filter(film => {
+      return film.movieShows.length > 0
+    })
+
+    // this.repertoire = this.route.snapshot.data['repertoire'];
+    //   this.apiService.getFilms().subscribe((resp: Array<any>) => {
+    //   this.apiService.getShows().subscribe((resp1: Array<any>) => {
+    //     if(resp1) {
+    //       resp1.forEach(show => {
+    //         resp.map(film => {
+    //           if (film.id == show.film.id) {
+    //             film.movieShows.push(show)
+    //           }
+    //         })
+    //       })
+    //
+    //       this.repertoire =  resp.filter(film => {
+    //         return film.movieShows.length > 0
+    //       })
+    //       console.log(this.repertoire)
+    //     }
+    //   })
+    // })
   }
 
   ngAfterViewInit(): void {
   }
-
-  // openDialog(slide: any): void {
-  //   const dialogRef = this.dialog.open(DialogComponent, {
-  //     width: '250px',
-  //     data: {slide}
-  //   });
-  //
-  //   dialogRef.afterClosed().subscribe(result => {
-  //     console.log(result);
-  //   });
-  // }
 
   makeReservation(eventId: any) {
     this.router.navigate(['/cinema-reservations/make-reservation'], {queryParams: { eventId}});

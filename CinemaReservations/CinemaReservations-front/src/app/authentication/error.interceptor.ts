@@ -3,7 +3,7 @@ import {
   HttpRequest,
   HttpHandler,
   HttpEvent,
-  HttpInterceptor
+  HttpInterceptor, HttpHeaders
 } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import {catchError} from 'rxjs/operators';
@@ -14,7 +14,12 @@ export class ErrorInterceptor implements HttpInterceptor {
   constructor() {}
 
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    return next.handle(request).pipe(catchError( err => {
+    const authorization = localStorage.getItem('currentUser') ? localStorage.getItem('currentUser') : '';
+    let newrequest = request.clone({
+      headers: new HttpHeaders({ 'Authorization': authorization })
+    });
+
+    return next.handle(newrequest).pipe(catchError( err => {
       if (err.status === 401) {
         // TODO auto logout if 401 with AuthService
         location.reload(true);

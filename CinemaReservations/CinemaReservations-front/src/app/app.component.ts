@@ -12,10 +12,6 @@ export class AppComponent implements OnInit {
   constructor(private apiService: ApiService) {
   }
 
-  ngOnInit() {
-    // this.apiService.getFilms().subscribe(resp => {
-    //   console.log(resp)
-    // })
-  }
+  ngOnInit() {}
 
 }

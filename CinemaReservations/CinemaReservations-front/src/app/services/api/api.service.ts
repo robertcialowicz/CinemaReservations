@@ -8,47 +8,6 @@ import {HttpClient} from '@angular/common/http';
 })
 export class ApiService {
 
-  shows =  [
-    {
-      screeningData: {
-        screeningTime: 200,
-        screeningStartPeriod: 343434343,
-        screeningEndPeriod: 455746546356,
-        active: true
-      },
-      generalData: {
-        id: 1,
-        name: 'Once upon a time in Hollywood',
-        type: ['crime', 'drama'],
-        director: 'Quentin Tarantino',
-        scenario: 'Quentin Tarantino',
-        releaseDate: 352345234545,
-        description: 'Aktor Rick Dalton i jego przyjaciel kaskader powracają do Hollywood. Mężczyźni próbują odnaleźć się w przemyśle filmowym, który ewoluował podczas ich nieobecności.',
-        cast: ['Brad Pit', 'Leonardo Dicaprio', 'Margot Robie'],
-        ageLimit: null
-      }
-    },
-    {
-      screeningData: {
-        screeningTime: 200,
-        screeningStartPeriod: 343434343,
-        screeningEndPeriod: 455746546356,
-        active: true
-      },
-      generalData: {
-        id: 2,
-        name: 'Godzilla vs predator',
-        type: ['crime', 'drama'],
-        director: 'Quentin Tarantino',
-        scenario: 'Quentin Tarantino',
-        releaseDate: 352345234545,
-        description: 'Aktor Rick Dalton i jego przyjaciel kaskader powracają do Hollywood. Mężczyźni próbują odnaleźć się w przemyśle filmowym, który ewoluował podczas ich nieobecności.',
-        cast: ['Brad Pit', 'Leonardo Dicaprio', 'Margot Robie'],
-        ageLimit: null
-      }
-    }
-  ];
-
   repertoire = [
     {
       film: {
@@ -108,26 +67,71 @@ export class ApiService {
     date: '2020-05-07 20:30'
   };
 
+  reservations = [
+    {
+      id: 0,
+      film: 'The Blues Brothers',
+      date: '2020-05-10 18:30',
+      hall: 2,
+      email: "peron@op.pl",
+      seats: [
+        "G6",
+        "G7"
+      ]
+    },
+    {
+      id: 1,
+      film: 'Once upon a time in Hollywood',
+      date: '2020-05-07 20:30',
+      hall: 4,
+      email: "aaaa@op.pl",
+      seats: [
+        "H11",
+        "B6"
+      ]
+    }
+  ]
+
   constructor(private httpClient: HttpClient) { }
 
   getShows() {
-    return of(this.shows).pipe(delay(1000));
+    return this.httpClient.get('api/shows')
   }
 
-  getRepertoire() {
-    return of(this.repertoire).pipe(delay(1000));
+  getShow(showid: any) {
+    return this.httpClient.get(`api/shows/${showid}`);
   }
 
-  getImage(id: number): Observable<Blob> {
-    return this.httpClient.get('https://picsum.photos/300/300/?random', { responseType: 'blob' });
+  postShows(show: any) {
+    return this.httpClient.post('api/shows', show);
+  }
+
+  deleteShow(showid: any) {
+    return this.httpClient.delete(`api/shows/${showid}`);
+  }
+
+  postReservation(reservation: any) {
+    return this.httpClient.post('api/reservations', reservation);
   }
 
   getFilms() {
     return this.httpClient.get('api/films')
   }
 
+  postFilms(film: any) {
+    return this.httpClient.post('api/films', film);
+  }
+
+  getHalls() {
+    return this.httpClient.get('api/halls')
+  }
+
   getEvent(id: any) {
     return of(this.event).pipe(delay(1000));
+  }
+
+  getReservations() {
+    return of(this.reservations).pipe(delay(1000));
   }
 }
 

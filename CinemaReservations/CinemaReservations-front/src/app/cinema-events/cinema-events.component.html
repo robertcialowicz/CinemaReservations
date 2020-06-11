@@ -1,11 +1,17 @@
 <mat-card>
-  <mat-tab-group>
-    <mat-tab label="Hall 1">
+  <p>
+    <strong>Films</strong>
+  </p>
+  <div #events id="events">
+  </div>
+  <p>
+    <strong>Hall</strong>
+  </p>
+  <mat-tab-group  (selectedTabChange)="setActiveHall($event)" >
+    <mat-tab *ngFor="let hall of halls" label="{{hall.id}}">
       <p>
-        <strong>Active shows</strong>
+        <strong>Graphic</strong>
       </p>
-      <div #events id="events">
-      </div>
       <div class='app-calendar'>
         <full-calendar
           #calendar
@@ -18,24 +24,15 @@
           [plugins]="calendarPlugins"
           [events]="calendarEvents"
           [locale]="'pl'"
-          [editable]=true
           [droppable] = true
           contentHeight="auto"
-          (dateClick)="handleDateClick($event)"
-          (eventDrop)="handleDrop($event)"
+          (dateClick)="handleEvent($event)"
+          (eventClick)="handleEventClick($event)"
           (drop)="handleDrop($event)"
+          deepChangeDetection="true"
         ></full-calendar>
       </div>
     </mat-tab>
-    <mat-tab label="Hall 2">Content 2</mat-tab>
-    <mat-tab label="Hall 3">Content 3</mat-tab>
-    <mat-tab label="Hall 4">Content 1</mat-tab>
-    <mat-tab label="Hall 5">Content 2</mat-tab>
-    <mat-tab label="Hall 6">Content 3</mat-tab>
-    <mat-tab label="Hall 7">Content 1</mat-tab>
-    <mat-tab label="Hall 8">Content 2</mat-tab>
-    <mat-tab label="Hall 9">Content 3</mat-tab>
-    <mat-tab label="Hall 10">Content 3</mat-tab>
   </mat-tab-group>
 
 </mat-card>

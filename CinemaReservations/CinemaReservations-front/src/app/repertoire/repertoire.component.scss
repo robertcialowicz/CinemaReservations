@@ -16,8 +16,15 @@
   padding: 25px;
   width: 80%;
 }
+
+.mat-chip-list {
+  display: flex;
+  justify-content: center;
+}
+
 .mat-card-title {
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .image-container {
@@ -34,6 +41,9 @@
 tr {
   height: 20px;
 }
+table {
+  margin-left: 50px;
+}
 
 .upcoming-screenings {
   color: #90ac6d;
@@ -43,6 +53,7 @@ tr {
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 15px;
-    display: inline-block;
+    display: block;
+    text-align: center;
   }
 }

@@ -23,7 +23,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { DataTableRowDetailsComponent } from './commons/data-table-row-details/data-table-row-details.component';
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import {MatChipsModule} from '@angular/material/chips';
@@ -42,6 +42,11 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { CustomerReservationsComponent } from './customer-reservations/customer-reservations.component';
 import { MakeReservationComponent } from './make-reservation/make-reservation.component';
 import {MatStepperModule} from '@angular/material/stepper';
+import { ReservationsTableComponent } from './customer-reservations/components/reservations-table/reservations-table.component';
+import { ReservationsTableRowDetailsComponent } from './customer-reservations/components/reservations-table-row-details/reservations-table-row-details.component';
+import { EventPropertiesModalComponent } from './cinema-events/components/event-properties-modal/event-properties-modal.component';
+import { NgxMatDatetimePickerModule, NgxMatTimepickerModule, NgxMatNativeDateModule } from '@angular-material-components/datetime-picker';
+import { NgxMatMomentModule } from '@angular-material-components/moment-adapter';
 
 @NgModule({
   declarations: [
@@ -56,43 +61,55 @@ import {MatStepperModule} from '@angular/material/stepper';
     RepertoireComponent,
     CinemaReservationsComponent,
     CustomerReservationsComponent,
-    MakeReservationComponent
+    MakeReservationComponent,
+    ReservationsTableComponent,
+    ReservationsTableRowDetailsComponent,
+    EventPropertiesModalComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    LayoutModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
-    BrowserAnimationsModule,
-    MatGridListModule,
-    FullCalendarModule,
-    MatCardModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatSortModule,
-    MatTooltipModule,
-    ReactiveFormsModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatChipsModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
-    HttpClientModule,
-    MatTabsModule,
-    MatExpansionModule,
-    CarouselModule,
-    MatDialogModule,
-    MatStepperModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        LayoutModule,
+        MatToolbarModule,
+        MatButtonModule,
+        MatSidenavModule,
+        MatIconModule,
+        MatListModule,
+        BrowserAnimationsModule,
+        MatGridListModule,
+        FullCalendarModule,
+        MatCardModule,
+        MatTableModule,
+        MatPaginatorModule,
+        MatSortModule,
+        MatTooltipModule,
+        ReactiveFormsModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatChipsModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
+        HttpClientModule,
+        MatTabsModule,
+        MatExpansionModule,
+        CarouselModule,
+        MatDialogModule,
+        MatStepperModule,
+        FormsModule,
+        NgxMatDatetimePickerModule,
+        NgxMatTimepickerModule,
+        NgxMatMomentModule
+
+    ],
   providers: [
     MatDatepickerModule,
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
     // provider used to create fake backend
-    fakeBackendProvider],
-  bootstrap: [AppComponent]
+    // fakeBackendProvider
+  ],
+  bootstrap: [AppComponent],
+  entryComponents: [
+    EventPropertiesModalComponent
+  ],
 })
 export class AppModule { }

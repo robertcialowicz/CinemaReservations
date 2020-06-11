@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
-@Entity(name = "TheatreHall")
+@Entity
 public class TheatreHall {
 
     //TODO Validation of data provided in constructors
