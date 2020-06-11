@@ -18,11 +18,11 @@ public class TheatreHall {
         public static void main(String[] args)
         {
             createConnection();
-            insertTheatreHall(1, 3, 5, 2);
-            insertTheatreHall(2, 1, 1, 2);
-            insertTheatreHall(3, 2, 4, 3);
-            insertTheatreHall(4, 1, 5, 1);
-            insertTheatreHall(5, 2, 4, 2);
+            insertTheatreHall(3, "A5", "RESERVED");
+            insertTheatreHall(1, "D1", "CHOOSEN");
+            insertTheatreHall(2, "E14", "RESERVED");
+            insertTheatreHall(1, "A15", "RESERVED");
+            insertTheatreHall(2, "C4", "FREE");
 
             selectTheatreHall();
             shutdown();
@@ -41,12 +41,12 @@ public class TheatreHall {
             }
         }
 
-        private static void insertTheatreHall(int theatreHall_id, int rows_id, int columns_id, int seatStatus_id)
+        private static void insertTheatreHall(int theatre_hall_id, String seats_Number, String seatStatus)
         {
             try
             {
                 stmt = conn.createStatement();
-                stmt.execute("insert into " + tableName + " values (" + theatreHall_id + ',' + rows_id + ',' + columns_id + ',' + seatStatus_id + ')');
+                stmt.execute("insert into " + tableName + " values (" + theatre_hall_id + ',' + seats_Number + ',' + seatStatus + ')');
                 stmt.close();
             }
             catch (SQLException sqlExcept)
@@ -73,10 +73,10 @@ public class TheatreHall {
                 while(results.next())
                 {
                     int theatreHall_id = results.getInt(1);
-                    int rows_id = results.getInt(2);
-                    int columns_id = results.getInt(3);
-                    int seatStatus_id = results.getInt(4);
-                    System.out.println(theatreHall_id + "\t\t" + rows_id + "\t\t" + columns_id + "\t\t" + seatStatus_id);
+                    int theatre_hall_id = results.getInt(2);
+                    String seats_Number = results.getString(3);
+                    String seatStatus = results.getString(4);
+                    System.out.println(theatreHall_id + "\t\t" + theatre_hall_id + "\t\t" + seats_Number + "\t\t" + seatStatus);
                 }
                 results.close();
                 stmt.close();

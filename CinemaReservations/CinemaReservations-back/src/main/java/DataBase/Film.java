@@ -1,11 +1,6 @@
 package DataBase;
 
-import java.sql.Connection;
-        import java.sql.DriverManager;
-        import java.sql.ResultSet;
-        import java.sql.SQLException;
-        import java.sql.Statement;
-        import java.sql.ResultSetMetaData;
+import java.sql.*;
 
 public class Film
 {
@@ -17,11 +12,11 @@ public class Film
     public static void main(String[] args)
     {
         createConnection();
-        insertFilm(1, "The Shawshank Redemption", "Adaptacja opowiadania Stephena Kinga.");
-        insertFilm(2, "Intouchables", "Sparaliżowany milioner zatrudnia do opieki młodego chłopaka.");
-        insertFilm(3, "The Green Mile", "Emerytowany strażnik więzienny opowiada przyjaciółce o niezwykłym mężczyźnie.");
-        insertFilm(4, "The Godfather", "Opowieść o nowojorskiej rodzinie mafijnej.");
-        insertFilm(5, "12 Angry Men", "Dwunastu przysięgłych ma wydać wyrok w procesie o morderstwo.");
+        insertFilm(6, "The Shawshank Redemption", "Adaptacja opowiadania Stephena Kinga.", "action","Quentin Tarantino","2020/11/11", "Morgan Freeman", 16);
+        insertFilm(7, "Intouchables", "Sparaliżowany milioner zatrudnia do opieki młodego chłopaka.", "action","Frank Darabont","2020/11/11", "Morgan Freeman", 16);
+        insertFilm(8, "The Green Mile", "Emerytowany strażnik więzienny opowiada przyjaciółce o niezwykłym mężczyźnie.", "action","Quentin Tarantino", "2020/11/11", "Morgan Freeman", 16);
+        insertFilm(9, "The Godfather", "Opowieść o nowojorskiej rodzinie mafijnej.", "action","Quentin Tarantino","2020/11/11", "Frank Darabont", 13);
+        insertFilm(10, "12 Angry Men", "Dwunastu przysięgłych ma wydać wyrok w procesie o morderstwo.", "action","Quentin Tarantino","2020/11/11", "Morgan Freeman", 18);
 
         selectFilms();
         shutdown();
@@ -40,12 +35,12 @@ public class Film
         }
     }
 
-    private static void insertFilm(int film_id, String filmTitle, String filmDescription)
+    private static void insertFilm(int film_id, String filmTitle, String filmDescription, String type, String scenario, String release_date, String cast, int age_limit)
     {
         try
         {
             stmt = conn.createStatement();
-            stmt.execute("insert into " + tableName + " values (" + film_id + ",'" + filmTitle + "','" + filmDescription +"')");
+            stmt.execute("insert into " + tableName + " values (" + film_id + ',' + filmTitle + ',' + filmDescription + ',' + type + ',' + scenario + ',' + release_date + ',' + cast + ',' + age_limit + ')');
             stmt.close();
         }
         catch (SQLException sqlExcept)
@@ -74,7 +69,13 @@ public class Film
                 int film_id = results.getInt(1);
                 String filmTitle = results.getString(2);
                 String filmDescription = results.getString(3);
-                System.out.println(film_id + "\t\t" + filmTitle + "\t\t" + filmDescription);
+                String type = results.getString(4);
+                String scenario = results.getString(5);
+                Date release_date = results.getDate(6);
+                String cast = results.getString(7);
+                int age_Limit = results.getInt(8);
+
+                System.out.println(film_id + "\t\t" + filmTitle + "\t\t" + filmDescription + "\t\t" + type  + "\t\t" + scenario  + "\t\t" + release_date  + "\t\t" + cast  + "\t\t" +age_Limit);
             }
             results.close();
             stmt.close();

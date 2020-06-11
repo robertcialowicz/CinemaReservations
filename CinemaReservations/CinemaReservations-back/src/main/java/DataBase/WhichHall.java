@@ -18,11 +18,11 @@ public class WhichHall {
     public static void main(String[] args)
     {
         createConnection();
-        insertWhichHall(1, "Blue");
-        insertWhichHall(2, "Black");
-        insertWhichHall(3, "Green");
-        insertWhichHall(4, "Red");
-        insertWhichHall(5, "Yellow");
+        insertWhichHall(1,2, 2);
+        insertWhichHall(2,3, 2);
+        insertWhichHall(3,3, 4);
+        insertWhichHall(4,4, 1);
+        insertWhichHall(5,3, 1);
 
         selectWhichHall();
         shutdown();
@@ -41,12 +41,12 @@ public class WhichHall {
         }
     }
 
-    private static void insertWhichHall(int whichHall_id, String hallName)
+    private static void insertWhichHall(int whichHall_id, int number, int theatre_hall_id)
     {
         try
         {
             stmt = conn.createStatement();
-            stmt.execute("insert into " + tableName + " values (" + whichHall_id + ",'" + hallName +"')");
+            stmt.execute("insert into " + tableName + " values (" + whichHall_id + ",'" + number + "','" + theatre_hall_id +"')");
             stmt.close();
         }
         catch (SQLException sqlExcept)
@@ -73,8 +73,9 @@ public class WhichHall {
             while(results.next())
             {
                 int whichHall_id = results.getInt(1);
-                String hallName = results.getString(2);
-                System.out.println(whichHall_id + "\t\t" + hallName);
+                int number = results.getInt(2);
+                int theatre_hall_id = results.getInt(2);
+                System.out.println(whichHall_id + "\t\t" + number + "\t\t" + theatre_hall_id);
             }
             results.close();
             stmt.close();

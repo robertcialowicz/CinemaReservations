@@ -9,6 +9,7 @@ public class MovieShow {
         private static Connection conn = null;
         private static Statement stmt = null;
 
+
         public static void main(String[] args)
         {
             createConnection();
@@ -62,7 +63,7 @@ public class MovieShow {
                     System.out.print(rsmd.getColumnLabel(i)+"\t\t");
                 }
 
-                System.out.println("\n-------------------------------------------------");
+                System.out.println("\n-------------------------------------------------------------------------------");
 
                 while(results.next())
                 {

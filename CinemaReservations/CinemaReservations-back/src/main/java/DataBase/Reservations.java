@@ -17,11 +17,11 @@ public class Reservations {
         public static void main(String[] args)
         {
             createConnection();
-            insertReservation(1, 5, 4, 3);
-            insertReservation(2, 3, 4, 3);
-            insertReservation(3, 1, 1, 1);
-            insertReservation(4, 3, 4, 2);
-            insertReservation(5, 2, 3, 1);
+            insertReservation(1, "Jan", "Kowalski", "janatkowalski.pl",4, 3);
+            insertReservation(2, "Anna", "Nowak", "annaatnowak.pl",4, 3);
+            insertReservation(3, "Jan", "Kowalski", "janatkowalski.pl",1, 1);
+            insertReservation(4, "Anna", "Nowak", "annaatnowak.pl",4, 2);
+            insertReservation(5, "Izabela", "Kowalczyk", "izabelaatkowalczyk.pl", 3, 1);
 
             selectReservation();
             shutdown();
@@ -40,13 +40,13 @@ public class Reservations {
             }
         }
 
-        private static void insertReservation(int reservation_id, int personal_Data_id, int booked_Seats_id, int movie_Show_id)
+        private static void insertReservation(int reservation_id, String name, String surname, String email, int booked_Seats_id, int movie_Show_id)
         {
             try
             {
                 stmt = conn.createStatement();
                 stmt.execute("insert into " + tableName + " values (" +
-                        reservation_id + ',' + personal_Data_id + ',' + booked_Seats_id + ',' + movie_Show_id +')');
+                        reservation_id + ',' + name + ',' + surname + ',' + email + ',' + booked_Seats_id + ',' + movie_Show_id +')');
                 stmt.close();
             }
             catch (SQLException sqlExcept)
@@ -74,10 +74,12 @@ public class Reservations {
                 while(results.next())
                 {
                     int reservation_id = results.getInt(1);
-                    int personal_Data_id = results.getInt(2);
-                    int booked_Seats_id = results.getInt(3);
-                    int movie_Show_id = results.getInt(4);
-                    System.out.println(reservation_id + "\t\t" + personal_Data_id + "\t\t" + booked_Seats_id + "\t\t" + movie_Show_id);
+                    String name = results.getString(2);
+                    String surname = results.getString(2);
+                    String email = results.getString(4);
+                    int booked_Seats_id = results.getInt(5);
+                    int movie_Show_id = results.getInt(6);
+                    System.out.println(reservation_id + "\t\t" + name + "\t\t" + surname + "\t\t" + email + "\t\t" + booked_Seats_id + "\t\t" + movie_Show_id);
                 }
                 results.close();
                 stmt.close();
