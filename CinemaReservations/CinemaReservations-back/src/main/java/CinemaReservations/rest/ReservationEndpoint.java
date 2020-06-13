@@ -35,9 +35,15 @@ public class ReservationEndpoint {
     @POST
     @Consumes(APPLICATION_JSON)
     public Response createReservation(Reservation reservation, @Context UriInfo uriInfo) {
-        reservation = reservationRepository.create(reservation);
-        URI createdURI = uriInfo.getBaseUriBuilder().path(reservation.getId().toString()).build();
-        return Response.created(createdURI).build();
+        try{
+            reservation = reservationRepository.create(reservation);
+            URI createdURI = uriInfo.getBaseUriBuilder().path(reservation.getId().toString()).build();
+            return Response.created(createdURI).build();
+        } catch (Exception e){
+            e.getMessage();
+            //TODO change it to more specified error
+            return Response.serverError().build();
+        }
     }
 
     @DELETE
