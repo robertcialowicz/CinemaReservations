@@ -1,11 +1,8 @@
 package CinemaReservations;
 
 import CinemaReservations.model.Film;
-import CinemaReservations.model.MovieShow;
 import CinemaReservations.model.Reservation;
-import CinemaReservations.model.TheatreHall;
 import CinemaReservations.repository.FilmRepository;
-import CinemaReservations.repository.ReservationRepository;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
@@ -52,8 +49,6 @@ public class FilmRepositoryTest {
         return ShrinkWrap.create(JavaArchive.class)
                 .addClass(FilmRepository.class)
                 .addClass(Film.class)
-                .addClass(MovieShow.class)
-                .addClass(TheatreHall.class)
                 .addClass(Reservation.class)
                 .addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml")
                 .addAsManifestResource("META-INF/test-persistence.xml", "persistence.xml");

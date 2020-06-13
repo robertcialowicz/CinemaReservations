@@ -1,6 +1,8 @@
 package CinemaReservations.repository;
 
 import CinemaReservations.model.MovieShow;
+import CinemaReservations.model.Reservation;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
@@ -30,6 +32,10 @@ public class MovieShowRepository {
 
     @Transactional(REQUIRED)
     public void delete(Long id){
+        TypedQuery<Reservation> query = em.createQuery("SELECT FROM Reservation WHERE movieshow = " + id , Reservation.class);
+        for(Reservation reservation : query.getResultList()){
+            em.remove(em.getReference(Reservation.class, reservation.getId()));
+        }
         em.remove(em.getReference(MovieShow.class, id));
     }
 

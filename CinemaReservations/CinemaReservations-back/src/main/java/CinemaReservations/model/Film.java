@@ -8,8 +8,6 @@ import java.util.Random;
 @Entity(name = "Film")
 public class Film {
 
-    //TODO Validation of data provided in constructors
-
     @Id
     @GeneratedValue
     @Column(name = "FILM_ID")
@@ -21,6 +19,24 @@ public class Film {
     @Column(name = "DESCRIPTION", length = 1000)
     private String description;
 
+    @Column(name = "TYPE", length = 1000)
+    private String type;
+
+    @Column(name = "DIRECTOR", length = 1000)
+    private String director;
+
+    @Column(name = "SCENARIO", length = 1000)
+    private String scenario;
+
+    @Column(name = "RELEASE_DATE", length = 1000)
+    private String releaseDate;
+
+    @Column(name = "CAST", length = 1000)
+    private String cast;
+
+    @Column(name = "AGE_LIMIT", length = 1000)
+    private Long ageLimit;
+
     @OneToMany(mappedBy = "film")
     private List<MovieShow> movieShows = new ArrayList<>();
 
@@ -28,7 +44,6 @@ public class Film {
     }
 
     public Film(String title, String description){
-        //this.id = new Random(1234).nextLong();
         this.title = title;
         this.description = description;
     }
@@ -38,39 +53,54 @@ public class Film {
         return "Film{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
-                ", Description='" + description + '\'' +
+                ", description='" + description + '\'' +
+                ", type='" + type + '\'' +
+                ", director='" + director + '\'' +
+                ", scenario='" + scenario + '\'' +
+                ", releaseDate='" + releaseDate + '\'' +
+                ", cast='" + cast + '\'' +
+                ", ageLimit=" + ageLimit +
+                ", movieShows=" + movieShows +
                 '}';
     }
 
-    public Long getId() {
-        return id;
-    }
+    public Long getId() { return id; }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    public void setId(Long id) { this.id = id; }
 
-    public String getTitle() {
-        return title;
-    }
+    public String getTitle() { return title; }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
+    public void setTitle(String title) { this.title = title; }
 
-    public String getDescription() {
-        return description;
-    }
+    public String getDescription() { return description; }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+    public void setDescription(String description) { this.description = description; }
 
-    public List<MovieShow> getMovieShows() {
-        return movieShows;
-    }
+    public String getType() { return type; }
 
-    public void setMovieShows(List<MovieShow> movieShows) {
-        this.movieShows = movieShows;
-    }
+    public void setType(String type) { this.type = type; }
+
+    public String getDirector() { return director; }
+
+    public void setDirector(String director) { this.director = director; }
+
+    public String getScenario() { return scenario; }
+
+    public void setScenario(String scenario) { this.scenario = scenario; }
+
+    public String getReleaseDate() { return releaseDate; }
+
+    public void setReleaseDate(String releaseDate) { this.releaseDate = releaseDate; }
+
+    public String getCast() { return cast; }
+
+    public void setCast(String cast) { this.cast = cast; }
+
+    public Long getAgeLimit() { return ageLimit; }
+
+    public void setAgeLimit(Long ageLimit) { this.ageLimit = ageLimit; }
+
+    public List<MovieShow> getMovieShows() { return movieShows; }
+
+    public void setMovieShows(List<MovieShow> movieShows) { this.movieShows = movieShows; }
 }

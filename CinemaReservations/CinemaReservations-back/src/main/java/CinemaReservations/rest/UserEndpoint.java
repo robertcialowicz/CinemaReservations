@@ -21,7 +21,7 @@ public class UserEndpoint {
     private UserRepository userRepository;
 
     @GET
-    @Auth
+    //@Auth
     @Produces(APPLICATION_JSON)
     public Response getUsers() {
         List<User> users = userRepository.findAll();

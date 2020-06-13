@@ -1,6 +1,8 @@
 package CinemaReservations.repository;
 
 import CinemaReservations.model.Film;
+import CinemaReservations.model.MovieShow;
+import CinemaReservations.model.Reservation;
 
 import javax.persistence.*;
 import javax.transaction.Transactional;
@@ -11,7 +13,7 @@ import static javax.transaction.Transactional.TxType.SUPPORTS;
 @Transactional(SUPPORTS)
 public class FilmRepository {
 
-   @PersistenceContext(unitName = "CinemaReservationsPU")
+    @PersistenceContext(unitName = "CinemaReservationsPU")
     private EntityManager em;
 
     public FilmRepository() {
@@ -29,6 +31,10 @@ public class FilmRepository {
 
     @Transactional(REQUIRED)
     public void delete(Long id){
+        TypedQuery<MovieShow> query = em.createQuery("SELECT FROM MovieShow WHERE film = " + id , MovieShow.class);
+        for(MovieShow movieShow : query.getResultList()){
+            em.remove(em.getReference(MovieShow.class, movieShow.getId()));
+        }
         em.remove(em.getReference(Film.class, id));
     }
 

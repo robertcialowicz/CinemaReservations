@@ -33,7 +33,7 @@ public class FilmEndpoint {
     @GET
     @Produces(APPLICATION_JSON)
     @Path("/{id : \\d+}")
-        public Response getFilm(@PathParam("id") @Min(1) Long id) {
+    public Response getFilm(@PathParam("id") @Min(1) Long id) {
         Film film = filmRepository.find(id);
         if (film==null)
             return Response.noContent().build();

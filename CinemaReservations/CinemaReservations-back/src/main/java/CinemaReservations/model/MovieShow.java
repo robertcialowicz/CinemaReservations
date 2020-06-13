@@ -9,25 +9,23 @@ import java.util.List;
 @Entity(name = "MovieShow")
 public class MovieShow {
 
-    //TODO Validation of data provided in constructors
-
     @Id
     @GeneratedValue
     @Column(name = "MOVIESHOW_ID")
     private Long id;
 
-    @Column(name = "DATE", length = 1005)
+    @Column(name = "DATE", length = 1000)
     private String date;
 
     @Column(name = "TIME", length = 1000)
     private String time;
 
+    @Column(name = "SEATS_RESERVATION_STATUS", length = 1000)
+    private String seatsReservationStatus;
+
     @ManyToOne
     @JoinColumn(name = "FILM_ID")
     private Film film;
-
-    @OneToOne(mappedBy = "movieShow")
-    private TheatreHall theatreHall;
 
     @OneToMany(mappedBy = "movieShow")
     private List<Reservation> reservations = new ArrayList<>();
@@ -41,8 +39,8 @@ public class MovieShow {
                 "id=" + id +
                 ", date='" + date + '\'' +
                 ", time='" + time + '\'' +
+                ", seatsReservationStatus='" + seatsReservationStatus + '\'' +
                 ", film=" + film +
-                ", theatreHall=" + theatreHall +
                 ", reservations=" + reservations +
                 '}';
     }
@@ -71,20 +69,20 @@ public class MovieShow {
         this.time = time;
     }
 
+    public String getSeatsReservationStatus() {
+        return seatsReservationStatus;
+    }
+
+    public void setSeatsReservationStatus(String seatsReservationStatus) {
+        this.seatsReservationStatus = seatsReservationStatus;
+    }
+
     public Film getFilm() {
         return film;
     }
 
     public void setFilm(Film film) {
         this.film = film;
-    }
-
-    public TheatreHall getTheatreHall() {
-        return theatreHall;
-    }
-
-    public void setTheatreHall(TheatreHall theatreHall) {
-        this.theatreHall = theatreHall;
     }
 
     public List<Reservation> getReservations() {

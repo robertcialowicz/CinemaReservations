@@ -1,12 +1,22 @@
-INSERT INTO FILM (FILM_ID, DESCRIPTION, TITLE) VALUES (101,'ve101ry short','mov101ie');
-INSERT INTO FILM (FILM_ID, DESCRIPTION, TITLE) VALUES (102,'very102 short','mo102vie');
-INSERT INTO FILM (FILM_ID, DESCRIPTION, TITLE) VALUES (103,'very 103short','mo103vie');
-INSERT INTO FILM (FILM_ID, DESCRIPTION, TITLE) VALUES (104,'very sh104ort','mov104ie');
-INSERT INTO FILM (FILM_ID, DESCRIPTION, TITLE) VALUES (105,'very sh105ort','mo105vie');
-INSERT INTO FILM (FILM_ID, DESCRIPTION, TITLE) VALUES (106,'ve106ry short','mo106vie');
-INSERT INTO FILM (FILM_ID, DESCRIPTION, TITLE) VALUES (107,'v107ery short','mo107vie');
-INSERT INTO FILM (FILM_ID, DESCRIPTION, TITLE) VALUES (108,'very 108short','m108ovie');
-INSERT INTO FILM (FILM_ID, DESCRIPTION, TITLE) VALUES (109,'ver109y short','mov109ie');
-INSERT INTO FILM (FILM_ID, DESCRIPTION, TITLE) VALUES (110,'ver110y short','mo110vie');
-INSERT INTO FILM (FILM_ID, DESCRIPTION, TITLE) VALUES (111,'very s111hort','mov111ie');
-INSERT INTO FILM (FILM_ID, DESCRIPTION, TITLE) VALUES (112,'very sho112rt','mo112vie');
+INSERT INTO USER (ID, USERNAME, PASSWORD, REGISTRATIONDATE) VALUES (100, '', '', null);
+
+INSERT INTO FILM (FILM_ID, TITLE, DESCRIPTION, TYPE, DIRECTOR, SCENARIO, RELEASE_DATE, CAST, AGE_LIMIT) VALUES (101,'Shrek','A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go on a quest and rescue a princess for the lord in order to get his land back.','Animation, Adventure, Comedy','Andrew Adamson, Vicky Jenson','William Steig, Ted Elliot','2001','Mike Myers, Eddie Murphy, Cameron Diaz',7);
+INSERT INTO FILM (FILM_ID, TITLE, DESCRIPTION, TYPE, DIRECTOR, SCENARIO, RELEASE_DATE, CAST, AGE_LIMIT) VALUES (102,'Once upon a time... in Hollywood','A faded television actor and his stunt double strive to achieve fame and success in the film industry during the final years of Hollywood''s Golden Age in 1969 Los Angeles.','Comedy, Drama','Quentin Tarantino','Quentin Tarantino','2019','Leonardo DiCaprio, Brad Pitt, Margot Robbie',15);
+INSERT INTO FILM (FILM_ID, TITLE, DESCRIPTION, TYPE, DIRECTOR, SCENARIO, RELEASE_DATE, CAST, AGE_LIMIT) VALUES (103,'Avatar','A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.','Action, Adventure, Fantasy','James Cameron','James Cameron','2009','Sam Worthington, Zoe Saldana, Sigourney Weaver',12);
+INSERT INTO FILM (FILM_ID, TITLE, DESCRIPTION, TYPE, DIRECTOR, SCENARIO, RELEASE_DATE, CAST, AGE_LIMIT) VALUES (104,'Ocean''s Eleven','Danny Ocean and his ten accomplices plan to rob three Las Vegas casinos simultaneously.','Crime, Thriller','Steven Soderbergh','George Clayton Johnson, Jack Golden Russell','2001','George Clooney, Brad Pitt, Julia Roberts', 13);
+INSERT INTO FILM (FILM_ID, TITLE, DESCRIPTION, TYPE, DIRECTOR, SCENARIO, RELEASE_DATE, CAST, AGE_LIMIT) VALUES (105,'Ice Age','Set during the Ice Age, a sabertooth tiger, a sloth, and a wooly mammoth find a lost human infant, and they try to return him to his tribe.','Animation, Adventure, Comedy','Chris Wedge, Carlos Saldanha','Michael J. Wilson, Michael Berg','2002','Denis Leary, John Leguizamo, Ray Romano', 6);
+INSERT INTO FILM (FILM_ID, TITLE, DESCRIPTION, TYPE, DIRECTOR, SCENARIO, RELEASE_DATE, CAST, AGE_LIMIT) VALUES (106,'The Martian','An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive.','Adventure, Drama, Sci-Fi','Ridley Scott','Drew Goddard, Andy Weir','2012','Matt Damon, Jessica Chastain, Kristen Wiig', 12);
+INSERT INTO FILM (FILM_ID, TITLE, DESCRIPTION, TYPE, DIRECTOR, SCENARIO, RELEASE_DATE, CAST, AGE_LIMIT) VALUES (107,'The Dressmaker','A glamorous woman returns to her small town in rural Australia. With her sewing machine and haute couture style, she transforms the women and exacts sweet revenge on those who did her wrong.','Comedy, Drama','Jocelyn Moorhouse','Rosalie Ham, Jocelyn Moorhouse','2001','Kate Winslet, Judy Davis, Liam Hemsworth', 18);
+INSERT INTO FILM (FILM_ID, TITLE, DESCRIPTION, TYPE, DIRECTOR, SCENARIO, RELEASE_DATE, CAST, AGE_LIMIT) VALUES (108,'The Incredibles','A family of undercover superheroes, while trying to live the quiet suburban life, are forced into action to save the world.','Animation, Action, Adventure','Brad Bird','Brad Bird','2004','Craig T. Nelson, Samuel L. Jackson, Holly Hunter ', 6);
+INSERT INTO FILM (FILM_ID, TITLE, DESCRIPTION, TYPE, DIRECTOR, SCENARIO, RELEASE_DATE, CAST, AGE_LIMIT) VALUES (109,'Mirrors','An ex-cop and his family are the target of an evil force that is using mirrors as a gateway into their home.','Horror','Alexandre Aja','Alexandre Aja, Grégory Levasseur','2008','Kiefer Sutherland, Paula Patton, Amy Smart ', 18);
+INSERT INTO FILM (FILM_ID, TITLE, DESCRIPTION, TYPE, DIRECTOR, SCENARIO, RELEASE_DATE, CAST, AGE_LIMIT) VALUES (110,'Baby Driver','After being coerced into working for a crime boss, a young getaway driver finds himself taking part in a heist doomed to fail.','Action, Drama','Edgar Wright','Edgar Wright','2017','Ansel Elgort, Jon Bernthal, Jon Hamm', 18);
+INSERT INTO FILM (FILM_ID, TITLE, DESCRIPTION, TYPE, DIRECTOR, SCENARIO, RELEASE_DATE, CAST, AGE_LIMIT) VALUES (111,'Crazy, Stupid, Love.','A middle-aged husband''s life changes dramatically when his wife asks him for a divorce. He seeks to rediscover his manhood with the help of a newfound friend, Jacob, learning to pick up girls at bars.','Comedy, Drama, Romance','Glenn Ficarra, John Requa','Dan Fogelman','2011','Steve Carell, Ryan Gosling, Julianne Moore',13);
+INSERT INTO FILM (FILM_ID, TITLE, DESCRIPTION, TYPE, DIRECTOR, SCENARIO, RELEASE_DATE, CAST, AGE_LIMIT) VALUES (112,'Passengers','A spacecraft traveling to a distant colony planet and transporting thousands of people has a malfunction in its sleep chambers. As a result, two passengers are awakened 90 years early.','Drama, Romance, Sci-Fi','Morten Tyldum','Jon Spaihts','2016','Jennifer Lawrence, Chris Pratt, Michael Sheen ', 13);
+
+INSERT INTO MOVIE_SHOW (MOVIESHOW_ID, DATE, TIME, SEATS_RESERVATION_STATUS, FILM_ID, movieShow) VALUES (201, '2020-07-06', '12:45', 'A1,A2,A3,A10,A19,B2', 101, 301);
+INSERT INTO MOVIE_SHOW (MOVIESHOW_ID, DATE, TIME, SEATS_RESERVATION_STATUS, FILM_ID) VALUES (202, '2020-07-12', '13:00', 'A1,J19', 302);
+INSERT INTO MOVIE_SHOW (MOVIESHOW_ID, DATE, TIME, SEATS_RESERVATION_STATUS, FILM_ID) VALUES (203, '2020-07-13', '15:30', '', 303);
+
+INSERT INTO RESERVATIONS (RESERVATION_ID, NAME, SURNAME, EMAIL, BOOKEDSEATS, MOVIESHOW_ID) VALUES (301, 'ROB', 'SMIESZEK', 'robo@cop.pl', 'A10', 201);
+
+
