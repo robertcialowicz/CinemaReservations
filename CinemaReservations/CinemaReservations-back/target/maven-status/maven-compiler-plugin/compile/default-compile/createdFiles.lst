@@ -1,5 +1,4 @@
 CinemaReservations\model\Reservation.class
-CinemaReservations\utils\MovieTime.class
 CinemaReservations\repository\ReservationRepository.class
 CinemaReservations\model\Film.class
 CinemaReservations\model\MovieShow.class

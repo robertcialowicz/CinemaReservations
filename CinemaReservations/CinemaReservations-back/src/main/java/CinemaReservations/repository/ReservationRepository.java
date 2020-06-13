@@ -1,5 +1,6 @@
 package CinemaReservations.repository;
 
+import CinemaReservations.model.MovieShow;
 import CinemaReservations.model.Reservation;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -28,21 +29,25 @@ public class ReservationRepository {
 
     @Transactional(REQUIRED)
     public Reservation create(Reservation reservation) throws IllegalArgumentException {
-
+        //TODO rework with new utility class
         //get single seats as a list from whole String e.g. "A1,A2,A3" -> ["A1","A2","A3"]
         List<String> allReservedSeats = new ArrayList<String>();
         Pattern pattern = Pattern.compile("([A-J][0-9]{1,2})");
         Matcher matcher = pattern.matcher(reservation.getBookedSeats());
-        while(matcher.find()){
+        while(matcher.find()) {
             allReservedSeats.add(matcher.group());
         }
-
+        //TODO rework with new utility class
         //foreach reserved seat check if it is not already reserved } if not expand list of booked seats in given movieshow
         for(String toBeChecked : allReservedSeats){
             if(!reservation.getMovieShow().getSeatsReservationStatus().toLowerCase().contains(toBeChecked.toLowerCase())){
                 throw new IllegalArgumentException("Choosen seats are already reserved!");
             }
-            else reservation.getMovieShow().setSeatsReservationStatus((new StringBuilder()).append(reservation.getMovieShow().getSeatsReservationStatus()).append(reservation.getBookedSeats()).toString());
+            else reservation.getMovieShow().setSeatsReservationStatus((new StringBuilder())
+                    .append(reservation.getMovieShow().getSeatsReservationStatus())
+                    .append(",")
+                    .append(reservation.getBookedSeats())
+                    .toString());
         }
 
         em.persist(reservation);
@@ -51,6 +56,12 @@ public class ReservationRepository {
 
     @Transactional(REQUIRED)
     public void delete(Long id){
+        String newReservedSeatsString;
+        newReservedSeatsString = em.getReference(Reservation.class, id).getMovieShow().getSeatsReservationStatus();
+        //newReservedSeatsString.remove(em.getReference(Reservation.class, id).getBookedSeats());
+        //em.getReference(Reservation.class, id).getMovieShow().setSeatsReservationStatus(newReservedSeatsString);
+        //TODO rework with new utility class
+        em.persist(em.getReference(Reservation.class, id).getMovieShow());
         em.remove(em.getReference(Reservation.class, id));
     }
 
