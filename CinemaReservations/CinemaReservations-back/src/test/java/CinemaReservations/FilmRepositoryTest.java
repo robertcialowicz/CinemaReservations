@@ -39,9 +39,6 @@ public class FilmRepositoryTest {
         assertEquals("Avatar",filmFound.getTitle());
 
         Assert.assertEquals(Long.valueOf(1), filmRepository.countAll());
-
-        //TODO add some more tests to be sure every element in DB is working at its full path -> create -> find -> edit -> delete
-        //TODO same test for another object i.e. Reservation, MovieShow, TheatreHall
     }
 
     @Deployment

@@ -41,7 +41,6 @@ public class ReservationEndpoint {
             return Response.created(createdURI).build();
         } catch (Exception e){
             e.getMessage();
-            //TODO change it to more specified error
             return Response.serverError().build();
         }
     }

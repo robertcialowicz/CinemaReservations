@@ -3,13 +3,6 @@ package CinemaReservations.model;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-import com.fasterxml.jackson.annotation.ObjectIdGenerators;
-import com.sun.xml.bind.v2.model.core.ID;
-import sun.rmi.runtime.Log;
-
-import java.util.Random;
 
 @Entity(name = "Film")
 public class Film {
@@ -115,4 +108,15 @@ public class Film {
     }
 
     public void setMovieShows(List<MovieShow> movieShows) { this.movieShows = movieShows; }
+
+    public void addToMovieshowsList(Long newMovieshowID){
+        EntityManager em = Persistence.createEntityManagerFactory("CinemaReservationsPU").createEntityManager();
+        movieShows.add(em.getReference(MovieShow.class, newMovieshowID));
+    }
+
+    public void removeFromMovieshowsList(Long newMovieshowID){
+        EntityManager em = Persistence.createEntityManagerFactory("CinemaReservationsPU").createEntityManager();
+        movieShows.remove(movieShows.indexOf(em.getReference(MovieShow.class, newMovieshowID)));
+    }
+
 }

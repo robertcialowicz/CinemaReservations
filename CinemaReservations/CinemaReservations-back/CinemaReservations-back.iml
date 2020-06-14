@@ -16,7 +16,7 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <datasource-mapping>
-          <factory-entry name="CinemaReservationsPU" value="8ef679c5-a2ea-4183-ba41-b603e14e9ca3" />
+          <factory-entry name="CinemaReservationsPU" value="90f9e8a4-7a0e-4e0f-ace9-7d82ee41fac9" />
         </datasource-mapping>
         <naming-strategy-map />
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />
@@ -206,6 +206,5 @@
     <orderEntry type="library" name="Maven: org.apache.geronimo.specs:geronimo-jpa_2.2_spec:1.0" level="project" />
     <orderEntry type="library" name="Maven: javax.transaction:jta:1.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-compress:1.8.1" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.10.4" level="project" />
   </component>
 </module>

@@ -1,8 +1,4 @@
 package CinemaReservations.model;
-
-import CinemaReservations.utils.MovieTime;
-import com.fasterxml.jackson.annotation.*;
-
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +20,6 @@ public class MovieShow {
     @Column(name = "SEATS_RESERVATION_STATUS", length = 1000)
     private String seatsReservationStatus;
 
-    @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "FILM_ID")
     private Film film;
@@ -81,8 +76,9 @@ public class MovieShow {
 
     public Long getFilm() { return film.getId(); }
 
-    public void setFilm(Film film) {
-        this.film = film;
+    public void setFilm(Long film) {
+        EntityManager em = Persistence.createEntityManagerFactory("CinemaReservationsPU").createEntityManager();
+        this.film = em.getReference(Film.class, film);
     }
 
     public List<Long> getReservations() {
@@ -95,5 +91,15 @@ public class MovieShow {
 
     public void setReservations(List<Reservation> reservations) {
         this.reservations = reservations;
+    }
+
+    public void addToReservationList(Long newReservationID){
+        EntityManager em = Persistence.createEntityManagerFactory("CinemaReservationsPU").createEntityManager();
+        reservations.add(em.getReference(Reservation.class, newReservationID));
+    }
+
+    public void removeFromReservationList(Long newReservationID){
+        EntityManager em = Persistence.createEntityManagerFactory("CinemaReservationsPU").createEntityManager();
+        reservations.remove(reservations.indexOf(em.getReference(Reservation.class, newReservationID)));
     }
 }

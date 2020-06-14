@@ -1,5 +1,7 @@
 package CinemaReservations.repository;
 
+import CinemaReservations.model.Film;
+import CinemaReservations.model.MovieShow;
 import CinemaReservations.model.Reservation;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -29,6 +31,7 @@ public class ReservationRepository {
     @Transactional(REQUIRED)
     public Reservation create(Reservation reservation) throws IllegalArgumentException {
 
+        //TODO check if free seats are for sure available
         //get single seats as a list from whole String e.g. "A1,A2,A3" -> ["A1","A2","A3"]
         List<String> allReservedSeats = new ArrayList<String>();
         Pattern pattern = Pattern.compile("([A-J][0-9]{1,2})");
@@ -36,7 +39,7 @@ public class ReservationRepository {
         while(matcher.find()){
             allReservedSeats.add(matcher.group());
         }
-
+        //TODO update reserved seats in parent movieshow
         //foreach reserved seat check if it is not already reserved } if not expand list of booked seats in given movieshow
         //for(String toBeChecked : allReservedSeats){
         //    if(!reservation.getMovieShow().getSeatsReservationStatus().toLowerCase().contains(toBeChecked.toLowerCase())){
@@ -45,12 +48,18 @@ public class ReservationRepository {
          //   else reservation.getMovieShow().setSeatsReservationStatus((new StringBuilder()).append(reservation.getMovieShow().getSeatsReservationStatus()).append(reservation.getBookedSeats()).toString());
         //}
 
+        //update field in DB and parent movieshow entity
         em.persist(reservation);
+        em.getReference(MovieShow.class, reservation.getMovieShow()).addToReservationList(reservation.getId());
         return reservation;
     }
 
     @Transactional(REQUIRED)
     public void delete(Long id){
+        //TODO update reserved seats in parent movieshow
+
+        //update field in DB and parent movieshow entity
+        em.getReference(MovieShow.class, em.getReference(Reservation.class, id).getMovieShow()).removeFromReservationList(id);
         em.remove(em.getReference(Reservation.class, id));
     }
 

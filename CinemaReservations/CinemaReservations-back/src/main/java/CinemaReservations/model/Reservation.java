@@ -1,10 +1,4 @@
 package CinemaReservations.model;
-
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.ObjectIdGenerators;
-
 import javax.persistence.*;
 
 @Entity
@@ -27,7 +21,6 @@ public class Reservation {
     @Column(name = "BOOKEDSEATS")
     private String bookedSeats;
 
-    @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "MOVIESHOW_ID")
     private MovieShow movieShow;
@@ -69,5 +62,8 @@ public class Reservation {
 
     public Long getMovieShow() { return movieShow.getId(); }
 
-    public void setMovieShow(MovieShow movieShow) { this.movieShow = movieShow; }
+    public void setMovieShow(Long movieShow) {
+        EntityManager em = Persistence.createEntityManagerFactory("CinemaReservationsPU").createEntityManager();
+        this.movieShow = em.getReference(MovieShow.class, movieShow);
+    }
 }
