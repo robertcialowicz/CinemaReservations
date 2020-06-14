@@ -6,6 +6,7 @@ D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\Ci
 D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\CinemaReservations\CinemaReservations-back\src\main\java\CinemaReservations\repository\MovieShowRepository.java
 D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\CinemaReservations\CinemaReservations-back\src\main\java\CinemaReservations\repository\ReservationRepository.java
 D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\CinemaReservations\CinemaReservations-back\src\main\java\CinemaReservations\model\Film.java
+D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\CinemaReservations\CinemaReservations-back\src\main\java\CinemaReservations\utils\ReservedSeatStatusParser.java
 D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\CinemaReservations\CinemaReservations-back\src\main\java\CinemaReservations\rest\auth\Auth.java
 D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\CinemaReservations\CinemaReservations-back\src\main\java\CinemaReservations\rest\auth\AuthInterceptor.java
 D:\40_studia\informatyka\semestr_6\technologie_obiektowe_2\CinemaReservations\CinemaReservations\CinemaReservations-back\src\main\java\CinemaReservations\rest\data\UserDTO.java

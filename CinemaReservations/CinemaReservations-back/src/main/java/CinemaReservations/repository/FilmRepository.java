@@ -31,7 +31,8 @@ public class FilmRepository {
 
     @Transactional(REQUIRED)
     public void delete(Long id){
-        TypedQuery<MovieShow> query = em.createQuery("SELECT FROM MovieShow WHERE film = " + id , MovieShow.class);
+        TypedQuery<MovieShow> query = em.createQuery("SELECT b FROM MovieShow b WHERE b.film =:temp", MovieShow.class);
+        query.setParameter("temp",em.getReference(Film.class,id));
         for(MovieShow movieShow : query.getResultList()){
             em.remove(em.getReference(MovieShow.class, movieShow.getId()));
         }
