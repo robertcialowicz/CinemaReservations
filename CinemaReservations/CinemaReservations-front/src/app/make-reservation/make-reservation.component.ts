@@ -19,17 +19,19 @@ export class MakeReservationComponent implements OnInit {
   numberOfColsRight = Array<any>(10).fill(10).map((x, i) => i + 10 + 1);
   seatsNumberToPick = 0;
   sumamry: any;
-
+  films: any
   event: any;
   originalEvent: any
 
   constructor(private formBuilder: FormBuilder, private route: ActivatedRoute, private apiService: ApiService, private router: Router) {}
 
   ngOnInit(): void {
+    this.films = this.route.snapshot.data['films'];
     this.route.queryParams.subscribe(params => {
       this.apiService.getShow(params['eventId']).subscribe((res: any) => {
         this.originalEvent = { ...res};
         res.date = moment(res.date, "x").format("LLLL");
+        res.film = this.films.find(el => el.id == res.film )
         this.event = res;
       });
     })
@@ -50,6 +52,7 @@ export class MakeReservationComponent implements OnInit {
   toggggleSelection(id: any) {
     const selector = '#' + id;
     const seat = document.querySelector(selector);
+    if(seat.classList.contains('disabled')) return;
     if(this.seatsNumberToPick) {
       seat.classList.contains('selected') ? this.seatsNumberToPick += 1 : this.seatsNumberToPick -= 1;
       seat.classList.toggle('selected');
@@ -62,9 +65,15 @@ export class MakeReservationComponent implements OnInit {
   }
 
   setSeatsNumberToPick() {
-    const selectedSeats = document.querySelectorAll('div.selected[id^=seat]').forEach(el => {
-      el.classList.toggle('selected');
-    })
+
+  document.querySelectorAll('div.selected[id^=seat]').forEach(el => {
+    el.classList.toggle('selected');
+  })
+
+  this.event.seatsReservationStatus.split(',').forEach(seat => {
+    seat = seat.trim();
+    if(seat !== '') document.querySelector('#' + seat).classList.add('disabled');
+  })
     this.seatsNumberToPick = this.firstFormGroup.controls.firstCtrl.value;
   }
 
@@ -77,7 +86,11 @@ export class MakeReservationComponent implements OnInit {
   }
 
   createSummary() {
-    this.sumamry = Object.assign({}, this.secondFormGroup.value, this.thirdFormGroup.value, {movieshow_id: this.originalEvent})
+    this.sumamry = Object.assign({}, this.secondFormGroup.value, this.thirdFormGroup.value, {movieShow: this.originalEvent.id})
+    console.log(this.secondFormGroup.value)
+    console.log(this.thirdFormGroup.value)
+    console.log(this.sumamry)
+
   }
 
   navigateToPayment() {

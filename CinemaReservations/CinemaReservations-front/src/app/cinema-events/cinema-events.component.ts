@@ -66,7 +66,7 @@ export class CinemaEventsComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     this.shows = this.route.snapshot.data['shows'];
     this.films = this.route.snapshot.data['films'];
-    this.halls = this.route.snapshot.data['halls'];
+    this.halls = [{id: 0}];
     this.activeHall = this.halls[0].id;
   }
 
@@ -117,11 +117,12 @@ export class CinemaEventsComponent implements OnInit, AfterViewInit {
          const newShow = {
            date: moment(result.startDate).valueOf().toString(),
            time: result.duration.toString(),
-           film: this.films.filter(film => film.id == result.fimId)[0],
+           film: this.films.filter(film => film.id == result.fimId)[0].id,
            theatreHall: {
              id: this.activeHall
            }
          }
+
          this.apiService.postShows(newShow).subscribe(resp => {
            this.populateEvents()
          });
@@ -143,10 +144,10 @@ export class CinemaEventsComponent implements OnInit, AfterViewInit {
 
       if(shows) {
         shows
-          .filter(el => { return el.theatreHall.id == this.activeHall})
+          // .filter(el => { return el.theatreHall.id == this.activeHall})
           .forEach(el => {
             const title = this.films.filter(film => {
-              return el.film.id == film.id;
+              return el.film == film.id;
             })[0].title
             const newEvent = {
               title: title,

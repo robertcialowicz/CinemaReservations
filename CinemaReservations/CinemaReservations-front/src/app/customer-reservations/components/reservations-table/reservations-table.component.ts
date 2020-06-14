@@ -19,7 +19,7 @@ export class ReservationsTableComponent implements OnInit, AfterViewInit {
   dataSource: DataTableDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['ReservationNumber', 'Film', 'Date', 'Hall', 'Email', 'Seats'];
+  displayedColumns = ['ReservationNumber', 'Film', 'Date', 'Email', 'Seats'];
 
   constructor(private route: ActivatedRoute, private changeDetectorRefs: ChangeDetectorRef) {}
 

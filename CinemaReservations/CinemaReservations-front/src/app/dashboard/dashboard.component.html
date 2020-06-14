@@ -1,13 +1,13 @@
 <!-- Angular material cards -->
 <div class="productCards">
   <mat-grid-list cols="4" rowHeight="200px">
-    <mat-grid-tile [colspan]="3" [rowspan]="1">There should be charts
+    <mat-grid-tile [colspan]="3" [rowspan]="1">Reservations: <span class="number">{{reservationsCount}}</span>
     </mat-grid-tile>
-    <mat-grid-tile [colspan]="1" [rowspan]="2">And statistics!
+    <mat-grid-tile [colspan]="1" [rowspan]="2">
     </mat-grid-tile>
-    <mat-grid-tile [colspan]="1" [rowspan]="1">But in future
+    <mat-grid-tile [colspan]="1" [rowspan]="1">Films: <span class="number">{{filmsCount}}</span>
     </mat-grid-tile>
-    <mat-grid-tile [colspan]="2" [rowspan]="1">Maybe...
+    <mat-grid-tile [colspan]="2" [rowspan]="1">Movie shows: <span class="number">{{showsCount}}</span>
     </mat-grid-tile>
   </mat-grid-list>
 </div>

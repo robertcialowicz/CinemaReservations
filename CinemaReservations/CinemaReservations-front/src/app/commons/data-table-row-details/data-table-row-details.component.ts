@@ -32,7 +32,13 @@ export class DataTableRowDetailsComponent implements OnInit, AfterViewInit, OnCh
     this.showItemDetails = this.formBuilder.group({
       id: [null],
       title: ['',  Validators.required],
-      description: ['']
+      description: [''],
+      type: [''],
+      director: [''],
+      scenario: [''],
+      releaseDate: [''],
+      cast: this.formBuilder.array([]),
+      ageLimit: ['']
     });
   }
 
@@ -49,7 +55,13 @@ export class DataTableRowDetailsComponent implements OnInit, AfterViewInit, OnCh
       this.show = {
         id: null,
         title: '',
-        description: ''
+        description: '',
+        type: '',
+        director: '',
+        scenario: '',
+        releaseDate: null,
+        cast: [],
+        ageLimit: null,
       };
       return this.switchToModeCreate();
 
@@ -63,7 +75,7 @@ export class DataTableRowDetailsComponent implements OnInit, AfterViewInit, OnCh
     //
     // Add name
     if ((value || '').trim()) {
-      (this.showItemDetails.get('generalData.cast') as FormArray).push(this.formBuilder.group({person: value}));
+      (this.showItemDetails.get('cast') as FormArray).push(this.formBuilder.group({person: value}));
     }
     // Reset the input value
     if (input) {
@@ -72,7 +84,7 @@ export class DataTableRowDetailsComponent implements OnInit, AfterViewInit, OnCh
   }
 
   remove(index) {
-    (this.showItemDetails.get('generalData.cast') as FormArray).removeAt(index);
+    (this.showItemDetails.get('cast') as FormArray).removeAt(index);
   }
 
   addEvent(type: string, event: MatDatepickerInputEvent<Date>) {
@@ -94,21 +106,35 @@ export class DataTableRowDetailsComponent implements OnInit, AfterViewInit, OnCh
     this.showItemDetails.patchValue({
       id: this.show.id,
       title: this.show.title,
-      description: this.show.description
+      description: this.show.description,
+      type: this.show.type,
+      director: this.show.director,
+      scenario: this.show.scenario,
+      releaseDate: this.show.releaseDate,
+      ageLimit: this.show.ageLimit
     });
 
-    // const formArray = (this.showItemDetails.get('generalData.cast') as FormArray);
-    // while (formArray.length !== 0) {
-    //   formArray.removeAt(0);
-    // }
-    // this.show.generalData.cast.forEach(item => {
+    const formArray = (this.showItemDetails.get('cast') as FormArray);
+    while (formArray.length !== 0) {
+      formArray.removeAt(0);
+    }
+    // var cast = this.show.cast.split(",").map(function(item) {
+    //   return item.trim();
+    // });
+    // console.log(cast)
+    //
+    // this.show.cast.forEach(item => {
     //   formArray.push(this.formBuilder.group({person: item}));
     // });
   }
 
   saveChanges() {
-    Object.assign(this.showItemDetails.value, {movieShows: []})
-    this.apiService.postFilms(this.showItemDetails.value).subscribe(rep => {
+    let showItemDetails = this.showItemDetails.value;
+    showItemDetails.cast = showItemDetails.cast.map(el => {
+      return el.person
+    }).join(', ')
+    // Object.assign(showItemDetails, {movieShows: []})
+    this.apiService.postFilms(showItemDetails).subscribe(rep => {
       this.apiService.getFilms().subscribe((rep1: any) => {
         this.showUpdated.emit(true);
         this.show =  rep1.find(el => {

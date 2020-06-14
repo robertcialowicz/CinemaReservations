@@ -4,6 +4,7 @@ import { MatSort } from '@angular/material/sort';
 import { map } from 'rxjs/operators';
 import { Observable, of as observableOf, merge } from 'rxjs';
 import {ActivatedRoute} from '@angular/router';
+import * as moment from 'moment';
 
 /**
  * Data source for the DataTable view. This class should
@@ -12,12 +13,26 @@ import {ActivatedRoute} from '@angular/router';
  */
 export class DataTableDataSource extends DataSource<any> {
   data: any[];
+  films: any;
+  shows: any;
   paginator: MatPaginator;
   sort: MatSort;
 
   constructor(private route: ActivatedRoute) {
     super();
-    this.data = this.route.snapshot.data['reservations'];
+
+    this.shows = this.route.snapshot.data['shows'];
+    this.films = this.route.snapshot.data['films'];
+    const data = this.route.snapshot.data['reservations'];
+    data.map(el => {
+      el.extendedMovieShow = this.shows.find(show => show.id == el.movieShow)
+      el.extendedFilm = this.films.find(film => film.id == this.shows.find(show => show.id == el.movieShow).film);
+    })
+
+    data.map(el => {
+      el.extendedMovieShow.date = moment(el.extendedMovieShow.date, "x").format("LLLL")
+    })
+    this.data = data;
   }
 
   /**

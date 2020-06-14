@@ -53,23 +53,6 @@ export class RepertoireResolversService {
 @Injectable({
   providedIn: 'root'
 })
-export class SelectedEventResolverService {
-
-  constructor(private apiService: ApiService) { }
-
-  resolve(
-    route: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot
-  ): Observable<any>|Promise<any>|any {
-      this.apiService.getEvent(route.queryParams['eventId']).subscribe(res => {
-      return res;
-    });
-  }
-}
-
-@Injectable({
-  providedIn: 'root'
-})
 export class ReservationsResolverService {
 
   constructor(private apiService: ApiService) { }
@@ -85,7 +68,7 @@ export class ReservationsResolverService {
 @Injectable({
   providedIn: 'root'
 })
-export class HallsResolverService {
+export class FilmsCountService {
 
   constructor(private apiService: ApiService) { }
 
@@ -93,8 +76,39 @@ export class HallsResolverService {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): Observable<any>|Promise<any>|any {
-    return this.apiService.getHalls();
+    return this.apiService.getFilmsCount();
   }
 }
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ShowsCountService {
+
+  constructor(private apiService: ApiService) { }
+
+  resolve(
+    route: ActivatedRouteSnapshot,
+    state: RouterStateSnapshot
+  ): Observable<any>|Promise<any>|any {
+    return this.apiService.getShowsCount();
+  }
+}
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ReservationsCountService {
+
+  constructor(private apiService: ApiService) { }
+
+  resolve(
+    route: ActivatedRouteSnapshot,
+    state: RouterStateSnapshot
+  ): Observable<any>|Promise<any>|any {
+    return this.apiService.getReservationsCount();
+  }
+}
+
 
 

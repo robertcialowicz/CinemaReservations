@@ -44,6 +44,7 @@ export class ReservationsTableRowDetailsComponent implements OnInit, AfterViewIn
   }
 
   ngOnChanges(changes: SimpleChanges) {
+    console.log(this.show)
     if (Object.keys(changes.show.currentValue).length === 0) {
       this.show = {
         id: null,

@@ -8,7 +8,7 @@
     <strong>Hall</strong>
   </p>
   <mat-tab-group  (selectedTabChange)="setActiveHall($event)" >
-    <mat-tab *ngFor="let hall of halls" label="{{hall.id}}">
+    <mat-tab *ngFor="let hall of halls" label="Hall {{hall.id}}">
       <p>
         <strong>Graphic</strong>
       </p>

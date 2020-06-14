@@ -4,7 +4,12 @@ import {CinemaEventsComponent} from './cinema-events/cinema-events.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
 import {ShowsComponent} from './shows/shows.component';
 import {
-  FilmsResolversService, HallsResolverService, ReservationsResolverService, ShowsResolversService,
+  FilmsCountService,
+  FilmsResolversService,
+  ReservationsCountService,
+  ReservationsResolverService,
+  ShowsCountService,
+  ShowsResolversService,
 } from './services/resolvers/resolvers.service';
 import {AuthGuard} from './authentication/auth.guard';
 import {LoginComponent} from './authentication/login/login.component';
@@ -22,16 +27,16 @@ const routes: Routes = [
   { path: 'cinema-reservations', component: CinemaReservationsComponent,
     children: [
       { path: 'repertoire', component: RepertoireComponent, resolve: { shows: ShowsResolversService, films: FilmsResolversService } },
-      { path: 'make-reservation', component: MakeReservationComponent },
+      { path: 'make-reservation', component: MakeReservationComponent, resolve: { films: FilmsResolversService } },
       { path: '', pathMatch: 'full',  redirectTo: 'repertoire' },
     ]},
   { path: 'administrator-panel', component: NavigationComponent, canActivate: [AuthGuard],
     children: [
       { path: '', pathMatch: 'full',  redirectTo: 'dashboard' },
-      { path: 'cinema-events', component: CinemaEventsComponent, resolve: { shows: ShowsResolversService, films: FilmsResolversService, halls: HallsResolverService }},
-      { path: 'dashboard', component: DashboardComponent},
+      { path: 'cinema-events', component: CinemaEventsComponent, resolve: { shows: ShowsResolversService, films: FilmsResolversService }},
+      { path: 'dashboard', component: DashboardComponent, resolve: {filmsCount: FilmsCountService, showsCount: ShowsCountService, reservationsCount: ReservationsCountService}},
       { path: 'shows', component: ShowsComponent, resolve: { films: FilmsResolversService } },
-      { path: 'customer-reservations', component: CustomerReservationsComponent,  resolve: { reservations: ReservationsResolverService } }
+      { path: 'customer-reservations', component: CustomerReservationsComponent,  resolve: { reservations: ReservationsResolverService, shows: ShowsResolversService, films: FilmsResolversService } }
 ]}
 ];
 

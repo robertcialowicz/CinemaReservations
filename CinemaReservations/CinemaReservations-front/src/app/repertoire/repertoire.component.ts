@@ -26,17 +26,20 @@ export class RepertoireComponent implements OnInit, AfterViewInit {
     if(this.shows) {
       this.shows.forEach(show => {
         show.date = (moment(show.date, "x").format("LLLL"))
-        this.films.map(film => {
-          if (film.id == show.film.id) {
-            film.movieShows.push(show)
-          }
-        })
       })
     }
-    this.films = this.films.filter(film => {
-      return film.movieShows.length > 0
+    this.films = this.films
+    .filter(film => {
+        return film.movieShows.length > 0
     })
 
+    this.films.forEach(film => {
+      film.movieShowProperties = [];
+      film.movieShows.map(show => {
+        const showProperties = this.shows.find(el => { return el.id == show })
+        film.movieShowProperties.push(showProperties)
+      })
+    })
     // this.repertoire = this.route.snapshot.data['repertoire'];
     //   this.apiService.getFilms().subscribe((resp: Array<any>) => {
     //   this.apiService.getShows().subscribe((resp1: Array<any>) => {

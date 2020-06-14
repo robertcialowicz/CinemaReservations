@@ -1,0 +1,10 @@
+@import "../../theme";
+::ng-deep .mat-grid-tile {
+  font-family: 'Maven Pro';
+  font-size: 30px;
+  color: white;
+  .number {
+    color: mat-color($my-accent, 900);
+    font-size: 45px;
+  }
+}

@@ -7,8 +7,32 @@
       <mat-card-subtitle>
         <table>
           <tr>
+            <td>Type:</td>
+            <td>{{show.type}}</td>
+          </tr>
+          <tr>
+            <td>Director:</td>
+            <td>{{show.director}}</td>
+          </tr>
+          <tr>
+            <td>Scenario:</td>
+            <td>{{show.scenario}}</td>
+          </tr>
+          <tr>
+            <td>Release date:</td>
+            <td>{{show.releaseDate}}</td>
+          </tr>
+          <tr>
+            <td>Cast:</td>
+            <td>{{show.cast}}</td>
+          </tr>
+          <tr>
             <td>Description:</td>
             <td>{{show.description}}</td>
+          </tr>
+          <tr>
+            <td>Age limit:</td>
+            <td>{{show.ageLimit}}</td>
           </tr>
         </table>
       </mat-card-subtitle>
@@ -31,6 +55,43 @@
       <mat-divider></mat-divider>
       <mat-card-content>
         <mat-card-subtitle>
+          <mat-form-field appearance="outline">
+            <mat-label>Type</mat-label>
+            <input matInput formControlName="type">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Director</mat-label>
+            <input matInput formControlName="director">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Scenario</mat-label>
+            <input matInput formControlName="scenario">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Release date:</mat-label>
+            <input matInput formControlName="releaseDate">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-chip-list #chipList formArrayName="cast">
+              <mat-chip *ngFor="let person of showItemDetails.get('cast')['controls']; let i=index;"
+                        [selectable]="selectable"
+                        [removable]="removable"
+                        (removed)="remove(i)">
+                {{ person['value'].person}}
+                <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+              </mat-chip>
+              <input placeholder="New cast member..."
+                     [matChipInputFor]="chipList"
+                     [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                     [matChipInputAddOnBlur]="addOnBlur"
+                     (matChipInputTokenEnd)="add($event)">
+            </mat-chip-list>
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Age limit:</mat-label>
+            <input  matInput type="number" formControlName="ageLimit">
+          </mat-form-field>
+
           <mat-form-field appearance="outline">
             <mat-label>Description</mat-label>
             <textarea  matInput formControlName="description"></textarea>

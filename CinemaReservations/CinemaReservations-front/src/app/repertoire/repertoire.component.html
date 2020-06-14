@@ -35,7 +35,7 @@
         <span>Reserve:</span>
         <mat-chip-list aria-label="Fish selection">
           <mat-chip
-            *ngFor="let screening of item.movieShows"
+            *ngFor="let screening of item.movieShowProperties"
             color="primary"
             matTooltip="Click to make reservation"
             (click)="makeReservation(screening.id)">{{screening.date}}
