@@ -6,12 +6,15 @@ import java.util.List;
 public class ReservedSeatStatusParser {
 
     public boolean areSeatsFree(String input, String toCheck){
-        List<String> toCheckSeats = Arrays.asList(toCheck.split(","));
+        List<String> toCheckAsList = Arrays.asList(toCheck.split(","));
+        List<String> inputAsList = Arrays.asList(input.split(","));
 
-        for(String toCheckSeatsSingle : toCheckSeats) {
-            if (!input.toLowerCase().contains(toCheckSeatsSingle.toLowerCase()))
-            {
-                return false;
+        for(String inputSingle : inputAsList) {
+            for(String toCheckSingle : toCheckAsList) {
+                if (inputSingle.equals(toCheckSingle))
+                {
+                    return false;
+                }
             }
         }
         return true;

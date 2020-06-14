@@ -33,7 +33,7 @@ public class ReservationRepository {
     public Reservation create(Reservation reservation) throws IllegalArgumentException {
         ReservedSeatStatusParser helper = new ReservedSeatStatusParser();
         //TODO check if free seats are for sure available
-        if(helper.areSeatsFree(em.getReference(MovieShow.class, reservation.getMovieShow()).getSeatsReservationStatus(),reservation.getBookedSeats()))
+        if(!helper.areSeatsFree(em.getReference(MovieShow.class, reservation.getMovieShow()).getSeatsReservationStatus(),reservation.getBookedSeats()))
             throw new IllegalArgumentException("Chosen seats are already occupied!");
 
         //TODO update reserved seats in parent movieshow
