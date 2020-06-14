@@ -19,8 +19,8 @@ public class Film {
     @Column(name = "DESCRIPTION", length = 1000)
     private String description;
 
-    @Column(name = "TYPE", length = 1000)
-    private String type;
+    @Column(name = "TYPEOFFILM", length = 1000)
+    private String TYPEOFFILM;
 
     @Column(name = "DIRECTOR", length = 1000)
     private String director;
@@ -31,8 +31,8 @@ public class Film {
     @Column(name = "RELEASE_DATE", length = 1000)
     private String releaseDate;
 
-    @Column(name = "CAST", length = 1000)
-    private String cast;
+    @Column(name = "CASTS", length = 1000)
+    private String casts;
 
     @Column(name = "AGE_LIMIT", length = 1000)
     private Long ageLimit;
@@ -54,11 +54,11 @@ public class Film {
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", description='" + description + '\'' +
-                ", type='" + type + '\'' +
+                ", type='" + TYPEOFFILM + '\'' +
                 ", director='" + director + '\'' +
                 ", scenario='" + scenario + '\'' +
                 ", releaseDate='" + releaseDate + '\'' +
-                ", cast='" + cast + '\'' +
+                ", cast='" + casts + '\'' +
                 ", ageLimit=" + ageLimit +
                 ", movieShows=" + movieShows +
                 '}';
@@ -76,9 +76,9 @@ public class Film {
 
     public void setDescription(String description) { this.description = description; }
 
-    public String getType() { return type; }
+    public String getType() { return TYPEOFFILM; }
 
-    public void setType(String type) { this.type = type; }
+    public void setType(String type) { this.TYPEOFFILM = type; }
 
     public String getDirector() { return director; }
 
@@ -92,9 +92,9 @@ public class Film {
 
     public void setReleaseDate(String releaseDate) { this.releaseDate = releaseDate; }
 
-    public String getCast() { return cast; }
+    public String getCast() { return casts; }
 
-    public void setCast(String cast) { this.cast = cast; }
+    public void setCast(String cast) { this.casts = cast; }
 
     public Long getAgeLimit() { return ageLimit; }
 
