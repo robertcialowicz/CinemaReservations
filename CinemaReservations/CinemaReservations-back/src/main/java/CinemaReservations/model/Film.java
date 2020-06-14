@@ -3,6 +3,12 @@ package CinemaReservations.model;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+import com.sun.xml.bind.v2.model.core.ID;
+import sun.rmi.runtime.Log;
+
 import java.util.Random;
 
 @Entity(name = "Film")
@@ -100,7 +106,13 @@ public class Film {
 
     public void setAgeLimit(Long ageLimit) { this.ageLimit = ageLimit; }
 
-    public List<MovieShow> getMovieShows() { return movieShows; }
+    public List<Long> getMovieShows() {
+        List<Long> Ids = new ArrayList<Long>();
+        for(MovieShow movieShow : movieShows){
+            Ids.add(movieShow.getId());
+        }
+        return Ids;
+    }
 
     public void setMovieShows(List<MovieShow> movieShows) { this.movieShows = movieShows; }
 }

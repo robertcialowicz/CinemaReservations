@@ -97,7 +97,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-impl-maven-embedded:3.0.0-alpha-4" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.arquillian.spacelift:arquillian-spacelift:1.0.0.Alpha8" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.arquillian.spacelift:arquillian-spacelift-api:1.0.0.Alpha8" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.commons:commons-compress:1.8.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: commons-codec:commons-codec:1.10" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.jboss.arquillian.junit:arquillian-junit-container:1.1.13.Final" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.jboss.arquillian.junit:arquillian-junit-core:1.1.13.Final" level="project" />
@@ -206,5 +205,7 @@
     <orderEntry type="library" name="Maven: org.apache.xbean:xbean-asm7-shaded:4.12" level="project" />
     <orderEntry type="library" name="Maven: org.apache.geronimo.specs:geronimo-jpa_2.2_spec:1.0" level="project" />
     <orderEntry type="library" name="Maven: javax.transaction:jta:1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-compress:1.8.1" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.10.4" level="project" />
   </component>
 </module>

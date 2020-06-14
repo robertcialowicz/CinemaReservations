@@ -1,6 +1,7 @@
 package CinemaReservations.model;
 
 import CinemaReservations.utils.MovieTime;
+import com.fasterxml.jackson.annotation.*;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -23,7 +24,8 @@ public class MovieShow {
     @Column(name = "SEATS_RESERVATION_STATUS", length = 1000)
     private String seatsReservationStatus;
 
-    @ManyToOne
+    @JsonIgnore
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "FILM_ID")
     private Film film;
 
@@ -40,7 +42,7 @@ public class MovieShow {
                 ", date='" + date + '\'' +
                 ", time='" + time + '\'' +
                 ", seatsReservationStatus='" + seatsReservationStatus + '\'' +
-                ", film=" + film +
+                ", film=" + film.getId() +
                 ", reservations=" + reservations +
                 '}';
     }
@@ -77,16 +79,18 @@ public class MovieShow {
         this.seatsReservationStatus = seatsReservationStatus;
     }
 
-    public Film getFilm() {
-        return film;
-    }
+    public Long getFilm() { return film.getId(); }
 
     public void setFilm(Film film) {
         this.film = film;
     }
 
-    public List<Reservation> getReservations() {
-        return reservations;
+    public List<Long> getReservations() {
+        List<Long> Ids = new ArrayList<Long>();
+        for(Reservation reservation : reservations){
+            Ids.add(reservation.getId());
+        }
+        return Ids;
     }
 
     public void setReservations(List<Reservation> reservations) {

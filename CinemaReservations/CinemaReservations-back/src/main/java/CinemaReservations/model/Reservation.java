@@ -1,5 +1,10 @@
 package CinemaReservations.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
 import javax.persistence.*;
 
 @Entity
@@ -22,7 +27,8 @@ public class Reservation {
     @Column(name = "BOOKEDSEATS")
     private String bookedSeats;
 
-    @ManyToOne
+    @JsonIgnore
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "MOVIESHOW_ID")
     private MovieShow movieShow;
 
@@ -37,7 +43,7 @@ public class Reservation {
                 ", surname='" + surname + '\'' +
                 ", email='" + email + '\'' +
                 ", bookedSeats='" + bookedSeats + '\'' +
-                ", movieShow=" + movieShow +
+                ", movieShow=" + movieShow.getId() +
                 '}';
     }
 
@@ -61,7 +67,7 @@ public class Reservation {
 
     public void setBookedSeats(String bookedSeats) { this.bookedSeats = bookedSeats; }
 
-    public MovieShow getMovieShow() { return movieShow; }
+    public Long getMovieShow() { return movieShow.getId(); }
 
     public void setMovieShow(MovieShow movieShow) { this.movieShow = movieShow; }
 }

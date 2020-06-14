@@ -38,12 +38,12 @@ public class ReservationRepository {
         }
 
         //foreach reserved seat check if it is not already reserved } if not expand list of booked seats in given movieshow
-        for(String toBeChecked : allReservedSeats){
-            if(!reservation.getMovieShow().getSeatsReservationStatus().toLowerCase().contains(toBeChecked.toLowerCase())){
-                throw new IllegalArgumentException("Choosen seats are already reserved!");
-            }
-            else reservation.getMovieShow().setSeatsReservationStatus((new StringBuilder()).append(reservation.getMovieShow().getSeatsReservationStatus()).append(reservation.getBookedSeats()).toString());
-        }
+        //for(String toBeChecked : allReservedSeats){
+        //    if(!reservation.getMovieShow().getSeatsReservationStatus().toLowerCase().contains(toBeChecked.toLowerCase())){
+        //        throw new IllegalArgumentException("Choosen seats are already reserved!");
+        //    }
+         //   else reservation.getMovieShow().setSeatsReservationStatus((new StringBuilder()).append(reservation.getMovieShow().getSeatsReservationStatus()).append(reservation.getBookedSeats()).toString());
+        //}
 
         em.persist(reservation);
         return reservation;
