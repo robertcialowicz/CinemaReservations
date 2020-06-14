@@ -63,7 +63,15 @@ public class Reservation {
     public Long getMovieShow() { return movieShow.getId(); }
 
     public void setMovieShow(Long movieShow) {
-        EntityManager em = Persistence.createEntityManagerFactory("CinemaReservationsPU").createEntityManager();
-        this.movieShow = em.getReference(MovieShow.class, movieShow);
+        if(movieShow > 0){
+            EntityManager em = Persistence.createEntityManagerFactory("CinemaReservationsPU").createEntityManager();
+            this.movieShow = em.getReference(MovieShow.class, movieShow);
+        } else {
+            this.movieShow = null;
+        }
+    }
+
+    public void setMovieShowAsObject(MovieShow movieShow) {
+        this.movieShow = movieShow;
     }
 }

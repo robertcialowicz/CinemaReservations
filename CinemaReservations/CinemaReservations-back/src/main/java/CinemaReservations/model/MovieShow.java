@@ -24,7 +24,7 @@ public class MovieShow {
     @JoinColumn(name = "FILM_ID")
     private Film film;
 
-    @OneToMany(mappedBy = "movieShow")
+    @OneToMany(mappedBy = "movieShow", orphanRemoval = true)
     private List<Reservation> reservations = new ArrayList<>();
 
     public MovieShow(){
@@ -89,6 +89,10 @@ public class MovieShow {
         return Ids;
     }
 
+    public List<Reservation> getReservationsAsObjects() {
+        return this.reservations;
+    }
+
     public void setReservations(List<Reservation> reservations) {
         this.reservations = reservations;
     }
@@ -98,8 +102,4 @@ public class MovieShow {
         reservations.add(em.getReference(Reservation.class, newReservationID));
     }
 
-    public void removeFromReservationList(Long newReservationID){
-        EntityManager em = Persistence.createEntityManagerFactory("CinemaReservationsPU").createEntityManager();
-        reservations.remove(reservations.indexOf(em.getReference(Reservation.class, newReservationID)));
-    }
 }

@@ -1,5 +1,6 @@
 package CinemaReservations.utils;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -29,14 +30,8 @@ public class ReservedSeatStatusParser {
         List<String> toRemoveAsList = Arrays.asList(toRemove.split(","));
 
         for (String toRemoveSingle : toRemoveAsList){
-            int temp = inputAsList.indexOf(toRemoveSingle);
-            if(temp < inputAsList.size() - 1){
-                inputAsList.remove(temp);
-                inputAsList.remove(temp);
-            } else {
-                inputAsList.remove(temp-1);
-                inputAsList.remove(temp-1);
-            }
+            Integer temp = inputAsList.indexOf(toRemoveSingle);
+            if (temp > -1) inputAsList.remove(temp);
         }
 
         return String.join(",",inputAsList);

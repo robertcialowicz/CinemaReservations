@@ -6,6 +6,7 @@ import CinemaReservations.model.Reservation;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 import javax.transaction.Transactional;
 import java.util.List;
@@ -34,15 +35,18 @@ public class MovieShowRepository {
 
     @Transactional(REQUIRED)
     public void delete(Long id){
+        MovieShow m = em.find(MovieShow.class, id);
+        Film f = em.find(Film.class, m.getFilm());
+
         //remove all child reservations
-        TypedQuery<Reservation> query = em.createQuery("SELECT b FROM Reservation b WHERE b.movieShow =:temp" , Reservation.class);
-        query.setParameter("temp",em.getReference(MovieShow.class,id));
-        for(Reservation reservation : query.getResultList()){
-            em.remove(em.getReference(Reservation.class, reservation.getId()));
+        for (Long reservation : m.getReservations()){
+            em.remove(em.find(Reservation.class,reservation));
         }
-        //update entry in Film entity
-        em.getReference(Film.class, em.getReference(MovieShow.class, id).getFilm()).removeFromMovieshowsList(id);
-        em.remove(em.getReference(MovieShow.class, id));
+
+        //TODO update entry in parent Film entity
+        f.getMovieShowsAsObjects().remove(m);
+
+        em.remove(m);
     }
 
     public List<MovieShow> findAll(){

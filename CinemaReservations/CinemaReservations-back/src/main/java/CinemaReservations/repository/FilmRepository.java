@@ -2,7 +2,6 @@ package CinemaReservations.repository;
 
 import CinemaReservations.model.Film;
 import CinemaReservations.model.MovieShow;
-import CinemaReservations.model.Reservation;
 
 import javax.persistence.*;
 import javax.transaction.Transactional;
@@ -31,12 +30,13 @@ public class FilmRepository {
 
     @Transactional(REQUIRED)
     public void delete(Long id){
-        TypedQuery<MovieShow> query = em.createQuery("SELECT b FROM MovieShow b WHERE b.film =:temp", MovieShow.class);
-        query.setParameter("temp",em.getReference(Film.class,id));
-        for(MovieShow movieShow : query.getResultList()){
-            em.remove(em.getReference(MovieShow.class, movieShow.getId()));
+        //remove all child reservations
+        Film a = em.find(Film.class, id);
+        for (Long movieShow : a.getMovieShows()){
+            em.remove(em.find(MovieShow.class,movieShow));
         }
-        em.remove(em.getReference(Film.class, id));
+
+        em.remove(a);
     }
 
     public List<Film> findAll(){

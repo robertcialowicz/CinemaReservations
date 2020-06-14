@@ -36,7 +36,7 @@ public class Film {
     @Column(name = "AGE_LIMIT", length = 1000)
     private Long ageLimit;
 
-    @OneToMany(mappedBy = "film")
+    @OneToMany(mappedBy = "film", orphanRemoval = true)
     private List<MovieShow> movieShows = new ArrayList<>();
 
     public Film(){
@@ -114,9 +114,7 @@ public class Film {
         movieShows.add(em.getReference(MovieShow.class, newMovieshowID));
     }
 
-    public void removeFromMovieshowsList(Long newMovieshowID){
-        EntityManager em = Persistence.createEntityManagerFactory("CinemaReservationsPU").createEntityManager();
-        movieShows.remove(movieShows.indexOf(em.getReference(MovieShow.class, newMovieshowID)));
+    public List<MovieShow> getMovieShowsAsObjects() {
+        return this.movieShows;
     }
-
 }
