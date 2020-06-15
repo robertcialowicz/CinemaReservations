@@ -70,10 +70,13 @@ export class MakeReservationComponent implements OnInit {
     el.classList.toggle('selected');
   })
 
-  this.event.seatsReservationStatus.split(',').forEach(seat => {
-    seat = seat.trim();
-    if(seat !== '') document.querySelector('#' + seat).classList.add('disabled');
-  })
+  if(this.event.seatsReservationStatus) {
+    this.event.seatsReservationStatus.split(',').forEach(seat => {
+      seat = seat.trim();
+      if(seat !== '') document.querySelector('#' + seat).classList.add('disabled');
+    })
+  }
+
     this.seatsNumberToPick = this.firstFormGroup.controls.firstCtrl.value;
   }
 

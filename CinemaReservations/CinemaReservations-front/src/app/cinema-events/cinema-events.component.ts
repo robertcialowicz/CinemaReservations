@@ -117,10 +117,7 @@ export class CinemaEventsComponent implements OnInit, AfterViewInit {
          const newShow = {
            date: moment(result.startDate).valueOf().toString(),
            time: result.duration.toString(),
-           film: this.films.filter(film => film.id == result.fimId)[0].id,
-           theatreHall: {
-             id: this.activeHall
-           }
+           film: this.films.filter(film => film.id == result.fimId)[0].id
          }
 
          this.apiService.postShows(newShow).subscribe(resp => {
@@ -141,7 +138,7 @@ export class CinemaEventsComponent implements OnInit, AfterViewInit {
     this.apiService.getShows().subscribe(resp1 => {
       const events = [];
       const shows = resp1 as Array<any>;
-
+      console.log(shows)
       if(shows) {
         shows
           // .filter(el => { return el.theatreHall.id == this.activeHall})

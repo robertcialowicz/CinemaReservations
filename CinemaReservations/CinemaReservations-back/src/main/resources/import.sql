@@ -13,8 +13,8 @@ INSERT INTO FILM (FILM_ID, TITLE, DESCRIPTION, TYPEOFFILM, DIRECTOR, SCENARIO, R
 INSERT INTO FILM (FILM_ID, TITLE, DESCRIPTION, TYPEOFFILM, DIRECTOR, SCENARIO, RELEASE_DATE, CASTS, AGE_LIMIT) VALUES (111,'Crazy, Stupid, Love.','A middle-aged husband''s life changes dramatically when his wife asks him for a divorce. He seeks to rediscover his manhood with the help of a newfound friend, Jacob, learning to pick up girls at bars.','Comedy, Drama, Romance','Glenn Ficarra, John Requa','Dan Fogelman','2011','Steve Carell, Ryan Gosling, Julianne Moore', 13);
 INSERT INTO FILM (FILM_ID, TITLE, DESCRIPTION, TYPEOFFILM, DIRECTOR, SCENARIO, RELEASE_DATE, CASTS, AGE_LIMIT) VALUES (112,'Passengers','A spacecraft traveling to a distant colony planet and transporting thousands of people has a malfunction in its sleep chambers. As a result, two passengers are awakened 90 years early.','Drama, Romance, Sci-Fi','Morten Tyldum','Jon Spaihts','2016','Jennifer Lawrence, Chris Pratt, Michael Sheen ', 13);
 
-INSERT INTO MOVIESHOW (MOVIESHOW_ID, DATE, TIME, SEATS_RESERVATION_STATUS, FILM_ID) VALUES (201, '1592352000000', '60', 'A1,A2,A3,A10,A19,B2', 101);
-INSERT INTO MOVIESHOW (MOVIESHOW_ID, DATE, TIME, SEATS_RESERVATION_STATUS, FILM_ID) VALUES (202, '1592352000000', '125', 'A1,J19', 102);
+INSERT INTO MOVIESHOW (MOVIESHOW_ID, DATE, TIME, SEATS_RESERVATION_STATUS, FILM_ID) VALUES (201, '1592578800000', '60', 'A1,A2,A3,A10,A19,B2', 101);
+INSERT INTO MOVIESHOW (MOVIESHOW_ID, DATE, TIME, SEATS_RESERVATION_STATUS, FILM_ID) VALUES (202, '1592305200000', '125', 'A1,J19', 102);
 INSERT INTO MOVIESHOW (MOVIESHOW_ID, DATE, TIME, SEATS_RESERVATION_STATUS, FILM_ID) VALUES (203, '1592352000000', '130', '', 103);
 
 INSERT INTO RESERVATION (RESERVATION_ID, NAME, SURNAME, EMAIL, BOOKEDSEATS, MOVIESHOW_ID) VALUES (301, 'ROB', 'SMIESZEK', 'robo@cop.pl', 'A10', 201);
